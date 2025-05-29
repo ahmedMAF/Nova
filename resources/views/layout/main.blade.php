@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<!-- saved from url=(0024)https://auratechs.com/en -->
+<html lang="en" dir="ltr" class="theme-light">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!-- Required meta tags -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Links of CSS files -->
+    <link rel="stylesheet" href="{{asset('css/aos.css')}}" />
+    <link rel="stylesheet" href="{{asset('css/animate.min.css')}}" />
+    <link rel="stylesheet" href="{{asset('css/meanmenu.css')}}" />
+    <link rel="stylesheet" href="{{asset('fonts/remixicon.css')}}" />
+    <link rel="stylesheet" href="../css/odometer.min.css" />
+    <link rel="stylesheet" href="../css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="../css/magnific-popup.min.css" />
+    <link rel="stylesheet" href="../css/fancybox.min.css" />
+    <link rel="stylesheet" href="../css/nice-select.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/dark.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/toastr.min.css" />
+
+    <title>@yield('title')</title>
+</head>
+
+<body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
+    <!-- Start Preloader Area -->
+    <div class="preloader" style="display: none;">
+        <div class="d-table">
+            <div class="d-table-cell">
+                <div class="lds-spinner">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Preloader Area -->
+    <header class="main-header-area">
+        <!-- Start Navbar Area -->
+        <div class="navbar-area">
+            <div class="main-responsive-nav">
+                <div class="container">
+                    <div class="main-responsive-menu">
+                        <div class="logo">
+                            <a href="../html/index.html">
+                                <img src="../image/logo.jpeg" alt="image" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-navbar">
+                <div class="container-fluid">
+                    <nav class="navbar navbar-expand-md navbar-light">
+                        <a class="navbar-brand" href="../html/index.html">
+                            <img src="../image/logo.jpeg" alt="image" />
+                        </a>
+
+                        <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent"
+                            style="display: block">
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item">
+                                    <a href="../html/index.html" class="nav-link">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../html/about.html" class="nav-link">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../html/services.html" class="nav-link">Services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../html/team.html" class="nav-link">Team</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../html/projects.html" class="nav-link">Projects</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="../html/contact.html" class="nav-link">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="others-option-for-responsive">
+                <div class="container">
+                    <div class="container">
+                        <div class="option-inner">
+                            <div class="others-options d-flex align-items-center">
+                                <div class="option-item">
+                                    <i class="search-btn ri-search-line"></i>
+                                    <i class="close-btn ri-close-line"></i>
+                                    <div class="search-overlay search-popup">
+                                        <div class="search-box">
+                                            <form class="search-form">
+                                                <input class="search-input" placeholder="Search..." type="text" />
+
+                                                <button class="search-button" type="submit">
+                                                    <i class="ri-search-line"></i>
+                                                </button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="option-item">
+                                    <div class="side-menu-btn">
+                                        <i class="ri-bar-chart-horizontal-line" data-bs-toggle="modal"
+                                            data-bs-target="#sidebarModal"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Navbar Area -->
+    </header>
+
+    @yield('Banner')
+
+    @yield('content')
+
+    <!-- start Footer Area -->
+    <footer class="footer-area with-black-background pt-100">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-3 col-md-6">
+                    <div class="single-footer-widget aos-init" data-aos="fade-up" data-aos-delay="50"
+                        data-aos-duration="500" data-aos-once="true">
+                        <div class="widget-logo">
+                            <a href="../html/index.html"><img src="../image/logo.jpeg" alt="image" /></a>
+                        </div>
+                        <p>
+                            <font color="#ffffff">&nbsp; &nbsp;</font>
+                        </p>
+
+                        <ul class="widget-social">
+                            <li>
+                                <a href="https://www.facebook.com/share/1A4Wj75TTP/" target="_blank">
+                                    <i class="ri-facebook-fill"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/share/1A4Wj75TTP/" target="_blank">
+                                    <i class="ri-twitter-fill"></i>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https://www.youtube.com/@ahmedmsafana" target="_blank">
+                                    <i class="ri-youtube-fill"></i>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https://www.youtube.com/@ahmedmsafana" target="_blank">
+                                    <i class="ri-vimeo-fill"></i>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="https://www.facebook.com/share/1A4Wj75TTP/" target="_blank">
+                                    <i class="ri-instagram-line"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="single-footer-widget ps-5 aos-init" data-aos="fade-up" data-aos-delay="60"
+                        data-aos-duration="600" data-aos-once="true">
+                        <h3>Links</h3>
+
+                        <ul class="quick-links">
+                            <li><a href="../html/index.html">Home</a></li>
+                            <li><a href="../html/about.html">About Us</a></li>
+                            <li>
+                                <a href="../html/services.html">Services</a>
+                            </li>
+                            <li><a href="../html/team.html">Team</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="single-footer-widget ps-5 aos-init" data-aos="fade-up" data-aos-delay="70"
+                        data-aos-duration="700" data-aos-once="true">
+                        <h3>Pages</h3>
+
+                        <ul class="quick-links">
+                            <li>
+                                <a href="../html/projects.html">Projects</a>
+                            </li>
+                            <li><a href="../html/contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright-area">
+            <div class="container">
+                <div class="copyright-area-content">
+                    <p>
+                        Copyright @
+
+                        <script>
+                            document.write(new Date().getFullYear());
+                        </script>
+                        Created by NOVA
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-shape-1">
+            <img src="../image/slides-shape-2.png" alt="image" />
+        </div>
+        <div class="footer-shape-2">
+            <img src="../image/slides-shape-3.png" alt="image" />
+        </div>
+        <div class="footer-shape-3">
+            <img src="../image/footer-shape-3.png" alt="image" />
+        </div>
+    </footer>
+    <!-- End Footer Area -->
+
+    <!-- Start Go Top Area -->
+    <div class="go-top">
+        <i class="ri-arrow-up-s-line"></i>
+    </div>
+    <!-- End Go Top Area -->
+
+    <!-- Links of JS files -->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/jquery.meanmenu.js"></script>
+    <script src="../js/owl.carousel.min.js"></script>
+    <script src="../js/jquery.appear.js"></script>
+    <script src="../js/odometer.min.js"></script>
+    <script src="../js/jquery.magnific-popup.min.js"></script>
+    <script src="../js/fancybox.min.js"></script>
+    <script src="../js/tweenmax.min.js"></script>
+    <script src="../js/ScrollMagic.min.js"></script>
+    <script src="../js/animation.gsap.min.js"></script>
+    <script src="../js/debug.addIndicators.min.js"></script>
+    <script src="../js/mixitup.min.js"></script>
+    <script src="../js/nice-select.min.js"></script>
+    <script src="../js/tilt.jquery.min.js"></script>
+    <script src="../js/parallax.min.js"></script>
+    <script src="../js/jquery.ajaxchimp.min.js"></script>
+    <script src="../js/form-validator.min.js"></script>
+    <script src="../js/contact-form-script.js"></script>
+    <script src="../js/aos.js"></script>
+    <script src="../js/wow.min.js"></script>
+    <script src="../js/main.js"></script>
+    <div class="switch-box"><label id="switch" class="switch"><input type="checkbox" onchange="toggleTheme()"
+                id="slider"><span class="slider round"></span></label></div>
+    <script src="../js/toastr.min.js"></script>
+    <script></script>
+</body>
+
+</html>

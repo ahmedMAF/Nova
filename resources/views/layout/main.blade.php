@@ -13,19 +13,19 @@
     <link rel="stylesheet" href="{{asset('css/animate.min.css')}}" />
     <link rel="stylesheet" href="{{asset('css/meanmenu.css')}}" />
     <link rel="stylesheet" href="{{asset('fonts/remixicon.css')}}" />
-    <link rel="stylesheet" href="../css/odometer.min.css" />
-    <link rel="stylesheet" href="../css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="../css/owl.theme.default.min.css" />
-    <link rel="stylesheet" href="../css/magnific-popup.min.css" />
-    <link rel="stylesheet" href="../css/fancybox.min.css" />
-    <link rel="stylesheet" href="../css/nice-select.min.css" />
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/navbar.css" />
-    <link rel="stylesheet" href="../css/footer.css" />
-    <link rel="stylesheet" href="../css/dark.css" />
-    <link rel="stylesheet" href="../css/responsive.css" />
-    <link rel="stylesheet" href="../css/bootstrap.min.css" />
-    <link rel="stylesheet" href="../css/toastr.min.css" />
+    <link rel="stylesheet" href="{{asset('css/odometer.min.css')}}" />
+    <link rel="stylesheet" href="{{asset('css/owl.carousel.min.css')}}" />
+    <link rel="stylesheet" href="{{asset('css/owl.theme.default.min.css')}}" />
+    <link rel="stylesheet" href="{{asset('css/magnific-popup.min.css')}}" />
+    <link rel="stylesheet" href="{{asset('css/fancybox.min.css')}}" />
+    <link rel="stylesheet" href="{{asset('css/nice-select.min.css')}}" />
+    <link rel="stylesheet" href="{{asset('css/style.css')}}" />
+    <link rel="stylesheet" href="{{asset('css/navbar.css')}}" />
+    <link rel="stylesheet" href="{{asset('css/footer.css')}}" />
+    <link rel="stylesheet" href="{{asset('css/dark.css')}}" />
+    <link rel="stylesheet" href="{{asset('css/responsive.css')}}" />
+    <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}" />
+    <link rel="stylesheet" href="{{asset('css/toastr.min.css')}}" />
 
     <title>@yield('title')</title>
 </head>
@@ -61,7 +61,7 @@
                     <div class="main-responsive-menu">
                         <div class="logo">
                             <a href="../html/index.html">
-                                <img src="../image/logo.jpeg" alt="image" />
+                                <img src="{{asset('image/logo.jpeg')}}" alt="image" />
                             </a>
                         </div>
                     </div>
@@ -79,22 +79,22 @@
                             style="display: block">
                             <ul class="navbar-nav ms-auto">
                                 <li class="nav-item">
-                                    <a href="../html/index.html" class="nav-link">Home</a>
+                                    <a href="{{route('home')}}" class="nav-link">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="../html/about.html" class="nav-link">About</a>
+                                    <a href="{{route('about')}}" class="nav-link">About</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="../html/services.html" class="nav-link">Services</a>
+                                    <a href="{{route('services')}}" class="nav-link">Services</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="../html/team.html" class="nav-link">Team</a>
+                                    <a href="{{route('team')}}" class="nav-link">Team</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="../html/projects.html" class="nav-link">Projects</a>
+                                    <a href="{{route('projects')}}" class="nav-link">Projects</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="../html/contact.html" class="nav-link">Contact</a>
+                                    <a href="{{route('contact')}}" class="nav-link">Contact</a>
                                 </li>
                             </ul>
                         </div>
@@ -138,8 +138,6 @@
         <!-- End Navbar Area -->
     </header>
 
-    @yield('Banner')
-
     @yield('content')
 
     <!-- start Footer Area -->
@@ -150,7 +148,7 @@
                     <div class="single-footer-widget aos-init" data-aos="fade-up" data-aos-delay="50"
                         data-aos-duration="500" data-aos-once="true">
                         <div class="widget-logo">
-                            <a href="../html/index.html"><img src="../image/logo.jpeg" alt="image" /></a>
+                            <a href="../html/index.html"><img src="{{asset('image/logo.jpeg')}}" alt="image" /></a>
                         </div>
                         <p>
                             <font color="#ffffff">&nbsp; &nbsp;</font>
@@ -236,13 +234,13 @@
             </div>
         </div>
         <div class="footer-shape-1">
-            <img src="../image/slides-shape-2.png" alt="image" />
+            <img src="{{{asset('image/slides-shape-2.png')}}}" alt="image" />
         </div>
         <div class="footer-shape-2">
-            <img src="../image/slides-shape-3.png" alt="image" />
+            <img src="{{asset('image/slides-shape-3.png')}}" alt="image" />
         </div>
         <div class="footer-shape-3">
-            <img src="../image/footer-shape-3.png" alt="image" />
+            <img src="{{asset('image/footer-shape-3.png')}}" alt="image" />
         </div>
     </footer>
     <!-- End Footer Area -->
@@ -254,31 +252,31 @@
     <!-- End Go Top Area -->
 
     <!-- Links of JS files -->
-    <script src="../js/jquery.min.js"></script>
-    <script src="../js/bootstrap.bundle.min.js"></script>
-    <script src="../js/jquery.meanmenu.js"></script>
-    <script src="../js/owl.carousel.min.js"></script>
-    <script src="../js/jquery.appear.js"></script>
-    <script src="../js/odometer.min.js"></script>
-    <script src="../js/jquery.magnific-popup.min.js"></script>
-    <script src="../js/fancybox.min.js"></script>
-    <script src="../js/tweenmax.min.js"></script>
-    <script src="../js/ScrollMagic.min.js"></script>
-    <script src="../js/animation.gsap.min.js"></script>
-    <script src="../js/debug.addIndicators.min.js"></script>
-    <script src="../js/mixitup.min.js"></script>
-    <script src="../js/nice-select.min.js"></script>
-    <script src="../js/tilt.jquery.min.js"></script>
-    <script src="../js/parallax.min.js"></script>
-    <script src="../js/jquery.ajaxchimp.min.js"></script>
-    <script src="../js/form-validator.min.js"></script>
-    <script src="../js/contact-form-script.js"></script>
-    <script src="../js/aos.js"></script>
-    <script src="../js/wow.min.js"></script>
-    <script src="../js/main.js"></script>
+    <script src="{{asset('js/jquery.min.js')}}"></script>
+    <script src="{{asset('js/bootstrap.bundle.min.js')}}"></script>
+    <script src="{{asset('js/jquery.meanmenu.js')}}"></script>
+    <script src="{{asset('js/owl.carousel.min.js')}}"></script>
+    <script src="{{asset('js/jquery.appear.js')}}"></script>
+    <script src="{{asset('js/odometer.min.js')}}"></script>
+    <script src="{{asset('js/jquery.magnific-popup.min.js')}}"></script>
+    <script src="{{asset('js/fancybox.min.js')}}"></script>
+    <script src="{{asset('js/tweenmax.min.js')}}"></script>
+    <script src="{{asset('js/ScrollMagic.min.js')}}"></script>
+    <script src="{{asset('js/animation.gsap.min.js')}}"></script>
+    <script src="{{asset('js/debug.addIndicators.min.js')}}"></script>
+    <script src="{{asset('js/mixitup.min.js')}}"></script>
+    <script src="{{asset('js/nice-select.min.js')}}"></script>
+    <script src="{{asset('js/tilt.jquery.min.js')}}"></script>
+    <script src="{{asset('js/parallax.min.js')}}"></script>
+    <script src="{{asset('js/jquery.ajaxchimp.min.js')}}"></script>
+    <script src="{{asset('js/form-validator.min.js')}}"></script>
+    <script src="{{asset('js/contact-form-script.js')}}"></script>
+    <script src="{{asset('js/aos.js')}}"></script>
+    <script src="{{asset('js/wow.min.js')}}"></script>
+    <script src="{{asset('js/main.js')}}"></script>
     <div class="switch-box"><label id="switch" class="switch"><input type="checkbox" onchange="toggleTheme()"
                 id="slider"><span class="slider round"></span></label></div>
-    <script src="../js/toastr.min.js"></script>
+    <script src="{{asset('js/toastr.min.js')}}"></script>
     <script></script>
 </body>
 

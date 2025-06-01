@@ -72,7 +72,7 @@
                 <div class="container-fluid">
                     <nav class="navbar navbar-expand-md navbar-light">
                         <a class="navbar-brand" href="../html/index.html">
-                            <img src="../image/logo.jpeg" alt="image" />
+                            <img src="{{asset('image/logo.jpeg')}}" alt="image" />
                         </a>
 
                         <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent"

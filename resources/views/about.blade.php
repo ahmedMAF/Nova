@@ -36,7 +36,7 @@
                 <div class="col-lg-6 col-md-12">
                     <div class="about-image" data-tilt=""
                         style="will-change: transform; transform: perspective(300px) rotateX(0deg) rotateY(0deg);">
-                        <img src="../image/about.jpg" alt="image" data-aos="fade-down" data-aos-delay="80"
+                        <img src="{{asset('image/about.jpg')}}" alt="image" data-aos="fade-down" data-aos-delay="80"
                             data-aos-duration="800" data-aos-once="true" class="aos-init aos-animate">
                     </div>
                 </div>
@@ -81,7 +81,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-12">
                     <div class="about-wrap-image" data-tilt="" style="will-change: transform;">
-                        <img src="../image/aboutGoal.jpg" alt="image" data-aos="fade-down" data-aos-delay="80"
+                        <img src="{{asset('image/aboutGoal.jpg')}}" alt="image" data-aos="fade-down" data-aos-delay="80"
                             data-aos-duration="800" data-aos-once="true" class="aos-init aos-animate">
                     </div>
                 </div>
@@ -175,14 +175,27 @@
         <div class="container">
             <div class="section-title">
                 <span>WHY CHOOSE US</span>
-                <h2>We Help You To Increase Your Sale Through Solutions<span class="overlay"
-                        style="transform: matrix(0, 0, 0, 1, 0, 0); transform-origin: left 50% 0px;"></span></h2>
+                <h2>
+                    We Help You To Increase Your Sale Through Solutions<span class="overlay" style="
+                            transform-origin: left 50% 0px;
+                            transform: matrix(0, 0, 0, 1, 0, 0);
+                          "></span>
+                </h2>
                 <p></p>
-                <h1 style="line-height:150%" class="">
-                    <p class="MsoNormal"
-                        style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; direction: ltr; unicode-bidi: embed;">
+                <h1 style="line-height: 150%" class="">
+                    <p class="MsoNormal" style="
+                            background-image: initial;
+                            background-position: initial;
+                            background-size: initial;
+                            background-repeat: initial;
+                            background-attachment: initial;
+                            background-origin: initial;
+                            background-clip: initial;
+                            direction: ltr;
+                            unicode-bidi: embed;
+                          ">
                         Everything we do is aligned with these values<font face="Open Sans, sans-serif"><span
-                                style="font-size: 12pt;">
+                                style="font-size: 12pt">
                                 <o:p></o:p>
                             </span></font>
                     </p>
@@ -192,160 +205,176 @@
 
             <div class="row">
                 <div class="col-lg-3 col-sm-6">
-                    <div class="single-choose-card aos-init aos-animate" data-aos="fade-up" data-aos-delay="50"
-                        data-aos-duration="500" data-aos-once="true">
+                    <div class="single-choose-card aos-init" data-aos="fade-up" data-aos-delay="50" data-aos-duration="500"
+                        data-aos-once="true">
                         <div class="choose-image" data-tilt="">
-                            <a href="../html/about.html"><img src="../image/Ziar1VrkIiAJE8yrWiyIZTKyDVzte1QK4ufIuZMm.png"
-                                    alt=" image"></a>
+                            <a href="../html/index.html"><img
+                                    src="{{asset('image/Ziar1VrkIiAJE8yrWiyIZTKyDVzte1QK4ufIuZMm.png')}}"
+                                    alt=" image" /></a>
                         </div>
                         <div class="choose-content">
                             <h3>
-                                <a href="../html/about.html">Excellence</a>
+                                <a href="../html/index.html">Excellence</a>
                             </h3>
                             <p></p>
-                            <div style="text-align: justify;">Excellence in Execution, We believe in performing at the
-                                highest level
-                                of quality and professionalism in all aspects of the company</div>
-                            <p></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single-choose-card aos-init aos-animate" data-aos="fade-up" data-aos-delay="50"
-                        data-aos-duration="500" data-aos-once="true">
-                        <div class="choose-image" data-tilt="">
-                            <a href="../html/about.html"><img src="../image/mv5MUSz3BO1ZdImmoKRZFA7wywV93EZdHyAUfH7A.png"
-                                    alt=" image"></a>
-                        </div>
-                        <div class="choose-content">
-                            <h3>
-                                <a href="../html/about.html">Commitment</a>
-                            </h3>
-                            <p></p>
-                            <div style="text-align: justify;">Being committed to our work means being committed to our
-                                customers. Our
-                                commitment shines through in our day-to-day business.</div>
-                            <p></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single-choose-card aos-init aos-animate" data-aos="fade-up" data-aos-delay="50"
-                        data-aos-duration="500" data-aos-once="true">
-                        <div class="choose-image" data-tilt="">
-                            <a href="../html/about.html"><img src="../image/k2mPAdhe3yfadl3R35APCMq4PLwkBk615EzGDJqQ.png"
-                                    alt=" image"></a>
-                        </div>
-                        <div class="choose-content">
-                            <h3>
-                                <a href="../html/about.html">Teamwork</a>
-                            </h3>
-                            <p></p>
-                            <div style="text-align: justify;">We are one company, one team, focusing on our customers’
-                                success</div>
-                            <p></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single-choose-card aos-init aos-animate" data-aos="fade-up" data-aos-delay="50"
-                        data-aos-duration="500" data-aos-once="true">
-                        <div class="choose-image" data-tilt="">
-                            <a href="../html/about.html"><img src="../image/decTe7YkYPePp0G4TSZyAGovB85Yi9tTuNmKYi7X.png"
-                                    alt=" image"></a>
-                        </div>
-                        <div class="choose-content">
-                            <h3>
-                                <a href="../html/about.html">Creativity</a>
-                            </h3>
-                            <p></p>
-                            <div style="text-align: justify;">Creativity is a core value, effective Creativity sets higher
-                                goals and
-                                finds ways to meet them</div>
-                            <p></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single-choose-card aos-init aos-animate" data-aos="fade-up" data-aos-delay="50"
-                        data-aos-duration="500" data-aos-once="true">
-                        <div class="choose-image" data-tilt="">
-                            <a href="../html/about.html"><img src="../image/sFL2jkR1CC43rPNzB0QiUhKidGgQdQz4raiik3ft.png"
-                                    alt=" image"></a>
-                        </div>
-                        <div class="choose-content">
-                            <h3>
-                                <a href="../html/about.html">Passion</a>
-                            </h3>
-                            <p></p>
-                            <div style="text-align: justify;">We exhibit passion in everything we&nbsp; do in order to
-                                exceed the
-                                highest&nbsp; expectations of our customers.</div>
-                            <p></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single-choose-card aos-init aos-animate" data-aos="fade-up" data-aos-delay="50"
-                        data-aos-duration="500" data-aos-once="true">
-                        <div class="choose-image" data-tilt="">
-                            <a href="../html/about.html"><img src="../image/33dJZH0ohwVRfdXVLH1Ro2SstEO4qePp0STU4Ywi.png"
-                                    alt=" image"></a>
-                        </div>
-                        <div class="choose-content">
-                            <h3>
-                                <a href="../html/about.html">Integrity</a>
-                            </h3>
-                            <p></p>
-                            <div style="text-align: justify;">Being whole and undivided, Integrity&nbsp; is the defining
-                                quality of
-                                our people&nbsp; and our work.</div>
-                            <p></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single-choose-card aos-init aos-animate" data-aos="fade-up" data-aos-delay="50"
-                        data-aos-duration="500" data-aos-once="true">
-                        <div class="choose-image" data-tilt="">
-                            <a href="../html/about.html"><img src="../image/9kHL2vfSqYS15orB5H93AdDZtETO2mGBhNOeKbSL.png"
-                                    alt=" image"></a>
-                        </div>
-                        <div class="choose-content">
-                            <h3>
-                                <a href="../html/about.html">Innovation</a>
-                            </h3>
-                            <p></p>
-                            <div style="text-align: justify; ">We have the mentality of continuous&nbsp; improvement and
-                                development
-                                of&nbsp; new products and services</div>
-                            <div>
-
+                            <div style="text-align: justify">
+                                Excellence in Execution, We believe in performing at the
+                                highest level of quality and professionalism in all aspects of
+                                the company
                             </div>
                             <p></p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6">
-                    <div class="single-choose-card aos-init aos-animate" data-aos="fade-up" data-aos-delay="50"
-                        data-aos-duration="500" data-aos-once="true">
+                    <div class="single-choose-card aos-init" data-aos="fade-up" data-aos-delay="50" data-aos-duration="500"
+                        data-aos-once="true">
                         <div class="choose-image" data-tilt="">
-                            <a href="../html/about.html"><img src="../image/An9T3tDQAyAU4LS7gG1nOWzuA4jkHoNWpEzVd9w3.png"
-                                    alt=" image"></a>
+                            <a href="../html/index.html"><img
+                                    src="{{asset('image/mv5MUSz3BO1ZdImmoKRZFA7wywV93EZdHyAUfH7A.png')}}"
+                                    alt=" image" /></a>
                         </div>
                         <div class="choose-content">
                             <h3>
-                                <a href="../html/about.html">Quality</a>
+                                <a href="../html/index.html">Commitment</a>
                             </h3>
                             <p></p>
-                            <div style="text-align: justify; ">What we do, we do well,We’re committed to providing the best
-                                customer
-                                service possible.</div>
+                            <div style="text-align: justify">
+                                Being committed to our work means being committed to our
+                                customers. Our commitment shines through in our day-to-day
+                                business.
+                            </div>
                             <p></p>
                         </div>
                     </div>
                 </div>
-
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-choose-card aos-init" data-aos="fade-up" data-aos-delay="50" data-aos-duration="500"
+                        data-aos-once="true">
+                        <div class="choose-image" data-tilt="">
+                            <a href="../html/index.html"><img
+                                    src="{{asset('image/k2mPAdhe3yfadl3R35APCMq4PLwkBk615EzGDJqQ.png')}}"
+                                    alt=" image" /></a>
+                        </div>
+                        <div class="choose-content">
+                            <h3>
+                                <a href="../html/index.html">Teamwork</a>
+                            </h3>
+                            <p></p>
+                            <div style="text-align: justify">
+                                We are one company, one team, focusing on our customers’
+                                success
+                            </div>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-choose-card aos-init" data-aos="fade-up" data-aos-delay="50" data-aos-duration="500"
+                        data-aos-once="true">
+                        <div class="choose-image" data-tilt="">
+                            <a href="../html/index.html"><img
+                                    src="{{asset('image/decTe7YkYPePp0G4TSZyAGovB85Yi9tTuNmKYi7X.png')}}"
+                                    alt=" image" /></a>
+                        </div>
+                        <div class="choose-content">
+                            <h3>
+                                <a href="../html/index.html">Creativity</a>
+                            </h3>
+                            <p></p>
+                            <div style="text-align: justify">
+                                Creativity is a core value, effective Creativity sets higher
+                                goals and finds ways to meet them
+                            </div>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-choose-card aos-init" data-aos="fade-up" data-aos-delay="50" data-aos-duration="500"
+                        data-aos-once="true">
+                        <div class="choose-image" data-tilt="">
+                            <a href="../html/index.html"><img
+                                    src="{{asset('image/sFL2jkR1CC43rPNzB0QiUhKidGgQdQz4raiik3ft.png')}}"
+                                    alt=" image" /></a>
+                        </div>
+                        <div class="choose-content">
+                            <h3>
+                                <a href="../html/index.html">Passion</a>
+                            </h3>
+                            <p></p>
+                            <div style="text-align: justify">
+                                We exhibit passion in everything we&nbsp; do in order to
+                                exceed the highest&nbsp; expectations of our customers.
+                            </div>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-choose-card aos-init" data-aos="fade-up" data-aos-delay="50" data-aos-duration="500"
+                        data-aos-once="true">
+                        <div class="choose-image" data-tilt="">
+                            <a href="../html/index.html"><img
+                                    src="{{asset('image/33dJZH0ohwVRfdXVLH1Ro2SstEO4qePp0STU4Ywi.png')}}"
+                                    alt=" image" /></a>
+                        </div>
+                        <div class="choose-content">
+                            <h3>
+                                <a href="../html/index.html">Integrity</a>
+                            </h3>
+                            <p></p>
+                            <div style="text-align: justify">
+                                Being whole and undivided, Integrity&nbsp; is the defining
+                                quality of our people&nbsp; and our work.
+                            </div>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-choose-card aos-init" data-aos="fade-up" data-aos-delay="50" data-aos-duration="500"
+                        data-aos-once="true">
+                        <div class="choose-image" data-tilt="">
+                            <a href="../html/index.html"><img
+                                    src="{{asset('image/9kHL2vfSqYS15orB5H93AdDZtETO2mGBhNOeKbSL.png')}}"
+                                    alt=" image" /></a>
+                        </div>
+                        <div class="choose-content">
+                            <h3>
+                                <a href="../html/index.html">Innovation</a>
+                            </h3>
+                            <p></p>
+                            <div style="text-align: justify">
+                                We have the mentality of continuous&nbsp; improvement and
+                                development of&nbsp; new products and services
+                            </div>
+                            <div></div>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="single-choose-card aos-init" data-aos="fade-up" data-aos-delay="50" data-aos-duration="500"
+                        data-aos-once="true">
+                        <div class="choose-image" data-tilt="">
+                            <a href="../html/index.html"><img
+                                    src="{{asset('image/An9T3tDQAyAU4LS7gG1nOWzuA4jkHoNWpEzVd9w3.png')}}"
+                                    alt=" image" /></a>
+                        </div>
+                        <div class="choose-content">
+                            <h3>
+                                <a href="../html/index.html">Quality</a>
+                            </h3>
+                            <p></p>
+                            <div style="text-align: justify">
+                                What we do, we do well,We’re committed to providing the best
+                                customer service possible.
+                            </div>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

@@ -364,7 +364,7 @@
                                 <div class="owl-item cloned" style="width: 251.628px; margin-right: 25px">
                                     <div class="services-item">
                                         <div class="services-image">
-                                            <img src="../image/slidedev.jpeg" alt="image" />
+                                            <img src="{{asset('image/slidedev.jpeg')}}" alt="image" />
                                         </div>
                                         <div class="services-content">
                                             <h3>
@@ -382,7 +382,7 @@
                                 <div class="owl-item cloned" style="width: 251.628px; margin-right: 25px">
                                     <div class="services-item">
                                         <div class="services-image">
-                                            <img src="../image/slidedev.jpeg" alt="image" />
+                                            <img src="{{asset('image/slidedev.jpeg')}}" alt="image" />
                                         </div>
                                         <div class="services-content">
                                             <h3>
@@ -401,7 +401,7 @@
                                 <div class="owl-item cloned active" style="width: 251.628px; margin-right: 25px">
                                     <div class="services-item">
                                         <div class="services-image">
-                                            <img src="../image/slidedev.jpeg" alt="image" />
+                                            <img src="{{asset('image/slidedev.jpeg')}}" alt="image" />
                                         </div>
                                         <div class="services-content">
                                             <h3>
@@ -419,7 +419,7 @@
                                 <div class="owl-item active center" style="width: 251.628px; margin-right: 25px">
                                     <div class="services-item">
                                         <div class="services-image">
-                                            <img src="../image/slideai.jpeg" alt="image" />
+                                            <img src="{{asset('image/slideai.jpeg')}}" alt="image" />
                                         </div>
                                         <div class="services-content">
                                             <h3>
@@ -437,7 +437,7 @@
                                 <div class="owl-item active" style="width: 251.628px; margin-right: 25px">
                                     <div class="services-item">
                                         <div class="services-image">
-                                            <img src="../image/slideiot.jpeg" alt="image" />
+                                            <img src="{{asset('image/slideiot.jpeg')}}" alt="image" />
                                         </div>
                                         <div class="services-content">
                                             <h3>
@@ -455,7 +455,7 @@
                                 <div class="owl-item" style="width: 251.628px; margin-right: 25px">
                                     <div class="services-item">
                                         <div class="services-image">
-                                            <img src="../image/slidecourse.jpeg" alt="image" />
+                                            <img src="{{asset('image/slidecourse.jpeg')}}" alt="image" />
                                         </div>
                                         <div class="services-content">
                                             <h3>
@@ -527,7 +527,7 @@
                     <div class="single-choose-card aos-init" data-aos="fade-up" data-aos-delay="50" data-aos-duration="500"
                         data-aos-once="true">
                         <div class="choose-image" data-tilt="">
-                            <a href="../html/index.html"><img src="../image/Ziar1VrkIiAJE8yrWiyIZTKyDVzte1QK4ufIuZMm.png"
+                            <a href="../html/index.html"><img src="{{asset('image/Ziar1VrkIiAJE8yrWiyIZTKyDVzte1QK4ufIuZMm.png')}}"
                                     alt=" image" /></a>
                         </div>
                         <div class="choose-content">
@@ -548,7 +548,7 @@
                     <div class="single-choose-card aos-init" data-aos="fade-up" data-aos-delay="50" data-aos-duration="500"
                         data-aos-once="true">
                         <div class="choose-image" data-tilt="">
-                            <a href="../html/index.html"><img src="../image/mv5MUSz3BO1ZdImmoKRZFA7wywV93EZdHyAUfH7A.png"
+                            <a href="../html/index.html"><img src="{{asset('image/mv5MUSz3BO1ZdImmoKRZFA7wywV93EZdHyAUfH7A.png')}}"
                                     alt=" image" /></a>
                         </div>
                         <div class="choose-content">
@@ -569,7 +569,7 @@
                     <div class="single-choose-card aos-init" data-aos="fade-up" data-aos-delay="50" data-aos-duration="500"
                         data-aos-once="true">
                         <div class="choose-image" data-tilt="">
-                            <a href="../html/index.html"><img src="../image/k2mPAdhe3yfadl3R35APCMq4PLwkBk615EzGDJqQ.png"
+                            <a href="../html/index.html"><img src="{{asset('image/k2mPAdhe3yfadl3R35APCMq4PLwkBk615EzGDJqQ.png')}}"
                                     alt=" image" /></a>
                         </div>
                         <div class="choose-content">
@@ -589,7 +589,7 @@
                     <div class="single-choose-card aos-init" data-aos="fade-up" data-aos-delay="50" data-aos-duration="500"
                         data-aos-once="true">
                         <div class="choose-image" data-tilt="">
-                            <a href="../html/index.html"><img src="../image/decTe7YkYPePp0G4TSZyAGovB85Yi9tTuNmKYi7X.png"
+                            <a href="../html/index.html"><img src="{{asset('image/decTe7YkYPePp0G4TSZyAGovB85Yi9tTuNmKYi7X.png')}}"
                                     alt=" image" /></a>
                         </div>
                         <div class="choose-content">
@@ -609,7 +609,7 @@
                     <div class="single-choose-card aos-init" data-aos="fade-up" data-aos-delay="50" data-aos-duration="500"
                         data-aos-once="true">
                         <div class="choose-image" data-tilt="">
-                            <a href="../html/index.html"><img src="../image/sFL2jkR1CC43rPNzB0QiUhKidGgQdQz4raiik3ft.png"
+                            <a href="../html/index.html"><img src="{{asset('image/sFL2jkR1CC43rPNzB0QiUhKidGgQdQz4raiik3ft.png')}}"
                                     alt=" image" /></a>
                         </div>
                         <div class="choose-content">
@@ -629,7 +629,7 @@
                     <div class="single-choose-card aos-init" data-aos="fade-up" data-aos-delay="50" data-aos-duration="500"
                         data-aos-once="true">
                         <div class="choose-image" data-tilt="">
-                            <a href="../html/index.html"><img src="../image/33dJZH0ohwVRfdXVLH1Ro2SstEO4qePp0STU4Ywi.png"
+                            <a href="../html/index.html"><img src="{{asset('image/33dJZH0ohwVRfdXVLH1Ro2SstEO4qePp0STU4Ywi.png')}}"
                                     alt=" image" /></a>
                         </div>
                         <div class="choose-content">
@@ -649,7 +649,7 @@
                     <div class="single-choose-card aos-init" data-aos="fade-up" data-aos-delay="50" data-aos-duration="500"
                         data-aos-once="true">
                         <div class="choose-image" data-tilt="">
-                            <a href="../html/index.html"><img src="../image/9kHL2vfSqYS15orB5H93AdDZtETO2mGBhNOeKbSL.png"
+                            <a href="../html/index.html"><img src="{{asset('image/9kHL2vfSqYS15orB5H93AdDZtETO2mGBhNOeKbSL.png')}}"
                                     alt=" image" /></a>
                         </div>
                         <div class="choose-content">
@@ -670,7 +670,7 @@
                     <div class="single-choose-card aos-init" data-aos="fade-up" data-aos-delay="50" data-aos-duration="500"
                         data-aos-once="true">
                         <div class="choose-image" data-tilt="">
-                            <a href="../html/index.html"><img src="../image/An9T3tDQAyAU4LS7gG1nOWzuA4jkHoNWpEzVd9w3.png"
+                            <a href="../html/index.html"><img src="{{asset('image/An9T3tDQAyAU4LS7gG1nOWzuA4jkHoNWpEzVd9w3.png')}}"
                                     alt=" image" /></a>
                         </div>
                         <div class="choose-content">

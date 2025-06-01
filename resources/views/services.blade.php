@@ -5,12 +5,12 @@
 @section('content')
     <!-- Start Page Banner Area -->
     <div class="page-banner-area bg-2 jarallax" style="
-                        background-color: black;
-                        position: relative;
-                        z-index: 0;
-                        background-attachment: scroll;
-                        background-size: auto;
-                      " data-jarallax='{"speed": 0.3}'>
+                            background-color: black;
+                            position: relative;
+                            z-index: 0;
+                            background-attachment: scroll;
+                            background-size: auto;
+                          " data-jarallax='{"speed": 0.3}'>
         <div class="container">
             <div class="page-banner-content aos-init aos-animate" data-aos="fade-right" data-aos-delay="50"
                 data-aos-duration="500" data-aos-once="true">
@@ -25,32 +25,32 @@
             </div>
         </div>
         <div id="jarallax-container-0" style="
-                          position: absolute;
-                          top: 0px;
-                          left: 0px;
-                          width: 100%;
-                          height: 100%;
-                          overflow: hidden;
-                          pointer-events: none;
-                          visibility: hidden;
-                          z-index: -100;
-                        ">
+                              position: absolute;
+                              top: 0px;
+                              left: 0px;
+                              width: 100%;
+                              height: 100%;
+                              overflow: hidden;
+                              pointer-events: none;
+                              visibility: hidden;
+                              z-index: -100;
+                            ">
             <div style="
-                            background-position: 50% 50%;
-                            background-size: 100%;
-                            background-repeat: no-repeat;
-                            position: fixed;
-                            top: 0px;
-                            left: 0px;
-                            width: 1263.33px;
-                            height: 559.657px;
-                            overflow: hidden;
-                            pointer-events: none;
-                            margin-left: 0px;
-                            margin-top: 21.6717px;
-                            visibility: visible;
-                            transform: translateY(-30.75px) translateZ(0px);
-                          "></div>
+                                background-position: 50% 50%;
+                                background-size: 100%;
+                                background-repeat: no-repeat;
+                                position: fixed;
+                                top: 0px;
+                                left: 0px;
+                                width: 1263.33px;
+                                height: 559.657px;
+                                overflow: hidden;
+                                pointer-events: none;
+                                margin-left: 0px;
+                                margin-top: 21.6717px;
+                                visibility: visible;
+                                transform: translateY(-30.75px) translateZ(0px);
+                              "></div>
         </div>
     </div>
     <!-- End Page Banner Area -->
@@ -105,37 +105,37 @@
                 <h2>
                     Our Services
                     <span class="overlay" style="
-                        transform-origin: left 50% 0px;
-                        transform: matrix(0, 0, 0, 1, 0, 0);
-                      "></span>
+                            transform-origin: left 50% 0px;
+                            transform: matrix(0, 0, 0, 1, 0, 0);
+                          "></span>
                 </h2>
                 <p></p>
                 <p align="center" style="
-                      margin: 0in 0in 15pt;
-                      text-align: center;
-                      line-height: 18pt;
-                      background-image: initial;
-                      background-position: initial;
-                      background-size: initial;
-                      background-repeat: initial;
-                      background-attachment: initial;
-                      background-origin: initial;
-                      background-clip: initial;
-                      vertical-align: baseline;
-                    "></p>
+                          margin: 0in 0in 15pt;
+                          text-align: center;
+                          line-height: 18pt;
+                          background-image: initial;
+                          background-position: initial;
+                          background-size: initial;
+                          background-repeat: initial;
+                          background-attachment: initial;
+                          background-origin: initial;
+                          background-clip: initial;
+                          vertical-align: baseline;
+                        "></p>
                 <div style="text-align: left">
                     <p class="MsoNormal" style="
-                        text-align: center;
-                        background-image: initial;
-                        background-position: initial;
-                        background-size: initial;
-                        background-repeat: initial;
-                        background-attachment: initial;
-                        background-origin: initial;
-                        background-clip: initial;
-                        direction: ltr;
-                        unicode-bidi: embed;
-                      ">
+                            text-align: center;
+                            background-image: initial;
+                            background-position: initial;
+                            background-size: initial;
+                            background-repeat: initial;
+                            background-attachment: initial;
+                            background-origin: initial;
+                            background-clip: initial;
+                            direction: ltr;
+                            unicode-bidi: embed;
+                          ">
                         We offer individuals and companies locally and across global
                         market a full range of services We seek to offer your company the
                         very best solution in each category.
@@ -157,7 +157,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="services-item" style="height: 500px">
                         <div class="services-image">
-                            <a class="prevent" href="#"><img src="../image/slideiot.jpeg" alt="image" /></a>
+                            <a class="prevent" href="#"><img src="{{asset('image/slideiot.jpeg')}}" alt="image" /></a>
                         </div>
                         <div class="services-content">
                             <h3>
@@ -171,31 +171,31 @@
                             <a href="#" class="services-btn show"> View More</a>
                         </div>
                         <div id="all-text" style="
-                          display: none;
-                          background-color: #73589b;
-                          width: 100%;
-                          position: fixed;
-                          left: 5%;
-                          top: 50%;
-                          z-index: 100;
-                          padding: 20px;
-                          width: 90%;
-                          border-radius: 10px;
-                        ">
+                              display: none;
+                              background-color: #73589b;
+                              width: 100%;
+                              position: fixed;
+                              left: 5%;
+                              top: 50%;
+                              z-index: 100;
+                              padding: 20px;
+                              width: 90%;
+                              border-radius: 10px;
+                            ">
                             <div class="x" style="
-                            color: white;
-                            font-size: 20px;
-                            font-weight: bold;
-                            position: absolute;
-                            right: -23px;
-                            top: -23px;
-                            background-color: #73589b;
-                            width: 30px;
-                            height: 30px;
-                            border-radius: 50%;
-                            text-align: center;
-                            cursor: pointer;
-                          ">
+                                color: white;
+                                font-size: 20px;
+                                font-weight: bold;
+                                position: absolute;
+                                right: -23px;
+                                top: -23px;
+                                background-color: #73589b;
+                                width: 30px;
+                                height: 30px;
+                                border-radius: 50%;
+                                text-align: center;
+                                cursor: pointer;
+                              ">
                                 X
                             </div>
                             <h3 style="color: white">Internet of Things</h3>
@@ -214,7 +214,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="services-item" style="height: 500px">
                         <div class="services-image">
-                            <a class="prevent" href="#"><img src="../image/slidedev.jpeg" alt="image" /></a>
+                            <a class="prevent" href="#"><img src="{{asset('image/slidedev.jpeg')}}" alt="image" /></a>
                         </div>
                         <div class="services-content">
                             <h3>
@@ -228,31 +228,31 @@
                             <a href="#" class="services-btn show"> View More</a>
                         </div>
                         <div id="all-text" style="
-                          display: none;
-                          background-color: #73589b;
-                          width: 100%;
-                          position: fixed;
-                          left: 5%;
-                          top: 50%;
-                          z-index: 100;
-                          padding: 20px;
-                          width: 90%;
-                          border-radius: 10px;
-                        ">
+                              display: none;
+                              background-color: #73589b;
+                              width: 100%;
+                              position: fixed;
+                              left: 5%;
+                              top: 50%;
+                              z-index: 100;
+                              padding: 20px;
+                              width: 90%;
+                              border-radius: 10px;
+                            ">
                             <div class="x" style="
-                            color: white;
-                            font-size: 20px;
-                            font-weight: bold;
-                            position: absolute;
-                            right: -23px;
-                            top: -23px;
-                            background-color: #73589b;
-                            width: 30px;
-                            height: 30px;
-                            border-radius: 50%;
-                            text-align: center;
-                            cursor: pointer;
-                          ">
+                                color: white;
+                                font-size: 20px;
+                                font-weight: bold;
+                                position: absolute;
+                                right: -23px;
+                                top: -23px;
+                                background-color: #73589b;
+                                width: 30px;
+                                height: 30px;
+                                border-radius: 50%;
+                                text-align: center;
+                                cursor: pointer;
+                              ">
                                 X
                             </div>
                             <h3 style="color: white">Web development</h3>
@@ -272,7 +272,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="services-item" style="height: 500px">
                         <div class="services-image">
-                            <a class="prevent" href="#"><img src="../image/slideai.jpeg" alt="image" /></a>
+                            <a class="prevent" href="#"><img src="{{asset('image/slideai.jpeg')}}" alt="image" /></a>
                         </div>
                         <div class="services-content">
                             <h3>
@@ -286,31 +286,31 @@
                             <a href="%" class="services-btn show"> View More</a>
                         </div>
                         <div id="all-text" style="
-                          display: none;
-                          background-color: #73589b;
-                          width: 100%;
-                          position: fixed;
-                          left: 5%;
-                          top: 50%;
-                          z-index: 100;
-                          padding: 20px;
-                          width: 90%;
-                          border-radius: 10px;
-                        ">
+                              display: none;
+                              background-color: #73589b;
+                              width: 100%;
+                              position: fixed;
+                              left: 5%;
+                              top: 50%;
+                              z-index: 100;
+                              padding: 20px;
+                              width: 90%;
+                              border-radius: 10px;
+                            ">
                             <div class="x" style="
-                            color: white;
-                            font-size: 20px;
-                            font-weight: bold;
-                            position: absolute;
-                            right: -23px;
-                            top: -23px;
-                            background-color: #73589b;
-                            width: 30px;
-                            height: 30px;
-                            border-radius: 50%;
-                            text-align: center;
-                            cursor: pointer;
-                          ">
+                                color: white;
+                                font-size: 20px;
+                                font-weight: bold;
+                                position: absolute;
+                                right: -23px;
+                                top: -23px;
+                                background-color: #73589b;
+                                width: 30px;
+                                height: 30px;
+                                border-radius: 50%;
+                                text-align: center;
+                                cursor: pointer;
+                              ">
                                 X
                             </div>
                             <h3 style="color: white">AI & Machine Learning</h3>
@@ -326,7 +326,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="services-item" style="height: 500px">
                         <div class="services-image">
-                            <a class="prevent" href="#"><img src="../image/slidedev.jpeg" alt="image" /></a>
+                            <a class="prevent" href="#"><img src="{{asset('image/slidedev.jpeg')}}" alt="image" /></a>
                         </div>
                         <div class="services-content">
                             <h3>
@@ -340,31 +340,31 @@
                             <a href="#" class="services-btn show"> View More</a>
                         </div>
                         <div id="all-text" style="
-                          display: none;
-                          background-color: #73589b;
-                          width: 100%;
-                          position: fixed;
-                          left: 5%;
-                          top: 50%;
-                          z-index: 100;
-                          padding: 20px;
-                          width: 90%;
-                          border-radius: 10px;
-                        ">
+                              display: none;
+                              background-color: #73589b;
+                              width: 100%;
+                              position: fixed;
+                              left: 5%;
+                              top: 50%;
+                              z-index: 100;
+                              padding: 20px;
+                              width: 90%;
+                              border-radius: 10px;
+                            ">
                             <div class="x" style="
-                            color: white;
-                            font-size: 20px;
-                            font-weight: bold;
-                            position: absolute;
-                            right: -23px;
-                            top: -23px;
-                            background-color: #73589b;
-                            width: 30px;
-                            height: 30px;
-                            border-radius: 50%;
-                            text-align: center;
-                            cursor: pointer;
-                          ">
+                                color: white;
+                                font-size: 20px;
+                                font-weight: bold;
+                                position: absolute;
+                                right: -23px;
+                                top: -23px;
+                                background-color: #73589b;
+                                width: 30px;
+                                height: 30px;
+                                border-radius: 50%;
+                                text-align: center;
+                                cursor: pointer;
+                              ">
                                 X
                             </div>
                             <h3 style="color: white">Mobile App Development</h3>
@@ -383,7 +383,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="services-item" style="height: 500px">
                         <div class="services-image">
-                            <a class="prevent" href="#"><img src="../image/slidecourse.jpeg" alt="image" /></a>
+                            <a class="prevent" href="#"><img src="{{asset('image/slidecourse.jpeg')}}" alt="image" /></a>
                         </div>
                         <div class="services-content">
                             <h3>
@@ -397,31 +397,31 @@
                             <a href="" class="services-btn show"> View More</a>
                         </div>
                         <div id="all-text" style="
-                          display: none;
-                          background-color: #73589b;
-                          width: 100%;
-                          position: fixed;
-                          left: 5%;
-                          top: 50%;
-                          z-index: 100;
-                          padding: 20px;
-                          width: 90%;
-                          border-radius: 10px;
-                        ">
+                              display: none;
+                              background-color: #73589b;
+                              width: 100%;
+                              position: fixed;
+                              left: 5%;
+                              top: 50%;
+                              z-index: 100;
+                              padding: 20px;
+                              width: 90%;
+                              border-radius: 10px;
+                            ">
                             <div class="x" style="
-                            color: white;
-                            font-size: 20px;
-                            font-weight: bold;
-                            position: absolute;
-                            right: -23px;
-                            top: -23px;
-                            background-color: #73589b;
-                            width: 30px;
-                            height: 30px;
-                            border-radius: 50%;
-                            text-align: center;
-                            cursor: pointer;
-                          ">
+                                color: white;
+                                font-size: 20px;
+                                font-weight: bold;
+                                position: absolute;
+                                right: -23px;
+                                top: -23px;
+                                background-color: #73589b;
+                                width: 30px;
+                                height: 30px;
+                                border-radius: 50%;
+                                text-align: center;
+                                cursor: pointer;
+                              ">
                                 X
                             </div>
                             <h3 style="color: white">Training & Courses</h3>
@@ -441,7 +441,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="services-item" style="height: 500px">
                         <div class="services-image">
-                            <a class="prevent" href="#"><img src="../image/slidedev.jpeg" alt="image" /></a>
+                            <a class="prevent" href="#"><img src="{{asset('image/slidedev.jpeg')}}" alt="image" /></a>
                         </div>
                         <div class="services-content">
                             <h3>
@@ -455,31 +455,31 @@
                             <a href="#" class="services-btn show"> View More</a>
                         </div>
                         <div id="all-text" style="
-                          display: none;
-                          background-color: #73589b;
-                          width: 100%;
-                          position: fixed;
-                          left: 5%;
-                          top: 50%;
-                          z-index: 100;
-                          padding: 20px;
-                          width: 90%;
-                          border-radius: 10px;
-                        ">
+                              display: none;
+                              background-color: #73589b;
+                              width: 100%;
+                              position: fixed;
+                              left: 5%;
+                              top: 50%;
+                              z-index: 100;
+                              padding: 20px;
+                              width: 90%;
+                              border-radius: 10px;
+                            ">
                             <div class="x" style="
-                            color: white;
-                            font-size: 20px;
-                            font-weight: bold;
-                            position: absolute;
-                            right: -23px;
-                            top: -23px;
-                            background-color: #73589b;
-                            width: 30px;
-                            height: 30px;
-                            border-radius: 50%;
-                            text-align: center;
-                            cursor: pointer;
-                          ">
+                                color: white;
+                                font-size: 20px;
+                                font-weight: bold;
+                                position: absolute;
+                                right: -23px;
+                                top: -23px;
+                                background-color: #73589b;
+                                width: 30px;
+                                height: 30px;
+                                border-radius: 50%;
+                                text-align: center;
+                                cursor: pointer;
+                              ">
                                 X
                             </div>
                             <h3 style="color: white">Desktop Application Development</h3>
@@ -530,9 +530,9 @@
                         <span>LET'S TALK</span>
                         <h3>
                             Contact<span class="overlay" style="
-                        transform-origin: left 50% 0px;
-                        transform: matrix(0, 0, 0, 1, 0, 0);
-                      "></span>
+                            transform-origin: left 50% 0px;
+                            transform: matrix(0, 0, 0, 1, 0, 0);
+                          "></span>
                         </h3>
                         <p></p>
                         <p style="text-align: justify">
@@ -541,16 +541,16 @@
                             love to hear from you.<br />
                         </p>
                         <p class="MsoNormal" style="
-                      background-image: initial;
-                      background-position: initial;
-                      background-size: initial;
-                      background-repeat: initial;
-                      background-attachment: initial;
-                      background-origin: initial;
-                      background-clip: initial;
-                      direction: ltr;
-                      unicode-bidi: embed;
-                    ">
+                          background-image: initial;
+                          background-position: initial;
+                          background-size: initial;
+                          background-repeat: initial;
+                          background-attachment: initial;
+                          background-origin: initial;
+                          background-clip: initial;
+                          direction: ltr;
+                          unicode-bidi: embed;
+                        ">
                             <o:p></o:p>
                         </p>
                         <p></p>

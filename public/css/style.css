@@ -65,6 +65,7 @@ Default CSS
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+
 :root {
   --main-font-family: 'Open Sans', sans-serif;
   --heading-font-family: 'Jost', sans-serif;
@@ -94,7 +95,8 @@ a {
   display: inline-block;
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
   color: var(--main-color);
   text-decoration: none;
 }
@@ -152,13 +154,35 @@ img {
   padding-bottom: 75px;
 }
 
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: var(--black-color);
   font-family: var(--heading-font-family);
   font-weight: 900;
 }
 
-.h1:last-child, .h2:last-child, .h3:last-child, .h4:last-child, .h5:last-child, .h6:last-child, h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:last-child {
+.h1:last-child,
+.h2:last-child,
+.h3:last-child,
+.h4:last-child,
+.h5:last-child,
+.h6:last-child,
+h1:last-child,
+h2:last-child,
+h3:last-child,
+h4:last-child,
+h5:last-child,
+h6:last-child {
   margin-bottom: 0;
 }
 
@@ -177,20 +201,28 @@ Default Btn CSS
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   position: relative;
   border-radius: 10px;
   z-index: 0;
   background: var(--btn-gradient-color);
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   overflow: hidden;
   white-space: nowrap;
   font-family: var(--heading-font-family);
+  text-decoration: none;
+  width: 100%;
+  max-width: 200px;
+}
+
+.default-btn-form {
+  border: none;
+  font-size: 15px !important;
 }
 
 .default-btn:before {
@@ -206,9 +238,9 @@ Default Btn CSS
   border-radius: 50%;
   z-index: -1;
   -webkit-transform-origin: top center;
-          transform-origin: top center;
+  transform-origin: top center;
   -webkit-transform: translateX(-50%) translateY(-5%) scale(0.4);
-          transform: translateX(-50%) translateY(-5%) scale(0.4);
+  transform: translateX(-50%) translateY(-5%) scale(0.4);
   -webkit-transition: -webkit-transform .9s;
   transition: -webkit-transform .9s;
   transition: transform .9s;
@@ -225,9 +257,9 @@ Default Btn CSS
   transition: transform 1s;
   transition: transform 1s, -webkit-transform 1s;
   -webkit-transform: translateX(-45%) translateY(0) scale(1);
-          transform: translateX(-45%) translateY(0) scale(1);
+  transform: translateX(-45%) translateY(0) scale(1);
   -webkit-transform-origin: bottom center;
-          transform-origin: bottom center;
+  transform-origin: bottom center;
 }
 
 /*================================================
@@ -317,9 +349,9 @@ Preloader Area CSS
 
 .preloader .lds-spinner div {
   -webkit-transform-origin: 40px 40px;
-          transform-origin: 40px 40px;
+  transform-origin: 40px 40px;
   -webkit-animation: lds-spinner 1.2s linear infinite;
-          animation: lds-spinner 1.2s linear infinite;
+  animation: lds-spinner 1.2s linear infinite;
 }
 
 .preloader .lds-spinner div::after {
@@ -336,92 +368,93 @@ Preloader Area CSS
 
 .preloader .lds-spinner div:nth-child(1) {
   -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
+  transform: rotate(0deg);
   -webkit-animation-delay: -1.1s;
-          animation-delay: -1.1s;
+  animation-delay: -1.1s;
 }
 
 .preloader .lds-spinner div:nth-child(2) {
   -webkit-transform: rotate(30deg);
-          transform: rotate(30deg);
+  transform: rotate(30deg);
   -webkit-animation-delay: -1s;
-          animation-delay: -1s;
+  animation-delay: -1s;
 }
 
 .preloader .lds-spinner div:nth-child(3) {
   -webkit-transform: rotate(60deg);
-          transform: rotate(60deg);
+  transform: rotate(60deg);
   -webkit-animation-delay: -0.9s;
-          animation-delay: -0.9s;
+  animation-delay: -0.9s;
 }
 
 .preloader .lds-spinner div:nth-child(4) {
   -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  transform: rotate(90deg);
   -webkit-animation-delay: -0.8s;
-          animation-delay: -0.8s;
+  animation-delay: -0.8s;
 }
 
 .preloader .lds-spinner div:nth-child(5) {
   -webkit-transform: rotate(120deg);
-          transform: rotate(120deg);
+  transform: rotate(120deg);
   -webkit-animation-delay: -0.7s;
-          animation-delay: -0.7s;
+  animation-delay: -0.7s;
 }
 
 .preloader .lds-spinner div:nth-child(6) {
   -webkit-transform: rotate(150deg);
-          transform: rotate(150deg);
+  transform: rotate(150deg);
   -webkit-animation-delay: -0.6s;
-          animation-delay: -0.6s;
+  animation-delay: -0.6s;
 }
 
 .preloader .lds-spinner div:nth-child(7) {
   -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  transform: rotate(180deg);
   -webkit-animation-delay: -0.5s;
-          animation-delay: -0.5s;
+  animation-delay: -0.5s;
 }
 
 .preloader .lds-spinner div:nth-child(8) {
   -webkit-transform: rotate(210deg);
-          transform: rotate(210deg);
+  transform: rotate(210deg);
   -webkit-animation-delay: -0.4s;
-          animation-delay: -0.4s;
+  animation-delay: -0.4s;
 }
 
 .preloader .lds-spinner div:nth-child(9) {
   -webkit-transform: rotate(240deg);
-          transform: rotate(240deg);
+  transform: rotate(240deg);
   -webkit-animation-delay: -0.3s;
-          animation-delay: -0.3s;
+  animation-delay: -0.3s;
 }
 
 .preloader .lds-spinner div:nth-child(10) {
   -webkit-transform: rotate(270deg);
-          transform: rotate(270deg);
+  transform: rotate(270deg);
   -webkit-animation-delay: -0.2s;
-          animation-delay: -0.2s;
+  animation-delay: -0.2s;
 }
 
 .preloader .lds-spinner div:nth-child(11) {
   -webkit-transform: rotate(300deg);
-          transform: rotate(300deg);
+  transform: rotate(300deg);
   -webkit-animation-delay: -0.1s;
-          animation-delay: -0.1s;
+  animation-delay: -0.1s;
 }
 
 .preloader .lds-spinner div:nth-child(12) {
   -webkit-transform: rotate(330deg);
-          transform: rotate(330deg);
+  transform: rotate(330deg);
   -webkit-animation-delay: 0s;
-          animation-delay: 0s;
+  animation-delay: 0s;
 }
 
 @-webkit-keyframes lds-spinner {
   0% {
     opacity: 1;
   }
+
   100% {
     opacity: 0;
   }
@@ -431,6 +464,7 @@ Preloader Area CSS
   0% {
     opacity: 1;
   }
+
   100% {
     opacity: 0;
   }
@@ -511,13 +545,14 @@ Main Slides Area CSS
   margin: 0 5px;
 }
 
-.home-slides.owl-theme .owl-dots .owl-dot:hover span, .home-slides.owl-theme .owl-dots .owl-dot.active span {
+.home-slides.owl-theme .owl-dots .owl-dot:hover span,
+.home-slides.owl-theme .owl-dots .owl-dot.active span {
   background: radial-gradient(circle, #a66bff, #c666ef, #dd62df, #ee61cf, #fb64bf);
   width: 30px;
   border-radius: 30px;
 }
 
-.home-slides.owl-theme .owl-nav.disabled + .owl-dots {
+.home-slides.owl-theme .owl-nav.disabled+.owl-dots {
   margin-top: 0;
   line-height: 0;
   position: absolute;
@@ -538,13 +573,13 @@ Main Slides Area CSS
 
 .main-slides-shape-1 img {
   -webkit-animation-name: rotateme;
-          animation-name: rotateme;
+  animation-name: rotateme;
   -webkit-animation-duration: 5s;
-          animation-duration: 5s;
+  animation-duration: 5s;
   -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  animation-timing-function: linear;
 }
 
 .main-slides-shape-2 {
@@ -552,10 +587,10 @@ Main Slides Area CSS
   top: 20%;
   left: 50%;
   -webkit-transform: translateY(-20%) translateX(-50%);
-          transform: translateY(-20%) translateX(-50%);
+  transform: translateY(-20%) translateX(-50%);
   z-index: 1;
   -webkit-animation: moveleftbounce 2s linear infinite;
-          animation: moveleftbounce 2s linear infinite;
+  animation: moveleftbounce 2s linear infinite;
 }
 
 .main-slides-shape-3 {
@@ -564,9 +599,9 @@ Main Slides Area CSS
   left: 20%;
   z-index: 1;
   -webkit-transform: translateY(-10%) translateX(-20%);
-          transform: translateY(-10%) translateX(-20%);
+  transform: translateY(-10%) translateX(-20%);
   -webkit-animation: moveleftbounce 1s linear infinite;
-          animation: moveleftbounce 1s linear infinite;
+  animation: moveleftbounce 1s linear infinite;
 }
 
 .main-slides-shape-4 {
@@ -574,19 +609,19 @@ Main Slides Area CSS
   bottom: 10%;
   right: 32%;
   -webkit-transform: translateY(-10%) translateX(-32%);
-          transform: translateY(-10%) translateX(-32%);
+  transform: translateY(-10%) translateX(-32%);
   z-index: 1;
 }
 
 .main-slides-shape-4 img {
   -webkit-animation-name: rotateme;
-          animation-name: rotateme;
+  animation-name: rotateme;
   -webkit-animation-duration: 5s;
-          animation-duration: 5s;
+  animation-duration: 5s;
   -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  animation-timing-function: linear;
 }
 
 .main-slides-shape-5 {
@@ -594,115 +629,131 @@ Main Slides Area CSS
   bottom: 5%;
   right: 10%;
   -webkit-transform: translateY(-5%) translateX(-10%);
-          transform: translateY(-5%) translateX(-10%);
+  transform: translateY(-5%) translateX(-10%);
   z-index: 1;
   -webkit-animation: animationFramesOne 10s infinite linear;
-          animation: animationFramesOne 10s infinite linear;
+  animation: animationFramesOne 10s infinite linear;
 }
 
 @-webkit-keyframes rotateme {
   from {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
+
   to {
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
 @keyframes rotateme {
   from {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
+
   to {
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
 @-webkit-keyframes animationFramesOne {
   0% {
     -webkit-transform: translate(0px, 0px) rotate(0deg);
-            transform: translate(0px, 0px) rotate(0deg);
+    transform: translate(0px, 0px) rotate(0deg);
   }
+
   20% {
     -webkit-transform: translate(73px, -1px) rotate(36deg);
-            transform: translate(73px, -1px) rotate(36deg);
+    transform: translate(73px, -1px) rotate(36deg);
   }
+
   40% {
     -webkit-transform: translate(141px, 72px) rotate(72deg);
-            transform: translate(141px, 72px) rotate(72deg);
+    transform: translate(141px, 72px) rotate(72deg);
   }
+
   60% {
     -webkit-transform: translate(83px, 122px) rotate(108deg);
-            transform: translate(83px, 122px) rotate(108deg);
+    transform: translate(83px, 122px) rotate(108deg);
   }
+
   80% {
     -webkit-transform: translate(-40px, 72px) rotate(144deg);
-            transform: translate(-40px, 72px) rotate(144deg);
+    transform: translate(-40px, 72px) rotate(144deg);
   }
+
   100% {
     -webkit-transform: translate(0px, 0px) rotate(0deg);
-            transform: translate(0px, 0px) rotate(0deg);
+    transform: translate(0px, 0px) rotate(0deg);
   }
 }
 
 @keyframes animationFramesOne {
   0% {
     -webkit-transform: translate(0px, 0px) rotate(0deg);
-            transform: translate(0px, 0px) rotate(0deg);
+    transform: translate(0px, 0px) rotate(0deg);
   }
+
   20% {
     -webkit-transform: translate(73px, -1px) rotate(36deg);
-            transform: translate(73px, -1px) rotate(36deg);
+    transform: translate(73px, -1px) rotate(36deg);
   }
+
   40% {
     -webkit-transform: translate(141px, 72px) rotate(72deg);
-            transform: translate(141px, 72px) rotate(72deg);
+    transform: translate(141px, 72px) rotate(72deg);
   }
+
   60% {
     -webkit-transform: translate(83px, 122px) rotate(108deg);
-            transform: translate(83px, 122px) rotate(108deg);
+    transform: translate(83px, 122px) rotate(108deg);
   }
+
   80% {
     -webkit-transform: translate(-40px, 72px) rotate(144deg);
-            transform: translate(-40px, 72px) rotate(144deg);
+    transform: translate(-40px, 72px) rotate(144deg);
   }
+
   100% {
     -webkit-transform: translate(0px, 0px) rotate(0deg);
-            transform: translate(0px, 0px) rotate(0deg);
+    transform: translate(0px, 0px) rotate(0deg);
   }
 }
 
 @-webkit-keyframes moveleftbounce {
   0% {
     -webkit-transform: translateX(0px);
-            transform: translateX(0px);
+    transform: translateX(0px);
   }
+
   50% {
     -webkit-transform: translateX(20px);
-            transform: translateX(20px);
+    transform: translateX(20px);
   }
+
   100% {
     -webkit-transform: translateX(0px);
-            transform: translateX(0px);
+    transform: translateX(0px);
   }
 }
 
 @keyframes moveleftbounce {
   0% {
     -webkit-transform: translateX(0px);
-            transform: translateX(0px);
+    transform: translateX(0px);
   }
+
   50% {
     -webkit-transform: translateX(20px);
-            transform: translateX(20px);
+    transform: translateX(20px);
   }
+
   100% {
     -webkit-transform: translateX(0px);
-            transform: translateX(0px);
+    transform: translateX(0px);
   }
 }
 
@@ -802,13 +853,14 @@ Main Hero Area CSS
   margin: 0 5px;
 }
 
-.hero-slides.owl-theme .owl-dots .owl-dot:hover span, .hero-slides.owl-theme .owl-dots .owl-dot.active span {
+.hero-slides.owl-theme .owl-dots .owl-dot:hover span,
+.hero-slides.owl-theme .owl-dots .owl-dot.active span {
   background: radial-gradient(circle, #a66bff, #c666ef, #dd62df, #ee61cf, #fb64bf);
   width: 30px;
   border-radius: 30px;
 }
 
-.hero-slides.owl-theme .owl-nav.disabled + .owl-dots {
+.hero-slides.owl-theme .owl-nav.disabled+.owl-dots {
   margin-top: 0;
   line-height: 0;
   position: absolute;
@@ -825,13 +877,13 @@ Main Hero Area CSS
 
 .hero-shape-1 img {
   -webkit-animation-name: rotateme;
-          animation-name: rotateme;
+  animation-name: rotateme;
   -webkit-animation-duration: 5s;
-          animation-duration: 5s;
+  animation-duration: 5s;
   -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  animation-timing-function: linear;
 }
 
 .hero-shape-2 {
@@ -843,13 +895,13 @@ Main Hero Area CSS
 
 .hero-shape-2 img {
   -webkit-animation-name: rotateme;
-          animation-name: rotateme;
+  animation-name: rotateme;
   -webkit-animation-duration: 5s;
-          animation-duration: 5s;
+  animation-duration: 5s;
   -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  animation-timing-function: linear;
 }
 
 .hero-shape-3 {
@@ -858,9 +910,9 @@ Main Hero Area CSS
   left: 50%;
   z-index: 1;
   -webkit-transform: translateY(-5%) translateY(-50%);
-          transform: translateY(-5%) translateY(-50%);
+  transform: translateY(-5%) translateY(-50%);
   -webkit-animation: animationFramesOne 10s infinite linear;
-          animation: animationFramesOne 10s infinite linear;
+  animation: animationFramesOne 10s infinite linear;
 }
 
 /*================================================
@@ -933,7 +985,7 @@ Main Banner Area CSS
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   left: 100px;
   right: 0;
   margin: auto;
@@ -942,13 +994,13 @@ Main Banner Area CSS
 
 .main-banner-image .banner-circle img {
   -webkit-animation-name: rotateme;
-          animation-name: rotateme;
+  animation-name: rotateme;
   -webkit-animation-duration: 5s;
-          animation-duration: 5s;
+  animation-duration: 5s;
   -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  animation-timing-function: linear;
 }
 
 .banner-shape-1 {
@@ -956,7 +1008,7 @@ Main Banner Area CSS
   top: -100px;
   left: -100px;
   -webkit-animation: moveleftbounce 1s linear infinite;
-          animation: moveleftbounce 1s linear infinite;
+  animation: moveleftbounce 1s linear infinite;
   z-index: -1;
 }
 
@@ -965,7 +1017,7 @@ Main Banner Area CSS
   bottom: 25px;
   right: -50px;
   -webkit-animation: animationFramesOne 10s infinite linear;
-          animation: animationFramesOne 10s infinite linear;
+  animation: animationFramesOne 10s infinite linear;
   z-index: -1;
 }
 
@@ -974,9 +1026,9 @@ Main Banner Area CSS
   top: 20%;
   left: 50%;
   -webkit-transform: translateY(-20%) translateX(-50%);
-          transform: translateY(-20%) translateX(-50%);
+  transform: translateY(-20%) translateX(-50%);
   -webkit-animation: animationFramesOne 25s infinite linear;
-          animation: animationFramesOne 25s infinite linear;
+  animation: animationFramesOne 25s infinite linear;
   z-index: -1;
 }
 
@@ -985,9 +1037,9 @@ Main Banner Area CSS
   top: 15%;
   left: 5%;
   -webkit-transform: translateY(-15%) translateX(-5%);
-          transform: translateY(-15%) translateX(-5%);
+  transform: translateY(-15%) translateX(-5%);
   -webkit-animation: animationFramesOne 10s infinite linear;
-          animation: animationFramesOne 10s infinite linear;
+  animation: animationFramesOne 10s infinite linear;
   z-index: -1;
 }
 
@@ -996,9 +1048,9 @@ Main Banner Area CSS
   bottom: 10%;
   left: 35%;
   -webkit-transform: translateY(-10%) translateX(-35%);
-          transform: translateY(-10%) translateX(-35%);
+  transform: translateY(-10%) translateX(-35%);
   -webkit-animation: animationFramesOne 20s infinite linear;
-          animation: animationFramesOne 20s infinite linear;
+  animation: animationFramesOne 20s infinite linear;
   z-index: -1;
 }
 
@@ -1007,9 +1059,9 @@ Main Banner Area CSS
   bottom: 50%;
   left: 50%;
   -webkit-transform: translateY(-50%) translateX(-50%);
-          transform: translateY(-50%) translateX(-50%);
+  transform: translateY(-50%) translateX(-50%);
   -webkit-animation: animationFramesOne 15s infinite linear;
-          animation: animationFramesOne 15s infinite linear;
+  animation: animationFramesOne 15s infinite linear;
   z-index: -1;
 }
 
@@ -1018,9 +1070,9 @@ Main Banner Area CSS
   top: 20%;
   right: 10%;
   -webkit-transform: translateY(-20%) translateX(-10%);
-          transform: translateY(-20%) translateX(-10%);
+  transform: translateY(-20%) translateX(-10%);
   -webkit-animation: animationFramesOne 20s infinite linear;
-          animation: animationFramesOne 20s infinite linear;
+  animation: animationFramesOne 20s infinite linear;
   z-index: -1;
 }
 
@@ -1139,9 +1191,9 @@ About Area CSS
 
 .about-wrap-image:hover img {
   -webkit-transform: scale(1.1) !important;
-          transform: scale(1.1) !important;
+  transform: scale(1.1) !important;
   -webkit-filter: blur(2px);
-          filter: blur(2px);
+  filter: blur(2px);
 }
 
 .about-wrap-content {
@@ -1227,9 +1279,9 @@ About Area CSS
 
 .single-about-card .card-image:hover img {
   -webkit-transform: scale(1.1) !important;
-          transform: scale(1.1) !important;
+  transform: scale(1.1) !important;
   -webkit-filter: blur(2px);
-          filter: blur(2px);
+  filter: blur(2px);
 }
 
 .about-circle-shape {
@@ -1237,18 +1289,18 @@ About Area CSS
   top: 50%;
   left: 5%;
   -webkit-transform: translateY(-50%) translateX(-5%);
-          transform: translateY(-50%) translateX(-5%);
+  transform: translateY(-50%) translateX(-5%);
 }
 
 .about-circle-shape img {
   -webkit-animation-name: rotateme;
-          animation-name: rotateme;
+  animation-name: rotateme;
   -webkit-animation-duration: 5s;
-          animation-duration: 5s;
+  animation-duration: 5s;
   -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  animation-timing-function: linear;
 }
 
 /*================================================
@@ -1428,7 +1480,7 @@ Services Area CSS
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   left: 0;
   width: 20px;
   height: 1.5px;
@@ -1444,9 +1496,9 @@ Services Area CSS
 
 .services-item:hover .services-image a img {
   -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
   -webkit-filter: blur(2px);
-          filter: blur(2px);
+  filter: blur(2px);
 }
 
 .services-item:hover .services-content h3 a {
@@ -1481,13 +1533,14 @@ Services Area CSS
   margin: 0 5px;
 }
 
-.services-slides.owl-theme .owl-dots .owl-dot:hover span, .services-slides.owl-theme .owl-dots .owl-dot.active span {
+.services-slides.owl-theme .owl-dots .owl-dot:hover span,
+.services-slides.owl-theme .owl-dots .owl-dot.active span {
   background: var(--btn-gradient-color);
   width: 30px;
   border-radius: 30px;
 }
 
-.services-slides.owl-theme .owl-nav.disabled + .owl-dots {
+.services-slides.owl-theme .owl-nav.disabled+.owl-dots {
   margin-top: 25px;
 }
 
@@ -1504,13 +1557,14 @@ Services Area CSS
   margin: 0 5px;
 }
 
-.services-slides-two.owl-theme .owl-dots .owl-dot:hover span, .services-slides-two.owl-theme .owl-dots .owl-dot.active span {
+.services-slides-two.owl-theme .owl-dots .owl-dot:hover span,
+.services-slides-two.owl-theme .owl-dots .owl-dot.active span {
   background: radial-gradient(circle, #a66bff, #c666ef, #dd62df, #ee61cf, #fb64bf);
   width: 30px;
   border-radius: 30px;
 }
 
-.services-slides-two.owl-theme .owl-nav.disabled + .owl-dots {
+.services-slides-two.owl-theme .owl-nav.disabled+.owl-dots {
   margin-top: 0;
 }
 
@@ -1524,9 +1578,9 @@ Services Area CSS
   top: 20%;
   left: 5%;
   -webkit-transform: translateY(-20%) translateX(-5%);
-          transform: translateY(-20%) translateX(-5%);
+  transform: translateY(-20%) translateX(-5%);
   -webkit-animation: moveleftbounce 2s linear infinite;
-          animation: moveleftbounce 2s linear infinite;
+  animation: moveleftbounce 2s linear infinite;
 }
 
 .services-shape-2 {
@@ -1534,18 +1588,18 @@ Services Area CSS
   top: 10%;
   right: 5%;
   -webkit-transform: translateY(-20%) translateX(-5%);
-          transform: translateY(-20%) translateX(-5%);
+  transform: translateY(-20%) translateX(-5%);
 }
 
 .services-shape-2 img {
   -webkit-animation-name: rotateme;
-          animation-name: rotateme;
+  animation-name: rotateme;
   -webkit-animation-duration: 5s;
-          animation-duration: 5s;
+  animation-duration: 5s;
   -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  animation-timing-function: linear;
 }
 
 /*================================================
@@ -1575,9 +1629,9 @@ Services Details Area CSS
 
 .services-details-desc .article-services-image:hover img {
   -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
   -webkit-filter: blur(2px);
-          filter: blur(2px);
+  filter: blur(2px);
 }
 
 .services-details-desc .article-services-content {
@@ -1642,9 +1696,9 @@ Services Details Area CSS
 
 .services-details-desc .article-services-middle-image:hover img {
   -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
   -webkit-filter: blur(2px);
-          filter: blur(2px);
+  filter: blur(2px);
 }
 
 .services-details-desc .article-services-quote {
@@ -1664,7 +1718,7 @@ Services Details Area CSS
   top: 10px;
   z-index: -1;
   -webkit-animation: moveleftbounce 2s linear infinite;
-          animation: moveleftbounce 2s linear infinite;
+  animation: moveleftbounce 2s linear infinite;
 }
 
 .services-details-desc .article-services-quote p {
@@ -1684,13 +1738,13 @@ Services Details Area CSS
 
 .services-details-desc .article-services-quote .quote-shape img {
   -webkit-animation-name: rotateme;
-          animation-name: rotateme;
+  animation-name: rotateme;
   -webkit-animation-duration: 5s;
-          animation-duration: 5s;
+  animation-duration: 5s;
   -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  animation-timing-function: linear;
 }
 
 .services-details-shape {
@@ -1807,7 +1861,7 @@ Video Area CSS
   z-index: 1;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   left: 0;
   right: 0;
   margin: auto;
@@ -1838,7 +1892,7 @@ Video Area CSS
   border-radius: 50%;
   border: 2px solid #FB64BF;
   -webkit-animation: ripple 2s linear infinite;
-          animation: ripple 2s linear infinite;
+  animation: ripple 2s linear infinite;
 }
 
 .video-view-content .video-btn:hover {
@@ -1857,24 +1911,26 @@ Video Area CSS
 
 .video-view-content:hover .video-image img {
   -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
   -webkit-filter: blur(5px);
-          filter: blur(5px);
+  filter: blur(5px);
 }
 
 @-webkit-keyframes ripple {
   0% {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
+
   75% {
     -webkit-transform: scale(1.75);
-            transform: scale(1.75);
+    transform: scale(1.75);
     opacity: 1;
   }
+
   100% {
     -webkit-transform: scale(2);
-            transform: scale(2);
+    transform: scale(2);
     opacity: 0;
   }
 }
@@ -1882,16 +1938,18 @@ Video Area CSS
 @keyframes ripple {
   0% {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
+
   75% {
     -webkit-transform: scale(1.75);
-            transform: scale(1.75);
+    transform: scale(1.75);
     opacity: 1;
   }
+
   100% {
     -webkit-transform: scale(2);
-            transform: scale(2);
+    transform: scale(2);
     opacity: 0;
   }
 }
@@ -1984,7 +2042,7 @@ Projects Area CSS
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   left: 0;
   width: 20px;
   height: 1.5px;
@@ -2000,9 +2058,9 @@ Projects Area CSS
 
 .projects-item:hover .projects-image a img {
   -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
   -webkit-filter: blur(2px);
-          filter: blur(2px);
+  filter: blur(2px);
 }
 
 .projects-item:hover .projects-content h3 a {
@@ -2040,7 +2098,7 @@ Projects Area CSS
   visibility: hidden;
   border-radius: 50%;
   -webkit-transform: scale(1.5);
-          transform: scale(1.5);
+  transform: scale(1.5);
 }
 
 .projects-item.bg-F2F1F3 .projects-content h3 a {
@@ -2134,9 +2192,9 @@ Projects Area CSS
   top: 40%;
   left: 10%;
   -webkit-transform: translateY(-40%) translateX(-10%);
-          transform: translateY(-40%) translateX(-10%);
+  transform: translateY(-40%) translateX(-10%);
   -webkit-animation: animationFramesOne 10s infinite linear;
-          animation: animationFramesOne 10s infinite linear;
+  animation: animationFramesOne 10s infinite linear;
 }
 
 .projects-shape-2 {
@@ -2144,9 +2202,9 @@ Projects Area CSS
   bottom: 2%;
   left: 28%;
   -webkit-transform: translateY(-2%) translateX(-28%);
-          transform: translateY(-2%) translateX(-28%);
+  transform: translateY(-2%) translateX(-28%);
   -webkit-animation: moveleftbounce 1s linear infinite;
-          animation: moveleftbounce 1s linear infinite;
+  animation: moveleftbounce 1s linear infinite;
 }
 
 .projects-shape-3 {
@@ -2154,18 +2212,18 @@ Projects Area CSS
   top: 35%;
   right: 5%;
   -webkit-transform: translateY(-35%) translateX(-5%);
-          transform: translateY(-35%) translateX(-5%);
+  transform: translateY(-35%) translateX(-5%);
 }
 
 .projects-shape-3 img {
   -webkit-animation-name: rotateme;
-          animation-name: rotateme;
+  animation-name: rotateme;
   -webkit-animation-duration: 5s;
-          animation-duration: 5s;
+  animation-duration: 5s;
   -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  animation-timing-function: linear;
 }
 
 .projects-filter-menu {
@@ -2181,7 +2239,7 @@ Projects Area CSS
   background-color: var(--white-color);
   color: var(--black-color);
   -webkit-box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
   font-size: var(--font-size);
   font-weight: 600;
@@ -2285,7 +2343,7 @@ Projects Area CSS
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   left: 0;
   width: 20px;
   height: 1.5px;
@@ -2316,9 +2374,9 @@ Projects Area CSS
 
 .single-projects-item:hover .projects-image a img {
   -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
   -webkit-filter: blur(2px);
-          filter: blur(2px);
+  filter: blur(2px);
 }
 
 .single-projects-item:hover .projects-content {
@@ -2445,13 +2503,13 @@ Projects Details Area CSS
 
 .projects-details-desc .article-projects-with-info .projects-info-image .info-shape img {
   -webkit-animation-name: rotateme;
-          animation-name: rotateme;
+  animation-name: rotateme;
   -webkit-animation-duration: 5s;
-          animation-duration: 5s;
+  animation-duration: 5s;
   -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  animation-timing-function: linear;
 }
 
 .projects-details-desc .article-projects-with-info .projects-info-content {
@@ -2502,7 +2560,7 @@ Projects Details Area CSS
   border-radius: 30px;
   background-color: var(--white-color);
   -webkit-box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.1);
 }
 
 .projects-details-desc .article-projects-with-info .projects-info-content .info-list li:last-child {
@@ -2543,9 +2601,9 @@ Projects Details Area CSS
 
 .projects-details-desc .article-projects-content .image:hover img {
   -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
   -webkit-filter: blur(2px);
-          filter: blur(2px);
+  filter: blur(2px);
 }
 
 .projects-details-desc .article-projects-content .projects-list {
@@ -2599,9 +2657,9 @@ Projects Details Area CSS
 
 .projects-details-desc .article-projects-image:hover img {
   -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
   -webkit-filter: blur(2px);
-          filter: blur(2px);
+  filter: blur(2px);
 }
 
 .projects-details-desc .article-projects-quote {
@@ -2621,7 +2679,7 @@ Projects Details Area CSS
   top: 10px;
   z-index: -1;
   -webkit-animation: moveleftbounce 2s linear infinite;
-          animation: moveleftbounce 2s linear infinite;
+  animation: moveleftbounce 2s linear infinite;
 }
 
 .projects-details-desc .article-projects-quote p {
@@ -2641,13 +2699,13 @@ Projects Details Area CSS
 
 .projects-details-desc .article-projects-quote .quote-shape img {
   -webkit-animation-name: rotateme;
-          animation-name: rotateme;
+  animation-name: rotateme;
   -webkit-animation-duration: 5s;
-          animation-duration: 5s;
+  animation-duration: 5s;
   -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  animation-timing-function: linear;
 }
 
 .projects-details-desc .article-projects-text {
@@ -2760,7 +2818,7 @@ Testimonials Area CSS
 .testimonials-item .item-box:hover {
   border: 1px solid var(--white-color);
   -webkit-box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.1);
 }
 
 .single-testimonials-card {
@@ -2836,13 +2894,14 @@ Testimonials Area CSS
   margin: 0 5px;
 }
 
-.testimonials-slides.owl-theme .owl-dots .owl-dot:hover span, .testimonials-slides.owl-theme .owl-dots .owl-dot.active span {
+.testimonials-slides.owl-theme .owl-dots .owl-dot:hover span,
+.testimonials-slides.owl-theme .owl-dots .owl-dot.active span {
   background: var(--btn-gradient-color);
   width: 30px;
   border-radius: 30px;
 }
 
-.testimonials-slides.owl-theme .owl-nav.disabled + .owl-dots {
+.testimonials-slides.owl-theme .owl-nav.disabled+.owl-dots {
   margin-top: 10px;
 }
 
@@ -2953,7 +3012,7 @@ Pricing Area CSS
   left: 0;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   display: inline-block;
   height: 25px;
   width: 25px;
@@ -3007,10 +3066,10 @@ Pricing Area CSS
   top: 10%;
   right: 10%;
   -webkit-transform: translateY(-10%) translateX(-10%);
-          transform: translateY(-10%) translateX(-10%);
+  transform: translateY(-10%) translateX(-10%);
   z-index: -1;
   -webkit-animation: animationFramesOne 10s infinite linear;
-          animation: animationFramesOne 10s infinite linear;
+  animation: animationFramesOne 10s infinite linear;
 }
 
 .pricing-shape-2 {
@@ -3018,19 +3077,19 @@ Pricing Area CSS
   bottom: 5%;
   left: 25%;
   -webkit-transform: translateY(-5%) translateX(-25%);
-          transform: translateY(-5%) translateX(-25%);
+  transform: translateY(-5%) translateX(-25%);
   z-index: -1;
 }
 
 .pricing-shape-2 img {
   -webkit-animation-name: rotateme;
-          animation-name: rotateme;
+  animation-name: rotateme;
   -webkit-animation-duration: 5s;
-          animation-duration: 5s;
+  animation-duration: 5s;
   -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  animation-timing-function: linear;
 }
 
 /*================================================
@@ -3070,7 +3129,7 @@ Blog Area CSS
   border-radius: 50px;
   border: 1px solid var(--white-color);
   -webkit-box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.1);
   margin-bottom: 25px;
   color: var(--optional-color);
   -webkit-transition: var(--transition);
@@ -3109,7 +3168,7 @@ Blog Area CSS
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   left: 0;
   width: 20px;
   height: 1.5px;
@@ -3125,9 +3184,9 @@ Blog Area CSS
 
 .blog-card:hover .blog-image a img {
   -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
   -webkit-filter: blur(2px);
-          filter: blur(2px);
+  filter: blur(2px);
 }
 
 .blog-card:hover .blog-content .date {
@@ -3171,7 +3230,7 @@ Blog Area CSS
   left: -80px;
   top: 45%;
   -webkit-transform: translateY(-45%);
-          transform: translateY(-45%);
+  transform: translateY(-45%);
 }
 
 .blog-slides.owl-theme .owl-nav [class*=owl-] i {
@@ -3206,13 +3265,13 @@ Blog Area CSS
 
 .blog-shape-1 img {
   -webkit-animation-name: rotateme;
-          animation-name: rotateme;
+  animation-name: rotateme;
   -webkit-animation-duration: 5s;
-          animation-duration: 5s;
+  animation-duration: 5s;
   -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  animation-timing-function: linear;
 }
 
 .blog-grid-sorting {
@@ -3248,7 +3307,7 @@ Blog Area CSS
   background-color: var(--white-color);
   border-radius: 10px;
   -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   list-style-type: none;
   border: none;
   width: 100%;
@@ -3369,7 +3428,8 @@ Blog Area CSS
   line-height: 0;
 }
 
-.blog-grid-sorting form button:hover, .blog-grid-sorting form button:focus {
+.blog-grid-sorting form button:hover,
+.blog-grid-sorting form button:focus {
   color: var(--main-color);
 }
 
@@ -3443,7 +3503,7 @@ Blog Area CSS
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   left: 0;
   width: 20px;
   height: 1.5px;
@@ -3459,12 +3519,12 @@ Blog Area CSS
 
 .single-blog-card:hover .blog-image a img {
   -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .single-blog-card:hover .blog-image .date {
   -webkit-animation: bounce 1s;
-          animation: bounce 1s;
+  animation: bounce 1s;
 }
 
 .single-blog-card:hover .blog-content h3 a {
@@ -3498,7 +3558,7 @@ Blog Details Area CSS
 
 .blog-details-desc .article-image:hover img {
   -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .blog-details-desc .article-image .video-btn {
@@ -3513,7 +3573,7 @@ Blog Details Area CSS
   z-index: 1;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   left: 0;
   right: 0;
   margin: auto;
@@ -3544,7 +3604,7 @@ Blog Details Area CSS
   border-radius: 50%;
   border: 2px solid #FB64BF;
   -webkit-animation: ripple 2s linear infinite;
-          animation: ripple 2s linear infinite;
+  animation: ripple 2s linear infinite;
 }
 
 .blog-details-desc .article-image .video-btn:hover {
@@ -3583,7 +3643,7 @@ Blog Details Area CSS
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   left: 0;
   width: 15px;
   height: 2.5px;
@@ -3657,7 +3717,7 @@ Blog Details Area CSS
 
 .blog-details-desc .article-content .block-item:hover img {
   -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .blog-details-desc .article-content .article-quote {
@@ -3678,7 +3738,7 @@ Blog Details Area CSS
   top: 10px;
   z-index: -1;
   -webkit-animation: moveleftbounce 2s linear infinite;
-          animation: moveleftbounce 2s linear infinite;
+  animation: moveleftbounce 2s linear infinite;
 }
 
 .blog-details-desc .article-content .article-quote p {
@@ -3698,13 +3758,13 @@ Blog Details Area CSS
 
 .blog-details-desc .article-content .article-quote .quote-shape img {
   -webkit-animation-name: rotateme;
-          animation-name: rotateme;
+  animation-name: rotateme;
   -webkit-animation-duration: 5s;
-          animation-duration: 5s;
+  animation-duration: 5s;
   -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  animation-timing-function: linear;
 }
 
 .blog-details-desc .article-share {
@@ -3836,7 +3896,7 @@ Blog Details Area CSS
   background-color: var(--white-color);
   border: 1px solid var(--white-color);
   -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   border-radius: 15px;
   -webkit-transition: var(--transition);
   transition: var(--transition);
@@ -3906,11 +3966,13 @@ Blog Details Area CSS
   color: var(--optional-color);
 }
 
-.blog-details-desc .article-leave-comment .form-cookies-consent [type="checkbox"]:checked, .blog-details-desc .article-leave-comment .form-cookies-consent [type="checkbox"]:not(:checked) {
+.blog-details-desc .article-leave-comment .form-cookies-consent [type="checkbox"]:checked,
+.blog-details-desc .article-leave-comment .form-cookies-consent [type="checkbox"]:not(:checked) {
   display: none;
 }
 
-.blog-details-desc .article-leave-comment .form-cookies-consent [type="checkbox"]:checked + label, .blog-details-desc .article-leave-comment .form-cookies-consent [type="checkbox"]:not(:checked) + label {
+.blog-details-desc .article-leave-comment .form-cookies-consent [type="checkbox"]:checked+label,
+.blog-details-desc .article-leave-comment .form-cookies-consent [type="checkbox"]:not(:checked)+label {
   position: relative;
   padding-left: 25px;
   cursor: pointer;
@@ -3921,7 +3983,8 @@ Blog Details Area CSS
   font-size: 15px;
 }
 
-.blog-details-desc .article-leave-comment .form-cookies-consent [type="checkbox"]:checked + label:before, .blog-details-desc .article-leave-comment .form-cookies-consent [type="checkbox"]:not(:checked) + label:before {
+.blog-details-desc .article-leave-comment .form-cookies-consent [type="checkbox"]:checked+label:before,
+.blog-details-desc .article-leave-comment .form-cookies-consent [type="checkbox"]:not(:checked)+label:before {
   content: '';
   position: absolute;
   left: 0;
@@ -3935,7 +3998,8 @@ Blog Details Area CSS
   background: var(--white-color);
 }
 
-.blog-details-desc .article-leave-comment .form-cookies-consent [type="checkbox"]:checked + label:after, .blog-details-desc .article-leave-comment .form-cookies-consent [type="checkbox"]:not(:checked) + label:after {
+.blog-details-desc .article-leave-comment .form-cookies-consent [type="checkbox"]:checked+label:after,
+.blog-details-desc .article-leave-comment .form-cookies-consent [type="checkbox"]:not(:checked)+label:after {
   content: '';
   width: 5px;
   height: 5px;
@@ -3948,23 +4012,23 @@ Blog Details Area CSS
   border-radius: 30px;
 }
 
-.blog-details-desc .article-leave-comment .form-cookies-consent [type="checkbox"]:not(:checked) + label:after {
+.blog-details-desc .article-leave-comment .form-cookies-consent [type="checkbox"]:not(:checked)+label:after {
   opacity: 0;
   -webkit-transform: scale(0);
   transform: scale(0);
 }
 
-.blog-details-desc .article-leave-comment .form-cookies-consent [type="checkbox"]:checked + label:after {
+.blog-details-desc .article-leave-comment .form-cookies-consent [type="checkbox"]:checked+label:after {
   opacity: 1;
   -webkit-transform: scale(1);
   transform: scale(1);
 }
 
-.blog-details-desc .article-leave-comment .form-cookies-consent [type="checkbox"]:hover + label:before {
+.blog-details-desc .article-leave-comment .form-cookies-consent [type="checkbox"]:hover+label:before {
   border-color: var(--main-color);
 }
 
-.blog-details-desc .article-leave-comment .form-cookies-consent [type="checkbox"]:checked + label:before {
+.blog-details-desc .article-leave-comment .form-cookies-consent [type="checkbox"]:checked+label:before {
   border-color: var(--main-color);
 }
 
@@ -4005,7 +4069,7 @@ Blog Details Area CSS
   left: 15px;
   top: 45%;
   -webkit-transform: translateY(-45%);
-          transform: translateY(-45%);
+  transform: translateY(-45%);
 }
 
 .article-image-slides.owl-theme .owl-nav [class*=owl-] i {
@@ -4086,7 +4150,7 @@ Skill Area CSS
   position: absolute;
   bottom: 0;
   -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   font-size: var(--font-size);
   font-weight: 500;
   color: var(--black-color);
@@ -4149,13 +4213,13 @@ Skill Area CSS
 
 .skill-image .skill-shape-1 img {
   -webkit-animation-name: rotateme;
-          animation-name: rotateme;
+  animation-name: rotateme;
   -webkit-animation-duration: 5s;
-          animation-duration: 5s;
+  animation-duration: 5s;
   -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  animation-timing-function: linear;
 }
 
 .skill-image .skill-shape-2 {
@@ -4166,13 +4230,13 @@ Skill Area CSS
 
 .skill-image .skill-shape-2 img {
   -webkit-animation-name: rotateme;
-          animation-name: rotateme;
+  animation-name: rotateme;
   -webkit-animation-duration: 5s;
-          animation-duration: 5s;
+  animation-duration: 5s;
   -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  animation-timing-function: linear;
 }
 
 .skill-bg-shape {
@@ -4195,7 +4259,7 @@ Features Area CSS
 .single-features-card {
   background-color: var(--white-color);
   -webkit-box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.1);
   padding: 25px 25px 25px 140px;
   border-radius: 15px;
   position: relative;
@@ -4219,7 +4283,7 @@ Features Area CSS
   visibility: hidden;
   border-radius: 50%;
   -webkit-transform: scale(1.5);
-          transform: scale(1.5);
+  transform: scale(1.5);
 }
 
 .single-features-card .features-image {
@@ -4285,7 +4349,7 @@ Features Area CSS
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   left: 0;
   width: 20px;
   height: 1.5px;
@@ -4361,13 +4425,13 @@ Talk Area CSS
 
 .talk-image .talk-circle img {
   -webkit-animation-name: rotateme;
-          animation-name: rotateme;
+  animation-name: rotateme;
   -webkit-animation-duration: 5s;
-          animation-duration: 5s;
+  animation-duration: 5s;
   -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  animation-timing-function: linear;
 }
 
 .talk-content {
@@ -4435,7 +4499,7 @@ Talk Area CSS
   height: 55px;
   color: #9B8DAC;
   -webkit-box-shadow: unset !important;
-          box-shadow: unset !important;
+  box-shadow: unset !important;
   border: 1px solid var(--white-color);
   background-color: var(--white-color);
   -webkit-transition: var(--transition);
@@ -4640,7 +4704,7 @@ Overview Area CSS
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   right: 40px;
   width: 80px;
   height: 2px;
@@ -4680,13 +4744,13 @@ Overview Area CSS
 
 .overview-card .overview-shape img {
   -webkit-animation-name: rotateme;
-          animation-name: rotateme;
+  animation-name: rotateme;
   -webkit-animation-duration: 5s;
-          animation-duration: 5s;
+  animation-duration: 5s;
   -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  animation-timing-function: linear;
 }
 
 /*================================================
@@ -4699,6 +4763,7 @@ Page Banner Area CSS
   background-repeat: no-repeat;
   padding-top: 120px;
   padding-bottom: 150px;
+  text-align: center;
 }
 
 .page-banner-area.bg-2 {
@@ -4752,7 +4817,7 @@ Page Banner Area CSS
   width: 1px;
   background: #CDC4D9;
   -webkit-transform: rotate(20deg);
-          transform: rotate(20deg);
+  transform: rotate(20deg);
 }
 
 .page-banner-content ul li:first-child {
@@ -4817,9 +4882,9 @@ Gallery Area CSS
 
 .single-gallery-item:hover a img {
   -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
   -webkit-filter: blur(2px);
-          filter: blur(2px);
+  filter: blur(2px);
 }
 
 /*================================================
@@ -4847,7 +4912,7 @@ FAQ Area CSS
   position: relative;
   text-align: start;
   -webkit-box-shadow: unset;
-          box-shadow: unset;
+  box-shadow: unset;
   margin-bottom: 0;
   display: block;
   border: none;
@@ -4944,7 +5009,7 @@ Events Area CSS
   background-color: var(--white-color);
   border-radius: 10px;
   -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   list-style-type: none;
   border: none;
   width: 100%;
@@ -5057,13 +5122,13 @@ Events Area CSS
   left: 0;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   font-size: var(--font-size);
 }
 
 .single-events-box:hover .image img {
   -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 /*================================================
@@ -5143,7 +5208,7 @@ Events Details Area CSS
   left: 0;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   font-size: 18px;
 }
 
@@ -5288,7 +5353,7 @@ Events Details Area CSS
   background-color: var(--main-color);
   color: var(--white-color);
   -webkit-transform: translateY(-5px);
-          transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 /*================================================
@@ -5380,7 +5445,7 @@ Apply Area CSS
   height: 55px;
   color: var(--paragraph-color);
   -webkit-box-shadow: unset !important;
-          box-shadow: unset !important;
+  box-shadow: unset !important;
   border: 1px solid #f5f5f5;
   background-color: #f5f5f5;
   -webkit-transition: var(--transition);
@@ -5461,7 +5526,7 @@ Apply Area CSS
   background-color: var(--white-color);
   border-radius: 10px;
   -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   list-style-type: none;
   border: none;
   width: 100%;
@@ -5580,7 +5645,7 @@ Career Details Area CSS
 
 .career-details-desc .career-details-image:hover img {
   -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .career-details-desc .career-details-image .video-btn {
@@ -5595,7 +5660,7 @@ Career Details Area CSS
   z-index: 1;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   left: 0;
   right: 0;
   margin: auto;
@@ -5626,7 +5691,7 @@ Career Details Area CSS
   border-radius: 50%;
   border: 2px solid #FB64BF;
   -webkit-animation: ripple 2s linear infinite;
-          animation: ripple 2s linear infinite;
+  animation: ripple 2s linear infinite;
 }
 
 .career-details-desc .career-details-image .video-btn:hover {
@@ -5699,7 +5764,7 @@ Profile Authentication Area CSS
   border-radius: 15px;
   background-color: var(--white-color);
   -webkit-box-shadow: 0 0 1.25rem rgba(108, 118, 134, 0.1);
-          box-shadow: 0 0 1.25rem rgba(108, 118, 134, 0.1);
+  box-shadow: 0 0 1.25rem rgba(108, 118, 134, 0.1);
   max-width: 650px;
   margin: auto;
   border: 1px solid #e1e1e1;
@@ -5732,7 +5797,7 @@ Profile Authentication Area CSS
   border: 1px solid #eeeeee;
   border-radius: 10px;
   -webkit-box-shadow: unset;
-          box-shadow: unset;
+  box-shadow: unset;
   -webkit-transition: var(--transition);
   transition: var(--transition);
   font-size: 15px;
@@ -5771,7 +5836,7 @@ Profile Authentication Area CSS
 .login-form form .form-check-input:focus {
   border-color: var(--main-color);
   -webkit-box-shadow: unset;
-          box-shadow: unset;
+  box-shadow: unset;
 }
 
 .login-form form .lost-your-password {
@@ -5835,7 +5900,7 @@ Profile Authentication Area CSS
   border-radius: 15px;
   background-color: var(--white-color);
   -webkit-box-shadow: 0 0 1.25rem rgba(108, 118, 134, 0.1);
-          box-shadow: 0 0 1.25rem rgba(108, 118, 134, 0.1);
+  box-shadow: 0 0 1.25rem rgba(108, 118, 134, 0.1);
   max-width: 650px;
   margin: auto;
   border: 1px solid #e1e1e1;
@@ -5868,7 +5933,7 @@ Profile Authentication Area CSS
   border: 1px solid #eeeeee;
   border-radius: 10px;
   -webkit-box-shadow: unset;
-          box-shadow: unset;
+  box-shadow: unset;
   -webkit-transition: var(--transition);
   transition: var(--transition);
   font-size: 15px;
@@ -6049,7 +6114,7 @@ Purchase Guide Area CSS
 
 .purchase-guide-content .guide-image:hover img {
   -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .purchase-guide-content h3 {
@@ -6059,7 +6124,8 @@ Purchase Guide Area CSS
   font-weight: bold;
 }
 
-.purchase-guide-content .blockquote, .purchase-guide-content blockquote {
+.purchase-guide-content .blockquote,
+.purchase-guide-content blockquote {
   margin-top: 25px;
   margin-bottom: 30px;
   background-color: #e6f2f5;
@@ -6068,26 +6134,31 @@ Purchase Guide Area CSS
   border-radius: 10px;
 }
 
-.purchase-guide-content .blockquote p, .purchase-guide-content blockquote p {
+.purchase-guide-content .blockquote p,
+.purchase-guide-content blockquote p {
   margin-bottom: 0;
   line-height: 1.8;
   font-size: 15px !important;
   font-weight: 500;
 }
 
-.purchase-guide-content .blockquote::after, .purchase-guide-content blockquote::after {
+.purchase-guide-content .blockquote::after,
+.purchase-guide-content blockquote::after {
   display: none;
 }
 
-.purchase-guide-content .blockquote::before, .purchase-guide-content blockquote::before {
+.purchase-guide-content .blockquote::before,
+.purchase-guide-content blockquote::before {
   display: none;
 }
 
-.purchase-guide-content ol, .purchase-guide-content ul {
+.purchase-guide-content ol,
+.purchase-guide-content ul {
   margin-top: 20px;
 }
 
-.purchase-guide-content ol li, .purchase-guide-content ul li {
+.purchase-guide-content ol li,
+.purchase-guide-content ul li {
   margin-bottom: 10px;
   color: var(--paragraph-color);
   line-height: 1.8;
@@ -6112,7 +6183,7 @@ Terms of Service Area CSS
 
 .terms-of-service-content .terms-of-service-image:hover img {
   -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .terms-of-service-content h3 {
@@ -6122,7 +6193,8 @@ Terms of Service Area CSS
   font-weight: bold;
 }
 
-.terms-of-service-content .blockquote, .terms-of-service-content blockquote {
+.terms-of-service-content .blockquote,
+.terms-of-service-content blockquote {
   margin-top: 25px;
   margin-bottom: 30px;
   background-color: #e6f2f5;
@@ -6131,26 +6203,31 @@ Terms of Service Area CSS
   border-radius: 10px;
 }
 
-.terms-of-service-content .blockquote p, .terms-of-service-content blockquote p {
+.terms-of-service-content .blockquote p,
+.terms-of-service-content blockquote p {
   margin-bottom: 0;
   line-height: 1.8;
   font-size: 15px !important;
   font-weight: 500;
 }
 
-.terms-of-service-content .blockquote::after, .terms-of-service-content blockquote::after {
+.terms-of-service-content .blockquote::after,
+.terms-of-service-content blockquote::after {
   display: none;
 }
 
-.terms-of-service-content .blockquote::before, .terms-of-service-content blockquote::before {
+.terms-of-service-content .blockquote::before,
+.terms-of-service-content blockquote::before {
   display: none;
 }
 
-.terms-of-service-content ol, .terms-of-service-content ul {
+.terms-of-service-content ol,
+.terms-of-service-content ul {
   margin-top: 20px;
 }
 
-.terms-of-service-content ol li, .terms-of-service-content ul li {
+.terms-of-service-content ol li,
+.terms-of-service-content ul li {
   margin-bottom: 10px;
   color: var(--paragraph-color);
   line-height: 1.8;
@@ -6175,7 +6252,7 @@ Privacy Policy Area CSS
 
 .privacy-policy-content .privacy-policy-image:hover img {
   -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .privacy-policy-content h3 {
@@ -6185,7 +6262,8 @@ Privacy Policy Area CSS
   font-weight: bold;
 }
 
-.privacy-policy-content .blockquote, .privacy-policy-content blockquote {
+.privacy-policy-content .blockquote,
+.privacy-policy-content blockquote {
   margin-top: 25px;
   margin-bottom: 30px;
   background-color: #e6f2f5;
@@ -6194,26 +6272,31 @@ Privacy Policy Area CSS
   border-radius: 10px;
 }
 
-.privacy-policy-content .blockquote p, .privacy-policy-content blockquote p {
+.privacy-policy-content .blockquote p,
+.privacy-policy-content blockquote p {
   margin-bottom: 0;
   line-height: 1.8;
   font-size: 15px !important;
   font-weight: 500;
 }
 
-.privacy-policy-content .blockquote::after, .privacy-policy-content blockquote::after {
+.privacy-policy-content .blockquote::after,
+.privacy-policy-content blockquote::after {
   display: none;
 }
 
-.privacy-policy-content .blockquote::before, .privacy-policy-content blockquote::before {
+.privacy-policy-content .blockquote::before,
+.privacy-policy-content blockquote::before {
   display: none;
 }
 
-.privacy-policy-content ol, .privacy-policy-content ul {
+.privacy-policy-content ol,
+.privacy-policy-content ul {
   margin-top: 20px;
 }
 
-.privacy-policy-content ol li, .privacy-policy-content ul li {
+.privacy-policy-content ol li,
+.privacy-policy-content ul li {
   margin-bottom: 10px;
   color: var(--paragraph-color);
   line-height: 1.8;
@@ -6263,7 +6346,7 @@ Coming Soon Area CSS
   text-align: center;
   padding: 35px;
   -webkit-box-shadow: 0 0 1.25rem rgba(108, 118, 134, 0.1);
-          box-shadow: 0 0 1.25rem rgba(108, 118, 134, 0.1);
+  box-shadow: 0 0 1.25rem rgba(108, 118, 134, 0.1);
   margin: 0 auto 0 0;
   -webkit-transition: var(--transition);
   transition: var(--transition);
@@ -6300,7 +6383,7 @@ Coming Soon Area CSS
 
 .coming-soon-content #timer div:hover {
   -webkit-transform: translateY(-5px);
-          transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 .coming-soon-content #timer div span {
@@ -6329,7 +6412,7 @@ Coming Soon Area CSS
   background-color: var(--white-color);
   border: 1px solid #E5E7EC;
   -webkit-box-shadow: -12px 8px 25px rgba(217, 35, 12, 0.03);
-          box-shadow: -12px 8px 25px rgba(217, 35, 12, 0.03);
+  box-shadow: -12px 8px 25px rgba(217, 35, 12, 0.03);
   border-radius: 20px;
   -webkit-transition: var(--transition);
   transition: var(--transition);
@@ -6445,7 +6528,7 @@ Courses Area CSS
   padding: 25px;
   background-color: var(--white-color);
   -webkit-box-shadow: 0px 8px 16px 0px rgba(146, 184, 255, 0.2);
-          box-shadow: 0px 8px 16px 0px rgba(146, 184, 255, 0.2);
+  box-shadow: 0px 8px 16px 0px rgba(146, 184, 255, 0.2);
 }
 
 .single-courses-box .courses-content .course-author {
@@ -6500,18 +6583,18 @@ Courses Area CSS
   left: 6px;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   font-size: var(--font-size);
 }
 
 .single-courses-box:hover {
   -webkit-transform: translateY(-5px);
-          transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 .single-courses-box:hover .courses-image .price {
   -webkit-animation: bounce 1s;
-          animation: bounce 1s;
+  animation: bounce 1s;
 }
 
 /*================================================
@@ -6551,7 +6634,7 @@ Courses Details Area CSS
   margin: auto;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   text-align: center;
 }
 
@@ -6574,7 +6657,7 @@ Courses Details Area CSS
   border-radius: 50px;
   border: 1px solid var(--main-color);
   -webkit-animation: ripple 2s linear 1s infinite;
-          animation: ripple 2s linear 1s infinite;
+  animation: ripple 2s linear 1s infinite;
 }
 
 .courses-details-image .video-btn::before {
@@ -6589,7 +6672,7 @@ Courses Details Area CSS
   border-radius: 50px;
   border: 1px solid var(--main-color);
   -webkit-animation: ripple 2s linear infinite;
-          animation: ripple 2s linear infinite;
+  animation: ripple 2s linear infinite;
 }
 
 .courses-details-image .video-btn:hover {
@@ -6627,7 +6710,8 @@ Courses Details Area CSS
   color: var(--black-color);
 }
 
-.courses-details-desc .nav .nav-item .nav-link:hover, .courses-details-desc .nav .nav-item .nav-link.active {
+.courses-details-desc .nav .nav-item .nav-link:hover,
+.courses-details-desc .nav .nav-item .nav-link.active {
   color: var(--white-color);
   background-color: var(--main-color);
 }
@@ -6836,7 +6920,7 @@ Courses Details Area CSS
 
 .courses-details-desc .tab-content .courses-instructor .instructor-content .social-link li a i:hover {
   -webkit-transform: translateY(-5px);
-          transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 .courses-details-desc .tab-content .courses-reviews h3 {
@@ -7035,7 +7119,7 @@ Courses Details Area CSS
   z-index: 1;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   right: 0;
   left: 0;
   margin: auto;
@@ -7066,7 +7150,7 @@ Courses Details Area CSS
   border-radius: 50%;
   border: 2px solid var(--white-color);
   -webkit-animation: ripple 2s linear infinite;
-          animation: ripple 2s linear infinite;
+  animation: ripple 2s linear infinite;
 }
 
 .courses-details-info .image .video-btn:hover {
@@ -7171,7 +7255,7 @@ Courses Details Area CSS
 
 .courses-details-info .courses-share .share-info .social-link li a i:hover {
   -webkit-transform: translateY(-5px);
-          transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 /*================================================
@@ -7213,7 +7297,7 @@ Products Area CSS
   background-color: var(--white-color);
   border-radius: 10px;
   -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   list-style-type: none;
   border: none;
   width: 100%;
@@ -7333,7 +7417,8 @@ Products Area CSS
   line-height: 0;
 }
 
-.products-grid-sorting .ordering form button:hover, .products-grid-sorting .ordering form button:focus {
+.products-grid-sorting .ordering form button:hover,
+.products-grid-sorting .ordering form button:focus {
   color: var(--main-color);
 }
 
@@ -7416,7 +7501,7 @@ Products Area CSS
   right: 0;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   z-index: 1;
   opacity: 0;
   visibility: hidden;
@@ -7491,9 +7576,9 @@ Products Area CSS
 
 .single-products-card:hover .products-image a img {
   -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
   -webkit-filter: blur(2px);
-          filter: blur(2px);
+  filter: blur(2px);
 }
 
 .single-products-card:hover .products-image .heart-line {
@@ -7669,7 +7754,7 @@ Cart Area CSS
   border: 1px solid #F2F1F3;
   border-radius: 10px;
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   padding: 15px 25px;
   -webkit-transition: var(--transition);
   transition: var(--transition);
@@ -7704,7 +7789,7 @@ Cart Area CSS
 .cart-buttons .shopping-coupon-code .form-control:focus {
   outline: 0;
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 .cart-buttons .shopping-coupon-code .form-control:focus::-webkit-input-placeholder {
@@ -7935,7 +8020,7 @@ Checkout Area CSS
   color: var(--paragraph-color);
   border: 1px solid #eeeeee;
   -webkit-box-shadow: unset;
-          box-shadow: unset;
+  box-shadow: unset;
   border-radius: 10px;
   -webkit-transition: var(--transition);
   transition: var(--transition);
@@ -8049,7 +8134,7 @@ Checkout Area CSS
 .billing-details .form-group .form-check .form-check-input:focus {
   outline: 0;
   -webkit-box-shadow: unset;
-          box-shadow: unset;
+  box-shadow: unset;
 }
 
 .billing-details .form-group .form-check label {
@@ -8105,13 +8190,17 @@ Checkout Area CSS
   color: var(--main-color);
 }
 
-.order-details .order-table table tbody tr td.order-subtotal span, .order-details .order-table table tbody tr td.order-shipping span, .order-details .order-table table tbody tr td.total-price span {
+.order-details .order-table table tbody tr td.order-subtotal span,
+.order-details .order-table table tbody tr td.order-shipping span,
+.order-details .order-table table tbody tr td.total-price span {
   color: var(--paragraph-color);
   font-weight: 500;
   font-size: var(--font-size);
 }
 
-.order-details .order-table table tbody tr td.shipping-price, .order-details .order-table table tbody tr td.order-subtotal-price, .order-details .order-table table tbody tr td.product-subtotal {
+.order-details .order-table table tbody tr td.shipping-price,
+.order-details .order-table table tbody tr td.order-subtotal-price,
+.order-details .order-table table tbody tr td.product-subtotal {
   color: var(--paragraph-color);
   font-weight: 500;
   font-size: var(--font-size);
@@ -8132,11 +8221,13 @@ Checkout Area CSS
   font-size: 15px;
 }
 
-.order-details .payment-box .payment-method p [type="radio"]:checked, .order-details .payment-box .payment-method p [type="radio"]:not(:checked) {
+.order-details .payment-box .payment-method p [type="radio"]:checked,
+.order-details .payment-box .payment-method p [type="radio"]:not(:checked) {
   display: none;
 }
 
-.order-details .payment-box .payment-method p [type="radio"]:checked + label, .order-details .payment-box .payment-method p [type="radio"]:not(:checked) + label {
+.order-details .payment-box .payment-method p [type="radio"]:checked+label,
+.order-details .payment-box .payment-method p [type="radio"]:not(:checked)+label {
   padding-left: 25.8px;
   cursor: pointer;
   display: block;
@@ -8148,7 +8239,8 @@ Checkout Area CSS
   font-family: var(--heading-font-family);
 }
 
-.order-details .payment-box .payment-method p [type="radio"]:checked + label::before, .order-details .payment-box .payment-method p [type="radio"]:not(:checked) + label::before {
+.order-details .payment-box .payment-method p [type="radio"]:checked+label::before,
+.order-details .payment-box .payment-method p [type="radio"]:not(:checked)+label::before {
   content: '';
   position: absolute;
   left: 0;
@@ -8160,7 +8252,8 @@ Checkout Area CSS
   background: var(--white-color);
 }
 
-.order-details .payment-box .payment-method p [type="radio"]:checked + label::after, .order-details .payment-box .payment-method p [type="radio"]:not(:checked) + label::after {
+.order-details .payment-box .payment-method p [type="radio"]:checked+label::after,
+.order-details .payment-box .payment-method p [type="radio"]:not(:checked)+label::after {
   content: '';
   width: 12px;
   height: 12px;
@@ -8173,18 +8266,18 @@ Checkout Area CSS
   transition: var(--transition);
 }
 
-.order-details .payment-box .payment-method p [type="radio"]:not(:checked) + label::after {
+.order-details .payment-box .payment-method p [type="radio"]:not(:checked)+label::after {
   opacity: 0;
   visibility: hidden;
   -webkit-transform: scale(0);
-          transform: scale(0);
+  transform: scale(0);
 }
 
-.order-details .payment-box .payment-method p [type="radio"]:checked + label::after {
+.order-details .payment-box .payment-method p [type="radio"]:checked+label::after {
   opacity: 1;
   visibility: visible;
   -webkit-transform: scale(1);
-          transform: scale(1);
+  transform: scale(1);
 }
 
 .order-details .payment-box .default-btn {
@@ -8193,7 +8286,7 @@ Checkout Area CSS
   width: 100%;
   text-align: center;
   -webkit-transform: unset;
-          transform: unset;
+  transform: unset;
   border-radius: 50px;
   padding: 15px 30px;
 }
@@ -8271,7 +8364,7 @@ Products Details Area CSS
 
 .products-details-image:hover img {
   -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .products-details-image:hover .heart-line {
@@ -8349,7 +8442,8 @@ Products Details Area CSS
   color: var(--paragraph-color);
 }
 
-.products-details-desc .products-meta span a:hover, .products-details-desc .products-meta span a:focus {
+.products-details-desc .products-meta span a:hover,
+.products-details-desc .products-meta span a:focus {
   color: var(--main-color);
 }
 
@@ -8459,7 +8553,8 @@ Products Details Area CSS
   color: var(--black-color);
 }
 
-.products-details-tabs .nav .nav-item .nav-link:hover, .products-details-tabs .nav .nav-item .nav-link.active {
+.products-details-tabs .nav .nav-item .nav-link:hover,
+.products-details-tabs .nav .nav-item .nav-link.active {
   color: var(--white-color);
   background: radial-gradient(circle, #a66bff, #c666ef, #dd62df, #ee61cf, #fb64bf);
 }
@@ -8673,7 +8768,7 @@ Products Details Area CSS
   color: var(--paragraph-color);
   background-color: var(--white-color);
   -webkit-box-shadow: unset;
-          box-shadow: unset;
+  box-shadow: unset;
   border-radius: 15px;
   -webkit-transition: var(--transition);
   transition: var(--transition);
@@ -8762,7 +8857,9 @@ Products Details Area CSS
   display: none;
 }
 
-.products-details-tabs .tab-content .tab-pane .review-form-wrapper form .rating input:checked ~ label:before, .products-details-tabs .tab-content .tab-pane .review-form-wrapper form .rating:not(:checked) > label:hover:before, .products-details-tabs .tab-content .tab-pane .review-form-wrapper form .rating:not(:checked) > label:hover ~ label:before {
+.products-details-tabs .tab-content .tab-pane .review-form-wrapper form .rating input:checked~label:before,
+.products-details-tabs .tab-content .tab-pane .review-form-wrapper form .rating:not(:checked)>label:hover:before,
+.products-details-tabs .tab-content .tab-pane .review-form-wrapper form .rating:not(:checked)>label:hover~label:before {
   color: #f6b500;
 }
 
@@ -8895,7 +8992,8 @@ Widget Sidebar CSS
   line-height: 0;
 }
 
-.widget-area .widget_search form button:hover, .widget-area .widget_search form button:focus {
+.widget-area .widget_search form button:hover,
+.widget-area .widget_search form button:focus {
   color: var(--main-color);
 }
 
@@ -8921,7 +9019,7 @@ Widget Sidebar CSS
   padding: 15px 25px;
   background-color: var(--white-color);
   -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   border-radius: 30px;
   width: 100%;
 }
@@ -8977,7 +9075,8 @@ Widget Sidebar CSS
   background-image: url("../images/blog/blog-3.jpg");
 }
 
-.widget-area .widget_recent_post .item .thumb::before, .widget-area .widget_recent_post .item .thumb::after {
+.widget-area .widget_recent_post .item .thumb::before,
+.widget-area .widget_recent_post .item .thumb::after {
   -webkit-transition: all 0.8s cubic-bezier(0.2, 1, 0.22, 1);
   transition: all 0.8s cubic-bezier(0.2, 1, 0.22, 1);
   content: '';
@@ -8988,7 +9087,7 @@ Widget Sidebar CSS
   left: 50%;
   opacity: 0;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .widget-area .widget_recent_post .item .thumb::before {
@@ -9028,7 +9127,8 @@ Widget Sidebar CSS
   display: inline-block;
 }
 
-.widget-area .widget_recent_post .item:hover .thumb::before, .widget-area .widget_recent_post .item:hover .thumb::after {
+.widget-area .widget_recent_post .item:hover .thumb::before,
+.widget-area .widget_recent_post .item:hover .thumb::after {
   opacity: 1;
   top: 50%;
   left: 50%;
@@ -9051,7 +9151,8 @@ Widget Sidebar CSS
   margin-right: 5px;
 }
 
-.widget-area .tagcloud a:hover, .widget-area .tagcloud a:focus {
+.widget-area .tagcloud a:hover,
+.widget-area .tagcloud a:focus {
   color: var(--white-color);
   background-color: var(--main-color);
 }
@@ -9107,7 +9208,8 @@ Widget Sidebar CSS
   background-image: url("../images/courses/courses-3.jpg");
 }
 
-.widget-area .widget_recent_courses .item .thumb::before, .widget-area .widget_recent_courses .item .thumb::after {
+.widget-area .widget_recent_courses .item .thumb::before,
+.widget-area .widget_recent_courses .item .thumb::after {
   -webkit-transition: all 0.8s cubic-bezier(0.2, 1, 0.22, 1);
   transition: all 0.8s cubic-bezier(0.2, 1, 0.22, 1);
   content: '';
@@ -9118,7 +9220,7 @@ Widget Sidebar CSS
   left: 50%;
   opacity: 0;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .widget-area .widget_recent_courses .item .thumb::before {
@@ -9157,7 +9259,8 @@ Widget Sidebar CSS
   display: inline-block;
 }
 
-.widget-area .widget_recent_courses .item:hover .thumb::before, .widget-area .widget_recent_courses .item:hover .thumb::after {
+.widget-area .widget_recent_courses .item:hover .thumb::before,
+.widget-area .widget_recent_courses .item:hover .thumb::after {
   opacity: 1;
   top: 50%;
   left: 50%;
@@ -9203,17 +9306,19 @@ Widget Sidebar CSS
   left: 25px;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   border-radius: 50%;
 }
 
-.widget-area .widget_insight .list li a:hover, .widget-area .widget_insight .list li a.active {
+.widget-area .widget_insight .list li a:hover,
+.widget-area .widget_insight .list li a.active {
   border-color: var(--main-color);
   background-color: var(--main-color);
   color: var(--white-color);
 }
 
-.widget-area .widget_insight .list li a:hover::before, .widget-area .widget_insight .list li a.active::before {
+.widget-area .widget_insight .list li a:hover::before,
+.widget-area .widget_insight .list li a.active::before {
   background-color: var(--white-color);
 }
 
@@ -9252,7 +9357,8 @@ Pagination CSS
   font-family: var(--heading-font-family);
 }
 
-.pagination-area .page-numbers:hover, .pagination-area .page-numbers.current {
+.pagination-area .page-numbers:hover,
+.pagination-area .page-numbers.current {
   color: var(--white-color);
   background-color: var(--main-color);
   border: 2px solid var(--main-color);
@@ -9317,7 +9423,7 @@ Pagination CSS
   transition: var(--transition);
   overflow: hidden;
   -webkit-box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
 }
 
 .go-top i {
@@ -9326,7 +9432,7 @@ Pagination CSS
   left: 0;
   top: 45%;
   -webkit-transform: translateY(-45%);
-          transform: translateY(-45%);
+  transform: translateY(-45%);
   text-align: center;
   font-size: 30px;
   margin-left: auto;
@@ -9345,9 +9451,9 @@ Pagination CSS
   -webkit-transition: var(--transition);
   transition: var(--transition);
   -webkit-box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
-          box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
   -webkit-transform: translateY(-5px);
-          transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 .lines {
@@ -9381,11 +9487,11 @@ Pagination CSS
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(75%, #ffffff), to(#ffffff));
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 75%, #ffffff 100%);
   -webkit-animation: run 15s 0s infinite;
-          animation: run 15s 0s infinite;
+  animation: run 15s 0s infinite;
   -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
   -webkit-animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
-          animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+  animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
   border-radius: 50%;
 }
 
@@ -9405,6 +9511,7 @@ Pagination CSS
   0% {
     top: -50%;
   }
+
   100% {
     top: 110%;
   }
@@ -9414,6 +9521,7 @@ Pagination CSS
   0% {
     top: -50%;
   }
+
   100% {
     top: 110%;
   }
@@ -9443,7 +9551,7 @@ Buy Now Btn
   top: 50%;
   position: fixed;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   border-radius: 30px;
   display: inline-block;
   color: var(--white-color) !important;
@@ -9452,13 +9560,13 @@ Buy Now Btn
   font-size: 14px;
   font-weight: 500;
   -webkit-animation-name: tada;
-          animation-name: tada;
+  animation-name: tada;
   -webkit-animation-duration: 5s;
-          animation-duration: 5s;
+  animation-duration: 5s;
   -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
+  animation-fill-mode: both;
   -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
 }
 
 .buy-now-btn:hover {
@@ -9469,46 +9577,91 @@ Buy Now Btn
 @-webkit-keyframes tada {
   0% {
     -webkit-transform: scale3d(1, 1, 1);
-            transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
   }
-  10%, 20% {
+
+  10%,
+  20% {
     -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
-            transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
   }
-  30%, 50%, 70%, 90% {
+
+  30%,
+  50%,
+  70%,
+  90% {
     -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
-            transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
   }
-  40%, 60%, 80% {
+
+  40%,
+  60%,
+  80% {
     -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
-            transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
   }
+
   100% {
     -webkit-transform: scale3d(1, 1, 1);
-            transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
   }
 }
 
 @keyframes tada {
   0% {
     -webkit-transform: scale3d(1, 1, 1);
-            transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
   }
-  10%, 20% {
+
+  10%,
+  20% {
     -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
-            transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
   }
-  30%, 50%, 70%, 90% {
+
+  30%,
+  50%,
+  70%,
+  90% {
     -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
-            transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
   }
-  40%, 60%, 80% {
+
+  40%,
+  60%,
+  80% {
     -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
-            transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
   }
+
   100% {
     -webkit-transform: scale3d(1, 1, 1);
-            transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
   }
 }
+
 /*# sourceMappingURL=style.css.map */
+
+.form-input {
+  height: 55px;
+  color: #9B8DAC;
+  -webkit-box-shadow: unset !important;
+  box-shadow: unset !important;
+  border: 1px solid var(--white-color);
+  background-color: var(--white-color);
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 15px;
+}
+
+.icon{
+  font-size: 25px !important;
+  padding-left: 5px;
+  cursor: pointer;
+}
+
+.select span{
+  color: #9B8DAC;
+}

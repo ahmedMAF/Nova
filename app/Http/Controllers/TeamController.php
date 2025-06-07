@@ -10,4 +10,8 @@ class TeamController extends Controller
     {
         return view('team');
     }
+        public function teamPage()
+    {
+        return view('add-team');
+    }
 }

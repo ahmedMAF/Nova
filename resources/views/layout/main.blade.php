@@ -278,6 +278,8 @@
                 id="slider"><span class="slider round"></span></label></div>
     <script src="{{asset('js/toastr.min.js')}}"></script>
     <script></script>
+
+    @yield('scripts')
 </body>
 
 </html>

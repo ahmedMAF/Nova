@@ -10,4 +10,8 @@ class ServiceController extends Controller
     {
         return view('services');
     }
+    public function service()
+    {
+        return view('add-service');
+    }
 }

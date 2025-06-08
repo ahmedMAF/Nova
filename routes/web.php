@@ -23,3 +23,4 @@ Route::get('/admin/password' , [LoginController::class, 'change'])->name('change
 Route::get('/admin/project' , [ProjectController::class, 'project'])->name('add_project');
 Route::get('/admin/team' , [TeamController::class, 'teamPage'])->name('add_team');
 Route::get('/admin/category' , [CategoryController::class, 'category'])->name('add_category');
+Route::get('/admin/services' , [ServiceController::class, 'service'])->name('add-service');

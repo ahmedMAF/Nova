@@ -9656,12 +9656,22 @@ Buy Now Btn
   font-size: 15px;
 }
 
-.icon{
+.icon {
   font-size: 25px !important;
   padding-left: 5px;
   cursor: pointer;
 }
 
-.select span{
+.select span {
   color: #9B8DAC;
+}
+
+.btn-close:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.page ul li a:focus{
+  outline: none !important;
+  box-shadow: none !important;
 }

@@ -37,34 +37,34 @@
             <div class="row align-items-center">
                 <div class="col-lg-8 col-md-12 m-auto">
                     <div class="talk-content margin-zero">
-                        <form action="https://formspree.io/f/xyzezaoe" method="post">
-                            <input type="hidden" value="KE1FBRWJqSJ5Rl0GflJd3GPetPqRdPKG8TCg25Jl">
+                        <form action="{{route('add_member')}}" method="post" enctype="multipart/form-data">
+                            @csrf
                             <div id="contactFormTwo" novalidate="true">
                                 <div class="row">
                                     <div class="col-lg-12 col-md-12">
                                         <div class="form-group">
-                                            <input type="text" name="email" class="form-control" required=""
+                                            <input type="text" name="name" class="form-control" required=""
                                                 data-error="Please enter member name" placeholder="Name (English)">
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
                                     <div class="col-lg-12 col-md-12">
                                         <div class="form-group">
-                                            <input type="text" name="email" class="form-control" required=""
+                                            <input type="text" name="name_ar" class="form-control" required=""
                                                 data-error="Please enter member name" placeholder="Name (Arabic)">
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
                                     <div class="col-lg-12 col-md-12">
                                         <div class="form-group">
-                                            <input type="text" name="email" class="form-control" required=""
+                                            <input type="text" name="role" class="form-control" required=""
                                                 data-error="Please enter role" placeholder="Role (English)">
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
                                     <div class="col-lg-12 col-md-12">
                                         <div class="form-group">
-                                            <input type="text" name="email" class="form-control" required=""
+                                            <input type="text" name="role_ar" class="form-control" required=""
                                                 data-error="Please enter role" placeholder="Role (Arabic)">
                                             <div class="help-block with-errors"></div>
                                         </div>
@@ -72,11 +72,21 @@
                                     <div class="col-lg-12 col-md-12">
                                         <label class="pb-2 ps-2">Photo</label>
                                         <div class="form-group">
-                                            <input type="file" name="passowrd" class="form-control" required=""
+                                            <input type="file" name="image" class="form-control" required=""
                                                 data-error="Please enter member photo">
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
+                                    
+                                    @if ($errors->any())
+                                        <div class="alert alert-danger">
+                                            <ul class="list-unstyled">
+                                                @foreach ($errors->all() as $error)
+                                                    <li>{{ $error }}</li>
+                                                @endforeach
+                                            </ul>
+                                        </div>
+                                    @endif
 
                                     <div class="col-lg-12 col-md-12 text-center">
                                         <button type="submit" class="default-btn disabled"

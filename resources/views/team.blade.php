@@ -3,6 +3,15 @@
 @section('title', 'Team')
 
 @section('content')
+
+    @if (session('success'))
+        <div class="container alert alert-success alert-dismissible fade show position-fixed start-50 translate-middle-x mt-3 shadow"
+            role="alert" style="z-index: 1055; width:100%; top: 70px;">
+            {{ session('success') }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    @endif
+
     <!-- Start Page Banner Area -->
     <div class="page-banner-area bg-5 jarallax"
         style="background-color: black; position: relative; z-index: 0; background-attachment: scroll; background-size: auto;"
@@ -60,66 +69,19 @@
             </div>
 
             <div class="row justify-content-center">
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single-team-card">
-                        <div class="team-image" data-tilt="">
-                            <img src="../image/team1.jpeg" alt="image">
-
-                        </div>
-                        <div class="team-content">
-                            <h3>Ahmed Afana</h3>
-                            <span>CEO & Web Developer</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single-team-card">
-                        <div class="team-image" data-tilt="">
-                            <img src="../image/team3.jpeg" alt="image">
-
-                        </div>
-                        <div class="team-content">
-                            <h3>Abdelkarim Al-Daqamseh</h3>
-                            <span>R&D Engineer IoT</span>
+                @foreach ($members as $member)
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="single-team-card">
+                            <div class="team-image" data-tilt="">
+                                <img src="{{asset('storage/' . $member->image)}}" alt="image">
+                            </div>
+                            <div class="team-content">
+                                <h3>{{$member->name}}</h3>
+                                <span>{{$member->role}}</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single-team-card">
-                        <div class="team-image" data-tilt="">
-                            <img src="../image/team2.jpeg" alt="image">
-
-                        </div>
-                        <div class="team-content">
-                            <h3>Nasser Khatib</h3>
-                            <span>Software Engineer</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single-team-card">
-                        <div class="team-image" data-tilt="">
-                            <img src="../image/team4.jpeg" alt="image">
-
-                        </div>
-                        <div class="team-content">
-                            <h3>Ahmed Shaat</h3>
-                            <span>Software Engineer</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6">
-                    <div class="single-team-card">
-                        <div class="team-image" data-tilt="">
-                            <img src="../image/team5.jpeg" alt="image">
-
-                        </div>
-                        <div class="team-content">
-                            <h3>Adham Abu Rabie</h3>
-                            <span>Software Engineer</span>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </div>

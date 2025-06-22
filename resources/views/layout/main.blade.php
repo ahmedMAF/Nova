@@ -96,6 +96,12 @@
                                 <li class="nav-item">
                                     <a href="{{route('contact')}}" class="nav-link">Contact</a>
                                 </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                        <i class="ri-earth-line"></i>
+                                        <span class="language-text">EN/AR</span>
+                                    </a>
+                                </li>
                             </ul>
                         </div>
                     </nav>

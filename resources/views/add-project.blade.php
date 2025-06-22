@@ -37,41 +37,41 @@
             <div class="row align-items-center">
                 <div class="col-lg-8 col-md-12 m-auto">
                     <div class="talk-content margin-zero">
-                        <form action="https://formspree.io/f/xyzezaoe" method="post">
-                            <input type="hidden" value="KE1FBRWJqSJ5Rl0GflJd3GPetPqRdPKG8TCg25Jl">
+                        <form action="{{route('add_project')}}" method="post" enctype="multipart/form-data">
+                            @csrf
                             <div id="contactFormTwo" novalidate="true">
                                 <div class="row">
                                     <div class="col-lg-12 col-md-12">
                                         <div class="form-group">
-                                            <input type="text" name="email" class="form-control" required=""
+                                            <input type="text" name="name" class="form-control" required=""
                                                 data-error="Please enter project name" placeholder="Name (English)">
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
                                     <div class="col-lg-12 col-md-12">
                                         <div class="form-group">
-                                            <input type="text" name="email" class="form-control" required=""
+                                            <input type="text" name="name_ar" class="form-control" required=""
                                                 data-error="Please enter project name" placeholder="Name (Arabic)">
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
                                     <div class="col-lg-12 col-md-12">
                                         <div class="form-group">
-                                            <input type="text" name="email" class="form-control" required=""
+                                            <input type="text" name="client" class="form-control" required=""
                                                 data-error="Please enter client name" placeholder="Client Name (English)">
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
                                     <div class="col-lg-12 col-md-12">
                                         <div class="form-group">
-                                            <input type="text" name="email" class="form-control" required=""
+                                            <input type="text" name="client_ar" class="form-control" required=""
                                                 data-error="Please enter client name" placeholder="Client Name (Arabic)">
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
                                     <div class="col-lg-12 col-md-12">
                                         <div class="form-group">
-                                            <textarea name="message" class="form-control" cols="30" rows="6" required=""
+                                            <textarea name="description" class="form-control" cols="30" rows="6" required=""
                                                 data-error="Please enter project description"
                                                 placeholder="Description (English)"></textarea>
                                             <div class="help-block with-errors"></div>
@@ -79,18 +79,19 @@
                                     </div>
                                     <div class="col-lg-12 col-md-12">
                                         <div class="form-group">
-                                            <textarea name="message" class="form-control" cols="30" rows="6" required=""
-                                                data-error="Please enter project description"
+                                            <textarea name="description_ar" class="form-control" cols="30" rows="6"
+                                                required="" data-error="Please enter project description"
                                                 placeholder="Description (Arabic)"></textarea>
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
                                     <div class="col-lg-12 col-md-12">
                                         <div class="form-group">
-                                            <select name="" id="" required class="form-control select">
+                                            <select name="category" id="" required class="form-control select">
                                                 <option disabled selected>Please select Catogary</option>
-                                                <option value="2">cat1</option>
-                                                <option value="3"> cat2</option>
+                                                @foreach ($categories as $category)
+                                                    <option value="{{ $category->id }}">{{ $category->name }}</option>
+                                                @endforeach
                                             </select>
                                             <div class="help-block with-errors"></div>
                                         </div>
@@ -98,7 +99,7 @@
                                     <div class="col-lg-12 col-md-12">
                                         <label class="pb-2 ps-2">Project Date</label>
                                         <div class="form-group">
-                                            <input type="date" name="passowrd" class="form-control" required=""
+                                            <input type="date" name="date" class="form-control" required=""
                                                 data-error="Please enter project date" placeholder="Project Date">
                                             <div class="help-block with-errors"></div>
                                         </div>
@@ -107,7 +108,7 @@
                                     <div class="col-lg-12 col-md-12">
                                         <label class="pb-2 ps-2">Project Photo</label>
                                         <div class="form-group">
-                                            <input type="file" name="passowrd" class="form-control" required=""
+                                            <input type="file" name="image" class="form-control" required=""
                                                 data-error="Please enter project photo">
                                             <div class="help-block with-errors"></div>
                                         </div>
@@ -115,7 +116,7 @@
 
                                     <div class="col-lg-12 col-md-12">
                                         <div class="form-group">
-                                            <input type="text" name="passowrd" class="form-control"
+                                            <input type="text" name="link" class="form-control"
                                                 placeholder="link to project">
                                         </div>
                                     </div>
@@ -139,6 +140,16 @@
                                             <div id="con-video"></div>
                                         </div>
                                     </div>
+
+                                    @if ($errors->any())
+                                        <div class="alert alert-danger">
+                                            <ul class="list-unstyled">
+                                                @foreach ($errors->all() as $error)
+                                                    <li>{{ $error }}</li>
+                                                @endforeach
+                                            </ul>
+                                        </div>
+                                    @endif
 
                                     <div class="col-lg-12 col-md-12 text-center">
                                         <button type="submit" class="default-btn disabled"
@@ -167,7 +178,7 @@
         photo.onclick = function () {
             let input = document.createElement('input');
             input.type = 'file';
-            input.name = 'photo' + p;
+            input.name = 'photo[]';
             input.className = 'form-control mb-2';
             conPhoto.appendChild(input);
             p++;
@@ -176,7 +187,7 @@
         video.onclick = function () {
             let input = document.createElement('input');
             input.type = 'text';
-            input.name = 'video' + v;
+            input.name = 'video[]';
             input.placeholder = 'Video URL';
             input.className = 'form-control mb-2';
             conVideo.appendChild(input);

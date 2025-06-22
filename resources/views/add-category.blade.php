@@ -1,8 +1,17 @@
 @extends('layout.main')
 
-@section('title', 'Add Member')
+@section('title', 'Add Category')
 
 @section('content')
+
+    @if (session('success'))
+        <div class="container alert alert-success alert-dismissible fade show position-fixed start-50 translate-middle-x mt-3 shadow"
+            role="alert" style="z-index: 1055; width:100%; top: 70px;">
+            {{ session('success') }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    @endif
+
     <!-- Start Page Banner Area -->
     <div class="page-banner-area jarallax"
         style="background-color: black; position: relative; z-index: 0; background-attachment: scroll; background-size: auto;"
@@ -37,24 +46,33 @@
             <div class="row align-items-center">
                 <div class="col-lg-8 col-md-12 m-auto">
                     <div class="talk-content margin-zero">
-                        <form action="https://formspree.io/f/xyzezaoe" method="post">
-                            <input type="hidden" value="KE1FBRWJqSJ5Rl0GflJd3GPetPqRdPKG8TCg25Jl">
+                        <form action="{{route('add_category')}}" method="post">
+                            @csrf
                             <div id="contactFormTwo" novalidate="true">
                                 <div class="row">
                                     <div class="col-lg-12 col-md-12">
                                         <div class="form-group">
-                                            <input type="text" name="email" class="form-control" required=""
+                                            <input type="text" name="name" class="form-control" required=""
                                                 data-error="Please enter category name" placeholder="Name (English)">
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
                                     <div class="col-lg-12 col-md-12">
                                         <div class="form-group">
-                                            <input type="text" name="email" class="form-control" required=""
+                                            <input type="text" name="name_ar" class="form-control" 
                                                 data-error="Please enter category name" placeholder="Name (Arabic)">
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
+                                    @if ($errors->any())
+                                        <div class="alert alert-danger">
+                                            <ul class="list-unstyled">
+                                                @foreach ($errors->all() as $error)
+                                                    <li>{{ $error }}</li>
+                                                @endforeach
+                                            </ul>
+                                        </div>
+                                    @endif
                                     <div class="col-lg-12 col-md-12 text-center">
                                         <button type="submit" class="default-btn disabled"
                                             style="pointer-events: all; cursor: pointer;">Add<span></span></button>

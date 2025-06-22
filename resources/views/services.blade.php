@@ -3,14 +3,22 @@
 @section('title', 'Our Services')
 
 @section('content')
+    @if (session('success'))
+        <div class="container alert alert-success alert-dismissible fade show position-fixed start-50 translate-middle-x mt-3 shadow"
+            role="alert" style="z-index: 1055; width:100%; top: 70px;">
+            {{ session('success') }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    @endif
+
     <!-- Start Page Banner Area -->
     <div class="page-banner-area bg-2 jarallax" style="
-                            background-color: black;
-                            position: relative;
-                            z-index: 0;
-                            background-attachment: scroll;
-                            background-size: auto;
-                          " data-jarallax='{"speed": 0.3}'>
+                                                background-color: black;
+                                                position: relative;
+                                                z-index: 0;
+                                                background-attachment: scroll;
+                                                background-size: auto;
+                                              " data-jarallax='{"speed": 0.3}'>
         <div class="container">
             <div class="page-banner-content aos-init aos-animate" data-aos="fade-right" data-aos-delay="50"
                 data-aos-duration="500" data-aos-once="true">
@@ -25,32 +33,32 @@
             </div>
         </div>
         <div id="jarallax-container-0" style="
-                              position: absolute;
-                              top: 0px;
-                              left: 0px;
-                              width: 100%;
-                              height: 100%;
-                              overflow: hidden;
-                              pointer-events: none;
-                              visibility: hidden;
-                              z-index: -100;
-                            ">
+                                                  position: absolute;
+                                                  top: 0px;
+                                                  left: 0px;
+                                                  width: 100%;
+                                                  height: 100%;
+                                                  overflow: hidden;
+                                                  pointer-events: none;
+                                                  visibility: hidden;
+                                                  z-index: -100;
+                                                ">
             <div style="
-                                background-position: 50% 50%;
-                                background-size: 100%;
-                                background-repeat: no-repeat;
-                                position: fixed;
-                                top: 0px;
-                                left: 0px;
-                                width: 1263.33px;
-                                height: 559.657px;
-                                overflow: hidden;
-                                pointer-events: none;
-                                margin-left: 0px;
-                                margin-top: 21.6717px;
-                                visibility: visible;
-                                transform: translateY(-30.75px) translateZ(0px);
-                              "></div>
+                                                    background-position: 50% 50%;
+                                                    background-size: 100%;
+                                                    background-repeat: no-repeat;
+                                                    position: fixed;
+                                                    top: 0px;
+                                                    left: 0px;
+                                                    width: 1263.33px;
+                                                    height: 559.657px;
+                                                    overflow: hidden;
+                                                    pointer-events: none;
+                                                    margin-left: 0px;
+                                                    margin-top: 21.6717px;
+                                                    visibility: visible;
+                                                    transform: translateY(-30.75px) translateZ(0px);
+                                                  "></div>
         </div>
     </div>
     <!-- End Page Banner Area -->
@@ -105,37 +113,37 @@
                 <h2>
                     Our Services
                     <span class="overlay" style="
-                            transform-origin: left 50% 0px;
-                            transform: matrix(0, 0, 0, 1, 0, 0);
-                          "></span>
+                                                transform-origin: left 50% 0px;
+                                                transform: matrix(0, 0, 0, 1, 0, 0);
+                                              "></span>
                 </h2>
                 <p></p>
                 <p align="center" style="
-                          margin: 0in 0in 15pt;
-                          text-align: center;
-                          line-height: 18pt;
-                          background-image: initial;
-                          background-position: initial;
-                          background-size: initial;
-                          background-repeat: initial;
-                          background-attachment: initial;
-                          background-origin: initial;
-                          background-clip: initial;
-                          vertical-align: baseline;
-                        "></p>
+                                              margin: 0in 0in 15pt;
+                                              text-align: center;
+                                              line-height: 18pt;
+                                              background-image: initial;
+                                              background-position: initial;
+                                              background-size: initial;
+                                              background-repeat: initial;
+                                              background-attachment: initial;
+                                              background-origin: initial;
+                                              background-clip: initial;
+                                              vertical-align: baseline;
+                                            "></p>
                 <div style="text-align: left">
                     <p class="MsoNormal" style="
-                            text-align: center;
-                            background-image: initial;
-                            background-position: initial;
-                            background-size: initial;
-                            background-repeat: initial;
-                            background-attachment: initial;
-                            background-origin: initial;
-                            background-clip: initial;
-                            direction: ltr;
-                            unicode-bidi: embed;
-                          ">
+                                                text-align: center;
+                                                background-image: initial;
+                                                background-position: initial;
+                                                background-size: initial;
+                                                background-repeat: initial;
+                                                background-attachment: initial;
+                                                background-origin: initial;
+                                                background-clip: initial;
+                                                direction: ltr;
+                                                unicode-bidi: embed;
+                                              ">
                         We offer individuals and companies locally and across global
                         market a full range of services We seek to offer your company the
                         very best solution in each category.
@@ -154,371 +162,28 @@
             </div>
 
             <div class="row justify-content-center">
-                <div class="col-lg-4 col-md-6">
-                    <div class="services-item" style="height: 500px">
-                        <div class="services-image">
-                            <a class="prevent" href="#"><img src="{{asset('image/slideiot.jpeg')}}" alt="image" /></a>
-                        </div>
-                        <div class="services-content">
-                            <h3>
-                                <a class="prevent" href="#">Internet of Things</a>
-                            </h3>
-                            <p>
-                                We help individuals and organizations analyze, plan, design,
-                                create prototypes, and deploy IoT models, from an idea to the
-                                final release...
-                            </p>
-                            <a href="#" class="services-btn show"> View More</a>
-                        </div>
-                        <div id="all-text" style="
-                              display: none;
-                              background-color: #73589b;
-                              width: 100%;
-                              position: fixed;
-                              left: 5%;
-                              top: 50%;
-                              z-index: 100;
-                              padding: 20px;
-                              width: 90%;
-                              border-radius: 10px;
-                            ">
-                            <div class="x" style="
-                                color: white;
-                                font-size: 20px;
-                                font-weight: bold;
-                                position: absolute;
-                                right: -23px;
-                                top: -23px;
-                                background-color: #73589b;
-                                width: 30px;
-                                height: 30px;
-                                border-radius: 50%;
-                                text-align: center;
-                                cursor: pointer;
-                              ">
-                                X
+                @foreach ($services as $service)
+                    <div class="col-lg-4 col-md-6">
+                        <div class="services-item" style="height: 500px">
+                            <div class="services-image">
+                                <a class="prevent" href="{{route('service_details' , $service->id)}}"><img src="{{asset('storage/' . $service->image)}}"
+                                        alt="image" /></a>
                             </div>
-                            <h3 style="color: white">Internet of Things</h3>
-                            <p style="color: white">
-                                We help individuals and organizations analyze, plan, design,
-                                create prototypes, and deploy IoT models, from an idea to the
-                                final release of the product. This work is based on the
-                                nine-step methodology. We will cooperate with you closely to
-                                meet your expectations. Quality, speed and thorough testing
-                                are our top priorities. You will be also provided with the
-                                related documentation.
-                            </p>
+                            <div class="services-content">
+                                <h3>
+                                    <a class="prevent" href="#">{{$service->name}}</a>
+                                </h3>
+                                <p>
+                                    {{$service->description}}
+                                </p>
+                                <a href="{{route('service_details' , $service->id)}}" class="services-btn show"> View More</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="services-item" style="height: 500px">
-                        <div class="services-image">
-                            <a class="prevent" href="#"><img src="{{asset('image/slidedev.jpeg')}}" alt="image" /></a>
-                        </div>
-                        <div class="services-content">
-                            <h3>
-                                <a class="prevent" href="#">Web development</a>
-                            </h3>
-                            <p>
-                                We specialize in creating custom, scalable, and
-                                high-performance websites tailored to your business needs.
-                                From corporate...
-                            </p>
-                            <a href="#" class="services-btn show"> View More</a>
-                        </div>
-                        <div id="all-text" style="
-                              display: none;
-                              background-color: #73589b;
-                              width: 100%;
-                              position: fixed;
-                              left: 5%;
-                              top: 50%;
-                              z-index: 100;
-                              padding: 20px;
-                              width: 90%;
-                              border-radius: 10px;
-                            ">
-                            <div class="x" style="
-                                color: white;
-                                font-size: 20px;
-                                font-weight: bold;
-                                position: absolute;
-                                right: -23px;
-                                top: -23px;
-                                background-color: #73589b;
-                                width: 30px;
-                                height: 30px;
-                                border-radius: 50%;
-                                text-align: center;
-                                cursor: pointer;
-                              ">
-                                X
-                            </div>
-                            <h3 style="color: white">Web development</h3>
-                            <p style="color: white">
-                                We specialize in creating custom, scalable, and
-                                high-performance websites tailored to your business needs.
-                                From corporate websites to e-commerce platforms and web
-                                applications, we use the latest technologies to ensure speed,
-                                security, and a seamless user experience. Whether you need a
-                                simple landing page or a complex system, we turn your vision
-                                into reality with modern, responsive, and user-friendly
-                                designs.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="services-item" style="height: 500px">
-                        <div class="services-image">
-                            <a class="prevent" href="#"><img src="{{asset('image/slideai.jpeg')}}" alt="image" /></a>
-                        </div>
-                        <div class="services-content">
-                            <h3>
-                                <a class="prevent" href="#">AI & Machine Learning</a>
-                            </h3>
-                            <p>
-                                We help our clients build custom Artificial Intelligence and
-                                Machine Learning solutions: especially in image
-                                classification...
-                            </p>
-                            <a href="%" class="services-btn show"> View More</a>
-                        </div>
-                        <div id="all-text" style="
-                              display: none;
-                              background-color: #73589b;
-                              width: 100%;
-                              position: fixed;
-                              left: 5%;
-                              top: 50%;
-                              z-index: 100;
-                              padding: 20px;
-                              width: 90%;
-                              border-radius: 10px;
-                            ">
-                            <div class="x" style="
-                                color: white;
-                                font-size: 20px;
-                                font-weight: bold;
-                                position: absolute;
-                                right: -23px;
-                                top: -23px;
-                                background-color: #73589b;
-                                width: 30px;
-                                height: 30px;
-                                border-radius: 50%;
-                                text-align: center;
-                                cursor: pointer;
-                              ">
-                                X
-                            </div>
-                            <h3 style="color: white">AI & Machine Learning</h3>
-                            <p style="color: white">
-                                We help our clients build custom Artificial Intelligence and
-                                Machine Learning solutions: especially in image classification
-                                for creating smart, intelligent and human-friendly apps
-                                powered by ML technology.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="services-item" style="height: 500px">
-                        <div class="services-image">
-                            <a class="prevent" href="#"><img src="{{asset('image/slidedev.jpeg')}}" alt="image" /></a>
-                        </div>
-                        <div class="services-content">
-                            <h3>
-                                <a class="prevent" href="#">Mobile App Development</a>
-                            </h3>
-                            <p>
-                                We help businesses and startups build innovative mobile
-                                applications that provide a smooth and engaging user
-                                experience. Our expertise...
-                            </p>
-                            <a href="#" class="services-btn show"> View More</a>
-                        </div>
-                        <div id="all-text" style="
-                              display: none;
-                              background-color: #73589b;
-                              width: 100%;
-                              position: fixed;
-                              left: 5%;
-                              top: 50%;
-                              z-index: 100;
-                              padding: 20px;
-                              width: 90%;
-                              border-radius: 10px;
-                            ">
-                            <div class="x" style="
-                                color: white;
-                                font-size: 20px;
-                                font-weight: bold;
-                                position: absolute;
-                                right: -23px;
-                                top: -23px;
-                                background-color: #73589b;
-                                width: 30px;
-                                height: 30px;
-                                border-radius: 50%;
-                                text-align: center;
-                                cursor: pointer;
-                              ">
-                                X
-                            </div>
-                            <h3 style="color: white">Mobile App Development</h3>
-                            <p style="color: white">
-                                We help businesses and startups build innovative mobile
-                                applications that provide a smooth and engaging user
-                                experience. Our expertise covers iOS, Android, and
-                                cross-platform development, ensuring your app runs seamlessly
-                                on any device. Whether it's a business app, an e-commerce
-                                platform, or a custom solution, we develop secure, fast, and
-                                scalable applications that bring your ideas to life.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="services-item" style="height: 500px">
-                        <div class="services-image">
-                            <a class="prevent" href="#"><img src="{{asset('image/slidecourse.jpeg')}}" alt="image" /></a>
-                        </div>
-                        <div class="services-content">
-                            <h3>
-                                <a class="prevent" href="#">Training & Courses</a>
-                            </h3>
-                            <p>
-                                We offer professional training programs in software
-                                development, AI, IoT, and emerging technologies, tailored for
-                                students,...
-                            </p>
-                            <a href="" class="services-btn show"> View More</a>
-                        </div>
-                        <div id="all-text" style="
-                              display: none;
-                              background-color: #73589b;
-                              width: 100%;
-                              position: fixed;
-                              left: 5%;
-                              top: 50%;
-                              z-index: 100;
-                              padding: 20px;
-                              width: 90%;
-                              border-radius: 10px;
-                            ">
-                            <div class="x" style="
-                                color: white;
-                                font-size: 20px;
-                                font-weight: bold;
-                                position: absolute;
-                                right: -23px;
-                                top: -23px;
-                                background-color: #73589b;
-                                width: 30px;
-                                height: 30px;
-                                border-radius: 50%;
-                                text-align: center;
-                                cursor: pointer;
-                              ">
-                                X
-                            </div>
-                            <h3 style="color: white">Training & Courses</h3>
-                            <p style="color: white">
-                                We offer professional training programs in software
-                                development, AI, IoT, and emerging technologies, tailored for
-                                students, professionals, and businesses. Our courses are
-                                designed to provide hands-on experience, equipping
-                                participants with practical skills to excel in the tech
-                                industry. Whether you're looking to start a career in tech or
-                                upgrade your skills, our expert-led training programs will
-                                help you stay ahead in the digital world.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="services-item" style="height: 500px">
-                        <div class="services-image">
-                            <a class="prevent" href="#"><img src="{{asset('image/slidedev.jpeg')}}" alt="image" /></a>
-                        </div>
-                        <div class="services-content">
-                            <h3>
-                                <a class="prevent" href="#">Desktop Application Development</a>
-                            </h3>
-                            <p>
-                                Our team delivers powerful and efficient desktop applications
-                                for Windows, macOS, and Linux. Whether you need enterprise
-                                software...
-                            </p>
-                            <a href="#" class="services-btn show"> View More</a>
-                        </div>
-                        <div id="all-text" style="
-                              display: none;
-                              background-color: #73589b;
-                              width: 100%;
-                              position: fixed;
-                              left: 5%;
-                              top: 50%;
-                              z-index: 100;
-                              padding: 20px;
-                              width: 90%;
-                              border-radius: 10px;
-                            ">
-                            <div class="x" style="
-                                color: white;
-                                font-size: 20px;
-                                font-weight: bold;
-                                position: absolute;
-                                right: -23px;
-                                top: -23px;
-                                background-color: #73589b;
-                                width: 30px;
-                                height: 30px;
-                                border-radius: 50%;
-                                text-align: center;
-                                cursor: pointer;
-                              ">
-                                X
-                            </div>
-                            <h3 style="color: white">Desktop Application Development</h3>
-                            <p style="color: white">
-                                Our team delivers powerful and efficient desktop applications
-                                for Windows, macOS, and Linux. Whether you need enterprise
-                                software, automation tools, or standalone applications, we
-                                develop secure, high-performance solutions designed to enhance
-                                productivity and streamline your business processes. We ensure
-                                robust functionality, intuitive design, and seamless
-                                integration with your existing systems.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
 
-        <div class="col-lg-12 col-md-12">
-            <nav>
-                <ul class="pagination-area">
-                    <li class="prev page-numbers disabled" aria-disabled="true" aria-label="« Previous">
-                        <span class="page-link" aria-hidden="true"><i class="ri-arrow-left-s-line"></i></span>
-                    </li>
-
-                    <li class="page-numbers active" aria-current="page">
-                        <span class="page-link">1</span>
-                    </li>
-                    <li class="page-numbers">
-                        <a class="page-link" href="../html/services.html">2</a>
-                    </li>
-
-                    <li class="next page-numbers">
-                        <a class="page-link" href="../html/services.html" rel="next" aria-label="Next »"><i
-                                class="ri-arrow-right-s-line"></i></a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
     </div>
 
     <!-- Start Talk Area -->
@@ -530,9 +195,9 @@
                         <span>LET'S TALK</span>
                         <h3>
                             Contact<span class="overlay" style="
-                            transform-origin: left 50% 0px;
-                            transform: matrix(0, 0, 0, 1, 0, 0);
-                          "></span>
+                                                transform-origin: left 50% 0px;
+                                                transform: matrix(0, 0, 0, 1, 0, 0);
+                                              "></span>
                         </h3>
                         <p></p>
                         <p style="text-align: justify">
@@ -541,16 +206,16 @@
                             love to hear from you.<br />
                         </p>
                         <p class="MsoNormal" style="
-                          background-image: initial;
-                          background-position: initial;
-                          background-size: initial;
-                          background-repeat: initial;
-                          background-attachment: initial;
-                          background-origin: initial;
-                          background-clip: initial;
-                          direction: ltr;
-                          unicode-bidi: embed;
-                        ">
+                                              background-image: initial;
+                                              background-position: initial;
+                                              background-size: initial;
+                                              background-repeat: initial;
+                                              background-attachment: initial;
+                                              background-origin: initial;
+                                              background-clip: initial;
+                                              direction: ltr;
+                                              unicode-bidi: embed;
+                                            ">
                             <o:p></o:p>
                         </p>
                         <p></p>

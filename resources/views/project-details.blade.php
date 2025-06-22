@@ -19,7 +19,7 @@
                     <li>
                         <a href="#">Projects</a>
                     </li>
-                    <li>Awesome Project</li>
+                    <li>{{$project->name}}</li>
                 </ul>
             </div>
         </div>
@@ -34,7 +34,7 @@
                     <div class="project-details-desc">
                         <!-- Main Project Image -->
                         <div class="project-details-image mb-5 text-center">
-                            <img src="image/project1.jpeg" alt="Main Project Image" class="rounded-3">
+                            <img src="{{asset('storage/' . $project->image)}}" alt="Main Project Image" class="rounded-3">
                         </div>
 
                         <!-- Project Meta -->
@@ -42,67 +42,43 @@
                             <ul class="list-unstyled d-flex flex-wrap align-items-center justify-content-between">
                                 <li>
                                     <span>Date:</span>
-                                    15 June 2023
+                                    {{$project->date}}
                                 </li>
                                 <li>
                                     <span>Category:</span>
-                                    Web Development
+                                    {{$project->category->name}}
                                 </li>
                                 <li>
                                     <span>Client:</span>
-                                    Nova Company
+                                    {{$project->client}}
                                 </li>
                             </ul>
                         </div>
 
                         <!-- Project Title & Description -->
                         <div class="project-details-content mb-5">
-                            <h3 class="mb-3">Awesome Project Title</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
-                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                                laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                                mollit anim id est laborum.</p>
+                            <h3 class="mb-3">{{$project->name}}</h3>
+                            <p>{{$project->description}}</p>
                         </div>
 
                         <!-- Project Gallery -->
                         <div class="project-gallery mb-5">
                             <h4 class="mb-4">Project Gallery</h4>
                             <div class="row">
-                                <div class="col-md-4 col-sm-6 col-12 mb-4">
-                                    <div class="gallery-item text-center">
-                                        <a href="image/about.jpg" class="fancybox text-decoration-none"
-                                            data-fancybox="gallery">
-                                            <img src="image/about.jpg" alt="Project Image" class="img-fluid rounded-3">
-                                            <div class="gallery-overlay">
-                                                <i style="color: var(--main-color)" class="fs-3 ri-zoom-in-line"></i>
-                                            </div>
-                                        </a>
+                                @foreach (json_decode($project->photos) as $photo)
+                                    <div class="col-md-4 col-sm-6 col-12 mb-4">
+                                        <div class="gallery-item text-center">
+                                            <a href="{{asset('storage/' . $photo)}}" class="fancybox text-decoration-none"
+                                                data-fancybox="gallery">
+                                                <img src="{{asset('storage/' . $photo)}}" alt="Project Image"
+                                                    class="img-fluid rounded-3">
+                                                <div class="gallery-overlay">
+                                                    <i style="color: var(--main-color)" class="fs-3 ri-zoom-in-line"></i>
+                                                </div>
+                                            </a>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="col-md-4 col-sm-6 col-12 mb-4">
-                                    <div class="gallery-item text-center">
-                                        <a href="image/about.jpg" class="fancybox text-decoration-none"
-                                            data-fancybox="gallery">
-                                            <img src="image/about.jpg" alt="Project Image" class="img-fluid rounded-3">
-                                            <div class="gallery-overlay">
-                                                <i style="color: var(--main-color)" class="fs-3 ri-zoom-in-line"></i>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-sm-6 col-12 mb-4">
-                                    <div class="gallery-item text-center">
-                                        <a href="image/about.jpg" class="fancybox text-decoration-none"
-                                            data-fancybox="gallery">
-                                            <img src="image/about.jpg" alt="Project Image" class="img-fluid rounded-3">
-                                            <div class="gallery-overlay">
-                                                <i style="color: var(--main-color)" class="fs-3 ri-zoom-in-line"></i>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
+                                @endforeach
                             </div>
                         </div>
 
@@ -127,7 +103,7 @@
                                 <div>
                                     <div class="mx-auto link-item p-3 rounded-3 text-center"
                                         style="background-color: #f8f9fa; width: fit-content;">
-                                        <a href="https://example.com" target="_blank" class="d-flex align-items-center">
+                                        <a href="{{$project->link}}" target="_blank" class="d-flex align-items-center">
                                             <i class="ri-external-link-line me-2"></i>
                                             <span>Live Demo</span>
                                         </a>

@@ -19,7 +19,7 @@
                     <li>
                         <a href="#">Services</a>
                     </li>
-                    <li>Web Development</li>
+                    <li>{{$service->name}}</li>
                 </ul>
             </div>
         </div>
@@ -34,37 +34,25 @@
                     <div class="service-details-desc">
                         <!-- Main Service Image -->
                         <div class="service-details-image mb-5">
-                            <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-                                alt="Service Image" class="rounded-3">
+                            <img src="{{asset('storage/' . $service->image)}}" alt="Service Image" class="rounded-3">
                         </div>
 
                         <!-- Service Title & Description -->
                         <div class="service-details-content mb-5">
-                            <h3>Professional Web Development</h3>
-                            <p class="px-2">Our web development service provides comprehensive solutions for businesses of
-                                all sizes. We
-                                create responsive, user-friendly websites that help you establish a strong online presence
-                                and achieve your business goals.</p>
+                            <h3>{{$service->name}}</h3>
+                            <p class="px-2">{{$service->description}}</p>
                         </div>
 
                         <!-- Service Features -->
                         <div class="service-features mb-5">
                             <h4>Key Features</h4>
                             <ul class="list-unstyled px-2">
-                                <li>
-                                    <i class="ri-checkbox-circle-fill" style="color: #4e6baf; font-size: 24px;"></i>
-                                    Responsive Design for all devices
-                                </li>
-                                <li><i class="ri-checkbox-circle-fill" style="color: #4e6baf; font-size: 24px;"></i> SEO
-                                    Optimized Structure</li>
-                                <li><i class="ri-checkbox-circle-fill" style="color: #4e6baf; font-size: 24px;"></i> Fast
-                                    Loading Performance</li>
-                                <li><i class="ri-checkbox-circle-fill" style="color: #4e6baf; font-size: 24px;"></i> Secure
-                                    & Reliable Hosting</li>
-                                <li><i class="ri-checkbox-circle-fill" style="color: #4e6baf; font-size: 24px;"></i>
-                                    User-friendly Content Management</li>
-                                <li><i class="ri-checkbox-circle-fill" style="color: #4e6baf; font-size: 24px;"></i> Ongoing
-                                    Maintenance & Support</li>
+                                @foreach (json_decode($service->feature) as $feature)
+                                    <li>
+                                        <i class="ri-checkbox-circle-fill" style="color: #4e6baf; font-size: 24px;"></i>
+                                        {{$feature}}
+                                    </li>
+                                @endforeach
                             </ul>
                         </div>
 
@@ -168,15 +156,15 @@
                             <ul class="overview-list">
                                 <li>
                                     <span>Service Name:</span>
-                                    Web Development
+                                    {{$service->name}}
                                 </li>
                                 <li>
                                     <span>Delivery Time:</span>
-                                    2-4 Weeks
+                                    {{$service->delivery_time}}
                                 </li>
                                 <li>
                                     <span>Price Range:</span>
-                                    $500 - $5000
+                                    {{$service->price_range}}
                                 </li>
                                 <li>
                                     <span>Support:</span>
@@ -186,12 +174,15 @@
                         </div>
 
                         <!-- Download Brochure -->
-                        <div class="sidebar-widget mb-5">
-                            <h3 class="widget-title">Download Brochure</h3>
-                            <a href="#" class="default-btn" style="width: 100%; text-align: center;">
-                                <i class="ri-download-line me-2"></i> Download PDF
-                            </a>
-                        </div>
+                        @if ($service->information)
+                            <div class="sidebar-widget mb-5">
+                                <h3 class="widget-title">Download Brochure</h3>
+                                <a href="{{asset('storage/' . $service->information)}}" class="default-btn"
+                                    style="width: 100%; text-align: center;">
+                                    <i class="ri-download-line me-2"></i> Download PDF
+                                </a>
+                            </div>
+                        @endif
 
                         <!-- Contact For Service -->
                         <div class="mb-5">
@@ -206,24 +197,25 @@
                                                     <div>
                                                         <div>
                                                             <div class="form-group">
-                                                                <input style="background-color: #ececec" type="text" name="email" class="form-control"
-                                                                    required="" data-error="Please enter youre name"
-                                                                    placeholder="Name">
+                                                                <input style="background-color: #ececec" type="text"
+                                                                    name="email" class="form-control" required=""
+                                                                    data-error="Please enter youre name" placeholder="Name">
                                                                 <div class="help-block with-errors"></div>
                                                             </div>
                                                         </div>
                                                         <div>
                                                             <div class="form-group">
-                                                                <input style="background-color: #ececec" type="email" name="email" class="form-control"
-                                                                    required="" data-error="Please enter your email"
+                                                                <input style="background-color: #ececec" type="email"
+                                                                    name="email" class="form-control" required=""
+                                                                    data-error="Please enter your email"
                                                                     placeholder="Emial">
                                                                 <div class="help-block with-errors"></div>
                                                             </div>
                                                         </div>
                                                         <div>
                                                             <div class="form-group">
-                                                                <textarea style="background-color: #ececec" name="message" class="form-control" cols="30"
-                                                                    rows="6" required=""
+                                                                <textarea style="background-color: #ececec" name="message"
+                                                                    class="form-control" cols="30" rows="6" required=""
                                                                     data-error="Please enter your message"
                                                                     placeholder="Youre Message"></textarea>
                                                                 <div class="help-block with-errors"></div>
@@ -254,6 +246,26 @@
                                 <div class="single-service mb-3">
                                     <a href="#" class="d-flex align-items-center px-2">
                                         <h5>UI/UX Design</h5>
+                                    </a>
+                                </div>
+                                <div class="single-service mb-3">
+                                    <a href="#" class="d-flex align-items-center px-2">
+                                        <h5>Digital Marketing</h5>
+                                    </a>
+                                </div>
+                                <div class="single-service mb-3">
+                                    <a href="#" class="d-flex align-items-center px-2">
+                                        <h5>Digital Marketing</h5>
+                                    </a>
+                                </div>
+                                <div class="single-service mb-3">
+                                    <a href="#" class="d-flex align-items-center px-2">
+                                        <h5>Digital Marketing</h5>
+                                    </a>
+                                </div>
+                                <div class="single-service mb-3">
+                                    <a href="#" class="d-flex align-items-center px-2">
+                                        <h5>Digital Marketing</h5>
                                     </a>
                                 </div>
                                 <div class="single-service mb-3">

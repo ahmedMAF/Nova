@@ -37,27 +37,27 @@
             <div class="row align-items-center">
                 <div class="col-lg-8 col-md-12 m-auto">
                     <div class="talk-content margin-zero">
-                        <form action="https://formspree.io/f/xyzezaoe" method="post">
-                            <input type="hidden" value="KE1FBRWJqSJ5Rl0GflJd3GPetPqRdPKG8TCg25Jl">
+                        <form action="{{route('add-service')}}" method="post" enctype="multipart/form-data">
+                            @csrf
                             <div id="contactFormTwo" novalidate="true">
                                 <div class="row">
                                     <div class="col-lg-12 col-md-12">
                                         <div class="form-group">
-                                            <input type="text" name="email" class="form-control" required=""
+                                            <input type="text" name="name" class="form-control" required=""
                                                 data-error="Please enter service name" placeholder="Name (English)">
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
                                     <div class="col-lg-12 col-md-12">
                                         <div class="form-group">
-                                            <input type="text" name="email" class="form-control" required=""
+                                            <input type="text" name="name_ar" class="form-control" required=""
                                                 data-error="Please enter service name" placeholder="Name (Arabic)">
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
                                     <div class="col-lg-12 col-md-12">
                                         <div class="form-group">
-                                            <textarea name="message" class="form-control" cols="30" rows="6" required=""
+                                            <textarea name="description" class="form-control" cols="30" rows="6" required=""
                                                 data-error="Please enter service description"
                                                 placeholder="Description (English)"></textarea>
                                             <div class="help-block with-errors"></div>
@@ -65,15 +65,15 @@
                                     </div>
                                     <div class="col-lg-12 col-md-12">
                                         <div class="form-group">
-                                            <textarea name="message" class="form-control" cols="30" rows="6" required=""
-                                                data-error="Please enter service description"
+                                            <textarea name="description_ar" class="form-control" cols="30" rows="6"
+                                                required="" data-error="Please enter service description"
                                                 placeholder="Description (Arabic)"></textarea>
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
                                     <div class="col-lg-12 col-md-12">
                                         <div class="form-group">
-                                            <input type="text" name="passowrd" class="form-control" required=""
+                                            <input type="text" name="delivery_time" class="form-control" required=""
                                                 data-error="Please enter Delivery Time Rage"
                                                 placeholder="Delivery Time Rage">
                                             <div class="help-block with-errors"></div>
@@ -81,7 +81,7 @@
                                     </div>
                                     <div class="col-lg-12 col-md-12">
                                         <div class="form-group">
-                                            <input type="text" name="passowrd" class="form-control" required=""
+                                            <input type="text" name="price_range" class="form-control" required=""
                                                 data-error="Please enter Price Range" placeholder="Price Range">
                                             <div class="help-block with-errors"></div>
                                         </div>
@@ -89,7 +89,7 @@
                                     <div class="col-lg-12 col-md-12">
                                         <div class="form-group">
                                             <label class="pb-2 ps-2">Information</label>
-                                            <input type="file" name="passowrd" class="form-control"
+                                            <input type="file" name="information" class="form-control"
                                                 data-error="Please uplode Information">
                                             <div class="help-block with-errors"></div>
                                         </div>
@@ -97,7 +97,7 @@
                                     <div class="col-lg-12 col-md-12">
                                         <div class="form-group">
                                             <label class="pb-2 ps-2">Image</label>
-                                            <input type="file" name="passowrd" class="form-control" required=""
+                                            <input type="file" name="image" class="form-control" required=""
                                                 data-error="Please uplode Image">
                                             <div class="help-block with-errors"></div>
                                         </div>
@@ -111,6 +111,16 @@
                                             <div id="con-feature"></div>
                                         </div>
                                     </div>
+
+                                    @if ($errors->any())
+                                        <div class="alert alert-danger">
+                                            <ul class="list-unstyled">
+                                                @foreach ($errors->all() as $error)
+                                                    <li>{{ $error }}</li>
+                                                @endforeach
+                                            </ul>
+                                        </div>
+                                    @endif
 
                                     <div class="col-lg-12 col-md-12 text-center">
                                         <button type="submit" class="default-btn disabled"
@@ -137,7 +147,7 @@
         feature.onclick = function () {
             let input = document.createElement('input');
             input.type = 'text';
-            input.name = 'feature' + f;
+            input.name = 'feature[]';
             input.className = 'form-control mb-2';
             input.placeholder = 'Feature';
             confeature.appendChild(input);

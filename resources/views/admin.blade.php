@@ -38,28 +38,19 @@
         <div class="container">
             <div class="row justify-content-center gy-5">
                 <div style="max-width: 220px;">
-                    <a href="#about" class="default-btn">Add Product</a>
+                    <a href="{{route('admin_project')}}" class="default-btn">Add Project</a>
                 </div>
                 <div style="max-width: 220px;">
-                    <a href="#about" class="default-btn">Add Partner</a>
+                    <a href="{{route('admin_team')}}" class="default-btn">Add Member</a>
                 </div>
                 <div style="max-width: 220px;">
-                    <a href="#about" class="default-btn">Add Client</a>
+                    <a href="{{route('admin_service')}}" class="default-btn">Add Service</a>
                 </div>
                 <div style="max-width: 220px;">
-                    <a href="#about" class="default-btn">Add Member</a>
-                </div>
-                <div style="max-width: 220px;">
-                    <a href="#about" class="default-btn">Add Post</a>
-                </div>
-                <div style="max-width: 220px;">
-                    <a href="#about" class="default-btn">Add Contact</a>
+                    <a href="{{route('admin_category')}}" class="default-btn">Add Category</a>
                 </div>
                 <div style="max-width: 220px;">
                     <a href="#about" class="default-btn">password</a>
-                </div>
-                <div style="max-width: 220px;">
-                    <a href="#about" class="default-btn">Edit Contact</a>
                 </div>
             </div>
         </div>

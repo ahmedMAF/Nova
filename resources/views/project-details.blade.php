@@ -62,55 +62,64 @@
                         </div>
 
                         <!-- Project Gallery -->
-                        <div class="project-gallery mb-5">
-                            <h4 class="mb-4">Project Gallery</h4>
-                            <div class="row">
-                                @foreach (json_decode($project->photos) as $photo)
-                                    <div class="col-md-4 col-sm-6 col-12 mb-4">
-                                        <div class="gallery-item text-center">
-                                            <a href="{{asset('storage/' . $photo)}}" class="fancybox text-decoration-none"
-                                                data-fancybox="gallery">
-                                                <img src="{{asset('storage/' . $photo)}}" alt="Project Image"
-                                                    class="img-fluid rounded-3">
-                                                <div class="gallery-overlay">
-                                                    <i style="color: var(--main-color)" class="fs-3 ri-zoom-in-line"></i>
-                                                </div>
+                        @if (json_decode($project->photos))
+                            <div class="project-gallery mb-5">
+                                <h4 class="mb-4">Project Gallery</h4>
+                                <div class="row">
+                                    @foreach (json_decode($project->photos) as $photo)
+                                        <div class="col-md-4 col-sm-6 col-12 mb-4">
+                                            <div class="gallery-item text-center">
+                                                <a href="{{asset('storage/' . $photo)}}" class="fancybox text-decoration-none"
+                                                    data-fancybox="gallery">
+                                                    <img src="{{asset('storage/' . $photo)}}" alt="Project Image"
+                                                        class="img-fluid rounded-3">
+                                                    <div class="gallery-overlay">
+                                                        <i style="color: var(--main-color)" class="fs-3 ri-zoom-in-line"></i>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    @endforeach
+                                </div>
+                            </div>
+                        @endif
+
+                        <!-- Project Videos -->
+                        @if (json_decode($project->videos))
+                            <div class="project-videos mb-5">
+                                <h4 class="mb-4">Project Videos</h4>
+                                <div>
+                                    <div>
+                                        @foreach (json_decode($project->videos) as $video)
+                                            <div class="video-container rounded-3 text-center">
+                                                <iframe src="https://www.youtube.com/embed/{{$video}}" frameborder="0"
+                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                    allowfullscreen></iframe>
+                                            </div>
+                                        @endforeach
+                                    </div>
+                                </div>
+                            </div>
+                        @endif
+
+                        <!-- Project Links -->
+                        @if ($project->link)
+                            <div class="project-links">
+                                <h4 class="mb-4">Related Links</h4>
+                                <div>
+                                    <div>
+                                        <div class="mx-auto link-item p-3 rounded-3 text-center"
+                                            style="background-color: #f8f9fa; width: fit-content;">
+                                            <a href="{{$project->link}}" target="_blank" class="d-flex align-items-center">
+                                                <i class="ri-external-link-line me-2"></i>
+                                                <span>Live Demo</span>
                                             </a>
                                         </div>
                                     </div>
-                                @endforeach
-                            </div>
-                        </div>
-
-                        <!-- Project Videos -->
-                        <div class="project-videos mb-5">
-                            <h4 class="mb-4">Project Videos</h4>
-                            <div>
-                                <div>
-                                    <div class="video-container rounded-3 text-center">
-                                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0"
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                            allowfullscreen></iframe>
-                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        @endif
 
-                        <!-- Project Links -->
-                        <div class="project-links">
-                            <h4 class="mb-4">Related Links</h4>
-                            <div>
-                                <div>
-                                    <div class="mx-auto link-item p-3 rounded-3 text-center"
-                                        style="background-color: #f8f9fa; width: fit-content;">
-                                        <a href="{{$project->link}}" target="_blank" class="d-flex align-items-center">
-                                            <i class="ri-external-link-line me-2"></i>
-                                            <span>Live Demo</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>

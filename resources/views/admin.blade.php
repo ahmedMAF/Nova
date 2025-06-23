@@ -3,6 +3,13 @@
 @section('title', 'Admin Dashboard')
 
 @section('content')
+    @if (session('success'))
+        <div class="container alert alert-success alert-dismissible fade show position-fixed start-50 translate-middle-x mt-3 shadow"
+            role="alert" style="z-index: 1055; width:100%; top: 70px;">
+            {{ session('success') }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    @endif
     <!-- Start Page Banner Area -->
     <div class="page-banner-area jarallax"
         style="background-color: black; position: relative; z-index: 0; background-attachment: scroll; background-size: auto;"
@@ -50,7 +57,7 @@
                     <a href="{{route('admin_category')}}" class="default-btn">Add Category</a>
                 </div>
                 <div style="max-width: 220px;">
-                    <a href="#about" class="default-btn">password</a>
+                    <a href="{{route('change')}}" class="default-btn">password</a>
                 </div>
             </div>
         </div>

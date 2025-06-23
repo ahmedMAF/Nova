@@ -3,6 +3,13 @@
 @section('title', 'Change Password')
 
 @section('content')
+    @if (session('error'))
+        <div class="container alert alert-danger alert-dismissible fade show position-fixed start-50 translate-middle-x mt-3 shadow"
+            role="alert" style="z-index: 1055; width:100%; top: 70px;">
+            {{ session('error') }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    @endif
     <!-- Start Page Banner Area -->
     <div class="page-banner-area jarallax"
         style="background-color: black; position: relative; z-index: 0; background-attachment: scroll; background-size: auto;"
@@ -37,13 +44,13 @@
             <div class="row align-items-center">
                 <div class="col-lg-8 col-md-12 m-auto">
                     <div class="talk-content margin-zero">
-                        <form action="https://formspree.io/f/xyzezaoe" method="post">
-                            <input type="hidden" value="KE1FBRWJqSJ5Rl0GflJd3GPetPqRdPKG8TCg25Jl">
+                        <form action="{{ route('change_password') }}" method="post">
+                            @csrf
                             <div id="contactFormTwo" novalidate="true">
                                 <div class="row">
                                     <div class="col-lg-12 col-md-12">
                                         <div class="form-group">
-                                            <input type="password" name="email" class="form-control" required=""
+                                            <input type="password" name="old_password" class="form-control" required=""
                                                 data-error="Please enter your old password" placeholder="Old Password">
                                             <div class="help-block with-errors"></div>
                                         </div>
@@ -51,7 +58,7 @@
 
                                     <div class="col-lg-12 col-md-12">
                                         <div class="form-group">
-                                            <input type="password" name="passowrd" class="form-control" required=""
+                                            <input type="password" name="new_password" class="form-control" required=""
                                                 data-error="Please enter your New Password" placeholder="New Password">
                                             <div class="help-block with-errors"></div>
                                         </div>
@@ -59,16 +66,26 @@
 
                                     <div class="col-lg-12 col-md-12">
                                         <div class="form-group">
-                                            <input type="password" name="passowrd" class="form-control" required=""
-                                                data-error="Please enter your New Password"
+                                            <input type="password" name="new_password_confirmation" class="form-control"
+                                                required="" data-error="Please enter your New Password"
                                                 placeholder="Confirm New Password">
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
 
+                                    @if ($errors->any())
+                                        <div class="alert alert-danger">
+                                            <ul class="list-unstyled">
+                                                @foreach ($errors->all() as $error)
+                                                    <li>{{ $error }}</li>
+                                                @endforeach
+                                            </ul>
+                                        </div>
+                                    @endif
+
                                     <div class="col-lg-12 col-md-12 text-center">
                                         <button type="submit" class="default-btn disabled"
-                                            style="pointer-events: all; cursor: pointer;">Login<span></span></button>
+                                            style="pointer-events: all; cursor: pointer;">Change<span></span></button>
 
 
                                     </div>

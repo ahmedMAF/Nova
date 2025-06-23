@@ -31,7 +31,7 @@ class ProjectController extends Controller
             'description_ar' => 'required|string',
             'category' => 'required|exists:categories,id',
             'date' => 'required|date',
-            'link' => 'required|string',
+            'link' => 'string',
             'image' => 'required|image|mimes:jpeg,png,jpg,gif',
             'photo.*' => 'image|mimes:jpeg,png,jpg,gif',
             'video.*' => 'url',
@@ -48,7 +48,8 @@ class ProjectController extends Controller
         }
         if ($request->has('video')) {
             foreach ($request->input('video') as $video) {
-                $videos[] = $video;
+                $index = strpos($video , 'v=');
+                $videos[] = substr($video, $index + 2);
             }
         }
 

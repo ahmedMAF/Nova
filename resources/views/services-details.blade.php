@@ -238,41 +238,13 @@
                         <div class="sidebar-widget">
                             <h3 class="widget-title">Other Services</h3>
                             <div class="other-services">
-                                <div class="single-service mb-3 px-2">
-                                    <a href="#" class="d-flex align-items-center">
-                                        <h5>Mobile App Development</h5>
-                                    </a>
-                                </div>
-                                <div class="single-service mb-3">
-                                    <a href="#" class="d-flex align-items-center px-2">
-                                        <h5>UI/UX Design</h5>
-                                    </a>
-                                </div>
-                                <div class="single-service mb-3">
-                                    <a href="#" class="d-flex align-items-center px-2">
-                                        <h5>Digital Marketing</h5>
-                                    </a>
-                                </div>
-                                <div class="single-service mb-3">
-                                    <a href="#" class="d-flex align-items-center px-2">
-                                        <h5>Digital Marketing</h5>
-                                    </a>
-                                </div>
-                                <div class="single-service mb-3">
-                                    <a href="#" class="d-flex align-items-center px-2">
-                                        <h5>Digital Marketing</h5>
-                                    </a>
-                                </div>
-                                <div class="single-service mb-3">
-                                    <a href="#" class="d-flex align-items-center px-2">
-                                        <h5>Digital Marketing</h5>
-                                    </a>
-                                </div>
-                                <div class="single-service mb-3">
-                                    <a href="#" class="d-flex align-items-center px-2">
-                                        <h5>Digital Marketing</h5>
-                                    </a>
-                                </div>
+                                @foreach ($services as $s)
+                                    <div class="single-service mb-3 px-2">
+                                        <a href="{{route('service_details' , $s->id)}}" class="d-flex align-items-center">
+                                            <h5>{{ $s->name }}</h5>
+                                        </a>
+                                    </div>
+                                @endforeach
                             </div>
                         </div>
                     </div>

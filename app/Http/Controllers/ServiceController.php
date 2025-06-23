@@ -61,6 +61,7 @@ class ServiceController extends Controller
 
     public function details($serviceId){
         $service = Service::find($serviceId);
-        return view('services-details' , ["service" => $service]);
+        $services = Service::select('name' , 'id')->get();
+        return view('services-details' , ["service" => $service, "services" => $services]);
     }
 }

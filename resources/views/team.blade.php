@@ -68,21 +68,47 @@
                 <p></p>
             </div>
 
-            <div class="row justify-content-center">
-                @foreach ($members as $member)
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="single-team-card">
-                            <div class="team-image" data-tilt="">
-                                <img src="{{asset('storage/' . $member->image)}}" alt="image">
+            @if(session('is_admin'))
+                <div class="row justify-content-center">
+                    @foreach ($members as $member)
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="single-team-card">
+                                <div class="team-image" data-tilt="">
+                                    <img src="{{asset('storage/' . $member->image)}}" alt="image">
+                                </div>
+                                <div class="team-content">
+                                    <h3>{{$member->name}}</h3>
+                                    <span>{{$member->role}}</span>
+                                </div>
                             </div>
-                            <div class="team-content">
-                                <h3>{{$member->name}}</h3>
-                                <span>{{$member->role}}</span>
+                            <div>
+                                <a href="{{ route('edit_member', $member->id) }}" class="btn btn-warning">Edit</a>
+                                <form action="{{ route('delete_member', $member->id) }}" method="POST" style="display: inline;">
+                                    @csrf
+                                    @method('DELETE')
+                                    <button type="submit" class="btn btn-danger">Delete</button>
+                                </form>
                             </div>
                         </div>
-                    </div>
-                @endforeach
-            </div>
+                    @endforeach
+                </div>
+            @else
+                <div class="row justify-content-center">
+                    @foreach ($members as $member)
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="single-team-card">
+                                <div class="team-image" data-tilt="">
+                                    <img src="{{asset('storage/' . $member->image)}}" alt="image">
+                                </div>
+                                <div class="team-content">
+                                    <h3>{{$member->name}}</h3>
+                                    <span>{{$member->role}}</span>
+                                </div>
+                            </div>
+                        </div>
+                    @endforeach
+                </div>
+            @endif
         </div>
     </div>
     <!-- End Team Area -->

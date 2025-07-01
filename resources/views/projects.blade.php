@@ -44,24 +44,55 @@
                 <div class="col-lg-12 col-md-12">
                     <div class="row justify-content-center">
 
-                        @foreach ($projects as $project)
-                            <div class="col-lg-6 col-md-6">
-                                <div class="single-blog-card">
-                                    <div class="blog-image">
-                                        <a class="prevent" href="{{route('project_details' , $project->id)}}"><img src="{{asset('storage/' . $project->image)}}" alt="image"></a>
+                        @if (session('is_admin'))
+                            @foreach ($projects as $project)
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="single-blog-card">
+                                        <div class="blog-image">
+                                            <a class="prevent" href="{{route('project_details', $project->id)}}"><img
+                                                    src="{{asset('storage/' . $project->image)}}" alt="image"></a>
 
-                                        <div class="date">{{$project->date}}</div>
-                                    </div>
-                                    <div class="blog-content">
-                                        <h3>
-                                            <a class="prevent" href="#">{{$project->name}}</a>
-                                        </h3>
-                                        <p>{{$project->description}}</p>
-                                        <a href="{{route('project_details' , $project->id)}}" class="blog-btn show">View More</a>
+                                            <div class="date">{{$project->date}}</div>
+                                        </div>
+                                        <div class="blog-content">
+                                            <h3>
+                                                <a class="prevent" href="#">{{$project->name}}</a>
+                                            </h3>
+                                            <p>{{$project->description}}</p>
+                                            <a href="{{route('project_details', $project->id)}}" class="blog-btn show">View
+                                                More</a>
+                                        </div>
+                                        <a href="{{route('edit_project' , $project->id)}}">Edit</a>
+                                        <form action="{{route('delete_project' , $project->id)}}" method="POST">
+                                            @csrf
+                                            @method('DELETE')
+                                            <input type="submit" value="Delete">
+                                        </form>
                                     </div>
                                 </div>
-                            </div>
-                        @endforeach
+                            @endforeach
+                        @else
+                            @foreach ($projects as $project)
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="single-blog-card">
+                                        <div class="blog-image">
+                                            <a class="prevent" href="{{route('project_details', $project->id)}}"><img
+                                                    src="{{asset('storage/' . $project->image)}}" alt="image"></a>
+
+                                            <div class="date">{{$project->date}}</div>
+                                        </div>
+                                        <div class="blog-content">
+                                            <h3>
+                                                <a class="prevent" href="#">{{$project->name}}</a>
+                                            </h3>
+                                            <p>{{$project->description}}</p>
+                                            <a href="{{route('project_details', $project->id)}}" class="blog-btn show">View
+                                                More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            @endforeach
+                        @endif
 
                     </div>
                 </div>

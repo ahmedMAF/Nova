@@ -10,21 +10,25 @@ use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\TeamController;
 use App\Http\Middleware\Auth;
+use App\Http\Middleware\SetLocale;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', [HomeController::class, 'home'])->name('home');
-Route::get('/about', [AboutController::class, 'about'])->name('about');
-Route::get('/team', [TeamController::class, 'team'])->name('team');
-Route::get('/contact', [ContactController::class, 'contact'])->name('contact');
-Route::get('/projects', [ProjectController::class, 'projects'])->name('projects');
-Route::get('/project/details/{projectId}', [ProjectController::class, 'details'])->name('project_details');
-Route::get('/services', [ServiceController::class, 'services'])->name('services');
-Route::get('/service/details/{serviceId}', [ServiceController::class, 'details'])->name('service_details');
-Route::get('/admin/login', [LoginController::class, 'login'])->name('login');
-Route::post('/admin/login', [LoginController::class, 'validateLogin'])->name('validate_login');
-Route::get('/admin/logout', [LoginController::class, 'logout'])->name('logout');
+Route::middleware(SetLocale::class)->group(function () {
+    Route::get('/', [HomeController::class, 'home'])->name('home');
+    Route::get('/about', [AboutController::class, 'about'])->name('about');
+    Route::get('/team', [TeamController::class, 'team'])->name('team');
+    Route::get('/contact', [ContactController::class, 'contact'])->name('contact');
+    Route::get('/projects', [ProjectController::class, 'projects'])->name('projects');
+    Route::get('/project/details/{projectId}', [ProjectController::class, 'details'])->name('project_details');
+    Route::get('/services', [ServiceController::class, 'services'])->name('services');
+    Route::get('/service/details/{serviceId}', [ServiceController::class, 'details'])->name('service_details');
+    Route::get('/admin/login', [LoginController::class, 'login'])->name('login');
+    Route::post('/admin/login', [LoginController::class, 'validateLogin'])->name('validate_login');
+    Route::get('/admin/logout', [LoginController::class, 'logout'])->name('logout');
+});
 
-Route::middleware(Auth::class)->group(function () {
+
+Route::middleware([Auth::class , SetLocale::class])->group(function () {
     Route::get('/admin', [AdminController::class, 'admin'])->name('admin');
     Route::get('/admin/password', [LoginController::class, 'change'])->name('change');
     Route::post('/admin/password', [LoginController::class, 'changePassword'])->name('change_password');
@@ -47,3 +51,14 @@ Route::middleware(Auth::class)->group(function () {
     Route::post('/admin/edit/service/{id}', [ServiceController::class, 'updateService'])->name('update_service');
     Route::delete('/admin/delete/service/{id}', [ServiceController::class, 'deleteService'])->name('delete_service');
 });
+
+
+Route::get('/change-language', function () {
+    $current = session('locale', app()->getLocale());
+    $new = $current === 'ar' ? 'en' : 'ar';
+
+    session(['locale' => $new]);
+    app()->setLocale($new);
+
+    return redirect()->back();
+})->name('change_language');

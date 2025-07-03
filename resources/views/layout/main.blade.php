@@ -105,7 +105,7 @@
                                     </li>
                                 @endif
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">
+                                    <a href="{{route('change_language')}}" class="nav-link">
                                         <i style="font-size: 18px" class="ri-global-line"></i>
                                         <span class="language-text">EN/AR</span>
                                     </a>

@@ -10,7 +10,7 @@
         <div class="container">
             <div class="page-banner-content aos-init aos-animate" data-aos="fade-right" data-aos-delay="50"
                 data-aos-duration="500" data-aos-once="true">
-                <h2 style="color: white">{{ __('about.abouts') }}</h2>
+                <h2 style="color: white">{{ __('about.about') }}</h2>
 
                 <ul>
                     <li>

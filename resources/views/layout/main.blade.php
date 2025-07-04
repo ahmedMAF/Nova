@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- saved from url=(0024)https://auratechs.com/en -->
-<html lang="en" dir="ltr" class="theme-light">
+<html lang="{{ app()->getLocale() }}" dir="{{ __('app.dir') }}" class="theme-light">
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -79,35 +79,35 @@
                             style="display: block">
                             <ul class="navbar-nav ms-auto">
                                 <li class="nav-item">
-                                    <a href="{{route('home')}}" class="nav-link">Home</a>
+                                    <a href="{{route('home')}}" class="nav-link">{{ __('main.home') }}</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="{{route('about')}}" class="nav-link">About</a>
+                                    <a href="{{route('about')}}" class="nav-link">{{ __('main.about') }}</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="{{route('services')}}" class="nav-link">Services</a>
+                                    <a href="{{route('services')}}" class="nav-link">{{ __('main.services') }}</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="{{route('team')}}" class="nav-link">Team</a>
+                                    <a href="{{route('team')}}" class="nav-link">{{ __('main.team') }}</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="{{route('projects')}}" class="nav-link">Projects</a>
+                                    <a href="{{route('projects')}}" class="nav-link">{{ __('main.projects') }}</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="{{route('contact')}}" class="nav-link">Contact</a>
+                                    <a href="{{route('contact')}}" class="nav-link">{{ __('main.contact') }}</a>
                                 </li>
                                 @if (session('is_admin'))
                                     <li class="nav-item">
-                                        <a href="{{route('admin')}}" class="nav-link">Admin</a>
+                                        <a href="{{route('admin')}}" class="nav-link">{{ __('main.admin') }}</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="{{route('logout')}}" class="nav-link">Logout</a>
+                                        <a href="{{route('logout')}}" class="nav-link">{{ __('main.logout') }}</a>
                                     </li>
                                 @endif
                                 <li class="nav-item">
                                     <a href="{{route('change_language')}}" class="nav-link">
                                         <i style="font-size: 18px" class="ri-global-line"></i>
-                                        <span class="language-text">EN/AR</span>
+                                        <span class="language-text">{{ __('main.enar') }}</span>
                                     </a>
                                 </li>
                             </ul>
@@ -204,15 +204,15 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="single-footer-widget ps-5 aos-init" data-aos="fade-up" data-aos-delay="60"
                         data-aos-duration="600" data-aos-once="true">
-                        <h3>Links</h3>
+                        <h3>{{ __('main.links') }}</h3>
 
                         <ul class="quick-links">
-                            <li><a href="../html/index.html">Home</a></li>
-                            <li><a href="../html/about.html">About Us</a></li>
+                            <li><a href="../html/index.html">{{ __('main.home') }}</a></li>
+                            <li><a href="../html/about.html">{{ __('main.about') }}</a></li>
                             <li>
-                                <a href="../html/services.html">Services</a>
+                                <a href="../html/services.html">{{ __('main.services') }}</a>
                             </li>
-                            <li><a href="../html/team.html">Team</a></li>
+                            <li><a href="../html/team.html">{{ __('main.team') }}</a></li>
                         </ul>
                     </div>
                 </div>
@@ -220,13 +220,13 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="single-footer-widget ps-5 aos-init" data-aos="fade-up" data-aos-delay="70"
                         data-aos-duration="700" data-aos-once="true">
-                        <h3>Pages</h3>
+                        <h3>{{ __('main.pages') }}</h3>
 
                         <ul class="quick-links">
                             <li>
-                                <a href="../html/projects.html">Projects</a>
+                                <a href="../html/projects.html">{{ __('main.projects') }}</a>
                             </li>
-                            <li><a href="../html/contact.html">Contact</a></li>
+                            <li><a href="../html/contact.html">{{ __('main.contact') }}</a></li>
                         </ul>
                     </div>
                 </div>

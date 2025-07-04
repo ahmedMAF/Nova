@@ -1,0 +1,26 @@
+<?php
+
+return [
+    'addProject' => 'Add Project',
+    'home' => 'Home',
+    'admin' => 'Admin',
+    'nameEn' => 'Name (English)',
+    'nameAr' => 'Name (Arabic)',
+    'nameErorr' => 'Please enter project name',
+    'clientEn' => 'Client Name (English)',
+    'clientAr' => 'Client Name (Arabic)',
+    'clientErorr' => 'Plase enter Client name',
+    'descriptionEn' => 'Description (English)',
+    'descriptionAr' => 'Description (Arabic)',
+    'descriptionErorr' => 'Please enter project description',
+    'select' => 'Please select Catogary',
+    'projectDate' => 'Project Date',
+    'projectDateErorr' => 'Please enter project date',
+    'projectPhoto' => 'Project Photo',
+    'projectPhotoErorr' => 'Please enter project photo',
+    'link' => 'Link to Project',
+    'photos' => 'Add a photo',
+    'videos' => 'Add a video',
+    'add' => 'Add',
+    'videoUrl' => 'Video URL',
+];

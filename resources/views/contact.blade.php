@@ -10,13 +10,13 @@
         <div class="container">
             <div class="page-banner-content aos-init aos-animate" data-aos="fade-right" data-aos-delay="50"
                 data-aos-duration="500" data-aos-once="true">
-                <h2 style="color: white">Contact Us</h2>
+                <h2 style="color: white">{{ __('contact.contactUs') }}</h2>
 
                 <ul>
                     <li>
-                        <a href="../html/index.html">Home</a>
+                        <a href="../html/index.html">{{ __('contact.home') }}</a>
                     </li>
-                    <li>Contact</li>
+                    <li>{{ __('contact.contact') }}</li>
                 </ul>
             </div>
         </div>
@@ -35,7 +35,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-3 col-md-6">
                     <div class="overview-card">
-                        <h3>Call Us</h3>
+                        <h3>{{ __('contact.call') }}</h3>
                         <span>
                             <a href="tel:9901234567">0597456498</a>
                         </span>
@@ -44,9 +44,9 @@
 
                 <div class="col-lg-3 col-md-6">
                     <div class="overview-card">
-                        <h3>Email Us</h3>
+                        <h3>{{ __('contact.email') }}</h3>
                         <span>
-                            <a href="../html/contact.html"><span style="margin: 0px;" class="__cf_email__"
+                            <a href="../html/contact.html"><span style="margin: 0px" class="__cf_email__"
                                     data-cfemail="650d0c060a1f00250208040c094b060a08">nova.integrated.solutions@gmail.com</span></a>
                         </span>
                     </div>
@@ -54,7 +54,7 @@
 
                 <div class="col-lg-3 col-md-6">
                     <div class="overview-card">
-                        <h3>Tech Support</h3>
+                        <h3>{{ __('contact.support') }}</h3>
                         <span>
                             <a href="tel:15143125678">0597456498</a>
                         </span>
@@ -63,8 +63,8 @@
 
                 <div class="col-lg-3 col-md-6">
                     <div class="overview-card">
-                        <h3>Visit Us</h3>
-                        <span>Palestine Gaza Khanyounis</span>
+                        <h3>{{ __('contact.vist') }}</h3>
+                        <span>{{ __('contact.vistPart1') }}</span>
                     </div>
                 </div>
             </div>
@@ -78,13 +78,14 @@
             <div class="row align-items-center">
                 <div class="col-lg-8 col-md-12 m-auto">
                     <div class="talk-content margin-zero">
-                        <span>LET'S TALK</span>
-                        <h3>Contact<span class="overlay"
+                        <span>{{ __('contact.talk') }}</span>
+                        <h3>{{ __('contact.contact') }}<span class="overlay"
                                 style="transform-origin: left 50% 0px; transform: matrix(0, 0, 0, 1, 0, 0);"></span></h3>
                         <p></p>
-                        <p style="text-align: justify;">Whether you have a query about our services, or need any
-                            assistance, our team is ready to answer your questions. We’d love to hear from
-                            you.<br></p>
+                        <p style="text-align: justify;">
+                            {{ __('contact.talkPart1') }}
+                            <br>
+                        </p>
                         <p class="MsoNormal"
                             style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; direction: ltr; unicode-bidi: embed;">
                             <o:p></o:p>
@@ -98,7 +99,7 @@
                                     <div class="col-lg-6 col-md-6">
                                         <div class="form-group">
                                             <input type="text" name="name" class="form-control" required=""
-                                                data-error="Please enter your name" placeholder="Your name">
+                                                data-error="Please enter your name" placeholder="{{ __('contact.name') }}">
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
@@ -106,7 +107,8 @@
                                     <div class="col-lg-6 col-md-6">
                                         <div class="form-group">
                                             <input type="email" name="email" class="form-control" required=""
-                                                data-error="Please enter your email" placeholder="Your email address">
+                                                data-error="Please enter your email"
+                                                placeholder="{{ __('contact.yourEmail') }}">
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
@@ -115,14 +117,14 @@
                                         <div class="form-group">
                                             <textarea name="message" class="form-control" cols="30" rows="6" required=""
                                                 data-error="Please enter your message"
-                                                placeholder="Write your message..."></textarea>
+                                                placeholder="{{ __('contact.message') }}"></textarea>
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
 
                                     <div class="col-lg-12 col-md-12">
                                         <button type="submit" class="default-btn disabled"
-                                            style="pointer-events: all; cursor: pointer;">Send Message<span></span></button>
+                                            style="pointer-events: all; cursor: pointer;">{{ __('contact.send') }}<span></span></button>
 
 
                                     </div>

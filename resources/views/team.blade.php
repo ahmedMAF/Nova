@@ -19,13 +19,13 @@
         <div class="container">
             <div class="page-banner-content aos-init aos-animate" data-aos="fade-right" data-aos-delay="50"
                 data-aos-duration="500" data-aos-once="true">
-                <h2 style="color: white">Team</h2>
+                <h2 style="color: white">{{ __('team.team') }}</h2>
 
                 <ul>
                     <li>
-                        <a href="../html/index.html">Home</a>
+                        <a href="../html/index.html">{{ __('team.home') }}</a>
                     </li>
-                    <li>Team</li>
+                    <li>{{ __('team.team') }}</li>
                 </ul>
             </div>
         </div>
@@ -42,22 +42,20 @@
     <div class="team-area pt-100 pb-75">
         <div class="container">
             <div class="section-title section-style-two">
-                <span>TEAM MEMBER</span>
-                <h2>Our Team<span class="overlay"
+                <span>{{ __('team.member') }}</span>
+                <h2>{{ __('team.ourTeam') }}<span class="overlay"
                         style="transform-origin: left 50% 0px; transform: matrix(0, 0, 0, 1, 0, 0);"></span></h2>
                 <p></p>
                 <div style="text-align: justify; ">
-                    <p class="MsoNormal">NOVA believes that human resources are the pillars of any strong company. This is
-                        the
-                        primary
-                        reason that we employ only the best minds.</p>
-                    <p class="MsoNormal">The NOVA team is enthusiastic, cooperative and perceptive. The team members are
-                        dedicated
-                        people and reliable partners for providing IT services and solutions.
+                    <p class="MsoNormal">
+                        {{ __('team.ourTeamPart1') }}
                     </p>
-                    <p class="MsoNormal">We have a team of professionals, where all the members work collaboratively and
-                        passionately
-                        to achieve significant results and together overcome business challenges.</p>
+                    <p class="MsoNormal">
+                        {{ __('team.ourTeamPart2') }}
+                    </p>
+                    <p class="MsoNormal">
+                        {{ __('team.ourTeamPart3') }}
+                    </p>
                     <p class="MsoNormal">
                         <o:p></o:p>
                     </p>
@@ -82,11 +80,11 @@
                                 </div>
                             </div>
                             <div>
-                                <a href="{{ route('edit_member', $member->id) }}" class="btn btn-warning">Edit</a>
+                                <a href="{{ route('edit_member', $member->id) }}" class="btn btn-warning">{{ __('team.edit') }}</a>
                                 <form action="{{ route('delete_member', $member->id) }}" method="POST" style="display: inline;">
                                     @csrf
                                     @method('DELETE')
-                                    <button type="submit" class="btn btn-danger">Delete</button>
+                                    <button type="submit" class="btn btn-danger">{{ __('team.delete') }}</button>
                                 </form>
                             </div>
                         </div>
@@ -119,7 +117,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-3 col-md-6">
                     <div class="overview-card">
-                        <h3>Call Us</h3>
+                        <h3>{{ __('contact.call') }}</h3>
                         <span>
                             <a href="tel:9901234567">0597456498</a>
                         </span>
@@ -128,9 +126,9 @@
 
                 <div class="col-lg-3 col-md-6">
                     <div class="overview-card">
-                        <h3>Email Us</h3>
+                        <h3>{{ __('contact.email') }}</h3>
                         <span>
-                            <a href="../html/contact.html"><span style="margin: 0px;" class="__cf_email__"
+                            <a href="../html/contact.html"><span style="margin: 0px" class="__cf_email__"
                                     data-cfemail="650d0c060a1f00250208040c094b060a08">nova.integrated.solutions@gmail.com</span></a>
                         </span>
                     </div>
@@ -138,7 +136,7 @@
 
                 <div class="col-lg-3 col-md-6">
                     <div class="overview-card">
-                        <h3>Tech Support</h3>
+                        <h3>{{ __('contact.support') }}</h3>
                         <span>
                             <a href="tel:15143125678">0597456498</a>
                         </span>
@@ -147,8 +145,8 @@
 
                 <div class="col-lg-3 col-md-6">
                     <div class="overview-card">
-                        <h3>Visit Us</h3>
-                        <span>Palestine Gaza Khanyounis</span>
+                        <h3>{{ __('contact.vist') }}</h3>
+                        <span>{{ __('contact.vistPart1') }}</span>
                     </div>
                 </div>
             </div>

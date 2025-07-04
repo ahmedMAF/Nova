@@ -19,12 +19,10 @@
                                     <div class="col-lg-7 col-md-12">
                                         <div class="main-slides-content">
                                             <span data-aos="fade-right" data-aos-delay="70" data-aos-duration="700"
-                                                data-aos-once="true" class="aos-init aos-animate">WE ARE A LEADING COMPANY
-                                                IN INNOVATIVE TECHNOLOGY
-                                                SOLUTIONS</span>
+                                                data-aos-once="true" class="aos-init aos-animate">{{ __('home.h') }}</span>
                                             <h1 data-aos="fade-right" data-aos-delay="70" data-aos-duration="700"
                                                 data-aos-once="true" class="aos-init aos-animate">
-                                                IoT Solutions for a Smarter World
+                                                {{ __('home.iot') }}
                                                 <span class="overlay" style="
                                                       transform-origin: left 50% 0px;
                                                       transform: matrix(0, 0, 0, 1, 0, 0);
@@ -32,14 +30,12 @@
                                             </h1>
                                             <p data-aos="fade-right" data-aos-delay="70" data-aos-duration="700"
                                                 data-aos-once="true" class="aos-init aos-animate">
-                                                Make your life easier and more connected with Internet
-                                                of Things technologies that allow you to control
-                                                everything through a single network.
+                                                {{ __('home.iotPart1') }}
                                             </p>
 
                                             <div class="slides-btn aos-init" data-aos="fade-right" data-aos-delay="70"
                                                 data-aos-duration="700" data-aos-once="true">
-                                                <a href="../html/contact.html" class="default-btn">Get Started</a>
+                                                <a href="../html/contact.html" class="default-btn">{{ __('home.getStarted') }}</a>
                                             </div>
                                         </div>
                                     </div>
@@ -62,13 +58,10 @@
                                     <div class="col-lg-7 col-md-12">
                                         <div class="main-slides-content">
                                             <span data-aos="fade-right" data-aos-delay="70" data-aos-duration="700"
-                                                data-aos-once="true" class="aos-init aos-animate">WE ARE A LEADING COMPANY
-                                                IN INNOVATIVE TECHNOLOGY
-                                                SOLUTIONS
-                                            </span>
+                                                data-aos-once="true" class="aos-init aos-animate">{{ __('home.h') }}</span>
                                             <h1 data-aos="fade-right" data-aos-delay="70" data-aos-duration="700"
                                                 data-aos-once="true" class="aos-init aos-animate">
-                                                AI-Powered Innovations
+                                                {{ __('home.ai') }}
                                                 <span class="overlay" style="
                                                       transform-origin: left 50% 0px;
                                                       transform: matrix(0, 0, 0, 1, 0, 0);
@@ -78,10 +71,7 @@
                                                 data-aos-once="true" class="aos-init aos-animate"></p>
                                             <div>
                                                 <p class="MsoNormal">
-                                                    Leverage the power of artificial intelligence to
-                                                    enhance your business operations and achieve
-                                                    remarkable results in ways that were previously
-                                                    impossible.
+                                                    {{ __('home.aiPart1') }}
                                                     <br />
                                                 </p>
                                             </div>
@@ -89,7 +79,7 @@
 
                                             <div class="slides-btn aos-init" data-aos="fade-right" data-aos-delay="70"
                                                 data-aos-duration="700" data-aos-once="true">
-                                                <a href="../html/contact.html" class="default-btn">Get Started</a>
+                                                <a href="../html/contact.html" class="default-btn">{{ __('home.getStarted') }}</a>
                                             </div>
                                         </div>
                                     </div>
@@ -112,13 +102,10 @@
                                     <div class="col-lg-7 col-md-12">
                                         <div class="main-slides-content">
                                             <span data-aos="fade-right" data-aos-delay="70" data-aos-duration="700"
-                                                data-aos-once="true" class="aos-init aos-animate">WE ARE A LEADING COMPANY
-                                                IN INNOVATIVE TECHNOLOGY
-                                                SOLUTIONS
-                                            </span>
+                                                data-aos-once="true" class="aos-init aos-animate">{{ __('home.h') }}</span>
                                             <h1 data-aos="fade-right" data-aos-delay="70" data-aos-duration="700"
                                                 data-aos-once="true" class="aos-init aos-animate">
-                                                Web, Mobile, and Desktop Development
+                                                {{ __('home.programin') }}
                                                 <span class="overlay" style="
                                                       transform: matrix(0, 0, 0, 1, 0, 0);
                                                       transform-origin: right 50% 0px;
@@ -126,14 +113,12 @@
                                             </h1>
                                             <p data-aos="fade-right" data-aos-delay="70" data-aos-duration="700"
                                                 data-aos-once="true" class="aos-init aos-animate">
-                                                We provide customized digital solutions that combine
-                                                high performance with attractive design, delivering an
-                                                exceptional user experience.
+                                                {{ __('home.programinPart1') }}
                                             </p>
 
                                             <div class="slides-btn aos-init" data-aos="fade-right" data-aos-delay="70"
                                                 data-aos-duration="700" data-aos-once="true">
-                                                <a href="../html/contact.html" class="default-btn">Get Started</a>
+                                                <a href="../html/contact.html" class="default-btn">{{ __('home.getStarted') }}</a>
                                             </div>
                                         </div>
                                     </div>
@@ -156,13 +141,10 @@
                                     <div class="col-lg-7 col-md-12">
                                         <div class="main-slides-content">
                                             <span data-aos="fade-right" data-aos-delay="70" data-aos-duration="700"
-                                                data-aos-once="true" class="aos-init aos-animate">WE ARE A LEADING COMPANY
-                                                IN INNOVATIVE TECHNOLOGY
-                                                SOLUTIONS
-                                            </span>
+                                                data-aos-once="true" class="aos-init aos-animate">{{ __('home.h') }}</span>
                                             <h1 data-aos="fade-right" data-aos-delay="70" data-aos-duration="700"
                                                 data-aos-once="true" class="aos-init aos-animate">
-                                                Empowering Minds Through Training
+                                                {{ __('home.coures') }}
                                                 <span class="overlay" style="
                                                       transform: matrix(0, 0, 0, 1, 0, 0);
                                                       transform-origin: right 50% 0px;
@@ -172,9 +154,7 @@
                                                 data-aos-once="true" class="aos-init aos-animate"></p>
                                             <div style="">
                                                 <p class="MsoNormal">
-                                                    Invest in your future and learn the most in-demand
-                                                    tech skills with training courses designed to
-                                                    maximize your potential.
+                                                    {{ __('home.couresPart1') }}
                                                     <br />
                                                 </p>
                                             </div>
@@ -182,7 +162,7 @@
 
                                             <div class="slides-btn aos-init" data-aos="fade-right" data-aos-delay="70"
                                                 data-aos-duration="700" data-aos-once="true">
-                                                <a href="../html/contact.html" class="default-btn">Get Started</a>
+                                                <a href="../html/contact.html" class="default-btn">{{ __('home.getStarted') }}</a>
                                             </div>
                                         </div>
                                     </div>
@@ -242,9 +222,10 @@
                 <div class="col-lg-6 col-md-12">
                     <div class="about-content aos-init" data-aos="fade-up" data-aos-delay="80" data-aos-duration="800"
                         data-aos-once="true">
-                        <span>WHO WE ARE</span>
+                        <span>{{ __('about.who') }}</span>
                         <h3>
-                            What We Do<span class="overlay" style="
+                            {{ __('about.what') }}
+                            <span class="overlay" style="
                                     transform-origin: left 50% 0px;
                                     transform: matrix(0, 0, 0, 1, 0, 0);
                                   "></span>
@@ -262,27 +243,15 @@
                                   direction: ltr;
                                   unicode-bidi: embed;
                                 ">
-                            At NOVA, we dedicate our efforts to turning ideas into reality
-                            through innovative technological solutions. Our expertise
-                            includes developing websites, mobile applications, and desktop
-                            applications, ensuring that every project is designed to meet
-                            the unique needs of our clients. We harness the power of
-                            artificial intelligence (AI) in our projects to enhance
-                            efficiency and improve decision-making, providing customized
-                            solutions that analyze data and help create effective
-                            strategies. We also implement Internet of Things (IoT) projects
-                            that create interconnected environments, allowing you to control
-                            devices and exchange information seamlessly. Additionally, we
-                            empower the next generation of innovators through comprehensive
-                            training programs that equip them with the skills needed to
-                            excel in a rapidly evolving digital world. With NOVA, your
-                            vision becomes our mission!<font face="Open Sans, sans-serif"><span style="font-size: 12pt">
+                                {{ __('about.whatWeDo') }}
+                                
+                                <font face="Open Sans, sans-serif"><span style="font-size: 12pt">
                                     <o:p></o:p>
                                 </span></font>
                         </p>
                         <p></p>
                         <div class="about-btn">
-                            <a href="../html/about.html" class="default-btn">Know More About Us</a>
+                            <a href="../html/about.html" class="default-btn">{{ __('home.knowAbout') }}</a>
                         </div>
                     </div>
                 </div>
@@ -297,10 +266,11 @@
                 <div class="col-lg-4 col-md-12">
                     <div class="services-section-content aos-init" data-aos="fade-down" data-aos-delay="80"
                         data-aos-duration="800" data-aos-once="true">
-                        <div class="services-bg-text">SERVICES</div>
-                        <span>SERVICES</span>
+                        <div class="services-bg-text">{{ __('service.services') }}</div>
+                        <span>{{ __('service.services') }}</span>
                         <h3>
-                            Our Services<span class="overlay" style="
+                            {{ __('service.oureServices') }}
+                            <span class="overlay" style="
                                 transform-origin: left 50% 0px;
                                 transform: matrix(0, 0, 0, 1, 0, 0);
                               "></span>
@@ -332,9 +302,8 @@
                                 direction: ltr;
                                 unicode-bidi: embed;
                               ">
-                                We offer individuals and companies locally and across global
-                                market a full range of services We seek to offer your company
-                                the very best solution in each category.<font face="Open Sans, sans-serif"><span
+                              {{ __('service.oureServicesPart1') }}
+                              <font face="Open Sans, sans-serif"><span
                                         style="font-size: 12pt">
                                         <o:p></o:p>
                                     </span></font>
@@ -348,7 +317,7 @@
                         <p></p>
                         <p></p>
                         <div class="services-section-btn">
-                            <a href="../html/services.html" class="default-btn">Explore All Services</a>
+                            <a href="../html/services.html" class="default-btn">{{ __('home.exploreService') }}</a>
                         </div>
                     </div>
                 </div>
@@ -493,9 +462,10 @@
     <div class="choose-area pt-100 pb-75">
         <div class="container">
             <div class="section-title">
-                <span>WHY CHOOSE US</span>
+                <span>{{ __('about.shoose') }}</span>
                 <h2>
-                    We Help You To Increase Your Sale Through Solutions<span class="overlay" style="
+                    {{ __('about.shoosePart1') }}
+                    <span class="overlay" style="
                         transform-origin: left 50% 0px;
                         transform: matrix(0, 0, 0, 1, 0, 0);
                       "></span>
@@ -513,7 +483,8 @@
                         direction: ltr;
                         unicode-bidi: embed;
                       ">
-                        Everything we do is aligned with these values<font face="Open Sans, sans-serif"><span
+                      {{ __('about.shoosePart2') }}
+                        <font face="Open Sans, sans-serif"><span
                                 style="font-size: 12pt">
                                 <o:p></o:p>
                             </span></font>
@@ -532,13 +503,11 @@
                         </div>
                         <div class="choose-content">
                             <h3>
-                                <a href="../html/index.html">Excellence</a>
+                                <a href="../html/index.html">{{ __('about.excellence') }}</a>
                             </h3>
                             <p></p>
                             <div style="text-align: justify">
-                                Excellence in Execution, We believe in performing at the
-                                highest level of quality and professionalism in all aspects of
-                                the company
+                                {{ __('about.excellencePart1') }}
                             </div>
                             <p></p>
                         </div>
@@ -553,13 +522,11 @@
                         </div>
                         <div class="choose-content">
                             <h3>
-                                <a href="../html/index.html">Commitment</a>
+                                <a href="../html/index.html">{{ __('about.commitment') }}</a>
                             </h3>
                             <p></p>
                             <div style="text-align: justify">
-                                Being committed to our work means being committed to our
-                                customers. Our commitment shines through in our day-to-day
-                                business.
+                                {{ __('about.commitmentPart1') }}
                             </div>
                             <p></p>
                         </div>
@@ -574,12 +541,11 @@
                         </div>
                         <div class="choose-content">
                             <h3>
-                                <a href="../html/index.html">Teamwork</a>
+                                <a href="../html/index.html">{{ __('about.teamwork') }}</a>
                             </h3>
                             <p></p>
                             <div style="text-align: justify">
-                                We are one company, one team, focusing on our customers’
-                                success
+                                {{ __('about.teamworkPart1') }}
                             </div>
                             <p></p>
                         </div>
@@ -594,12 +560,11 @@
                         </div>
                         <div class="choose-content">
                             <h3>
-                                <a href="../html/index.html">Creativity</a>
+                                <a href="../html/index.html">{{ __('about.creativity') }}</a>
                             </h3>
                             <p></p>
                             <div style="text-align: justify">
-                                Creativity is a core value, effective Creativity sets higher
-                                goals and finds ways to meet them
+                                {{ __('about.creativityPart1') }}
                             </div>
                             <p></p>
                         </div>
@@ -614,12 +579,11 @@
                         </div>
                         <div class="choose-content">
                             <h3>
-                                <a href="../html/index.html">Passion</a>
+                                <a href="../html/index.html">{{ __('about.passion') }}</a>
                             </h3>
                             <p></p>
                             <div style="text-align: justify">
-                                We exhibit passion in everything we&nbsp; do in order to
-                                exceed the highest&nbsp; expectations of our customers.
+                                {{ __('about.passionPart1') }}
                             </div>
                             <p></p>
                         </div>
@@ -634,12 +598,11 @@
                         </div>
                         <div class="choose-content">
                             <h3>
-                                <a href="../html/index.html">Integrity</a>
+                                <a href="../html/index.html">{{ __('about.integrity') }}</a>
                             </h3>
                             <p></p>
                             <div style="text-align: justify">
-                                Being whole and undivided, Integrity&nbsp; is the defining
-                                quality of our people&nbsp; and our work.
+                                {{ __('about.integrityPart1') }}
                             </div>
                             <p></p>
                         </div>
@@ -654,12 +617,11 @@
                         </div>
                         <div class="choose-content">
                             <h3>
-                                <a href="../html/index.html">Innovation</a>
+                                <a href="../html/index.html">{{ __('about.innovation') }}</a>
                             </h3>
                             <p></p>
                             <div style="text-align: justify">
-                                We have the mentality of continuous&nbsp; improvement and
-                                development of&nbsp; new products and services
+                                {{ __('about.innovationPart1') }}
                             </div>
                             <div></div>
                             <p></p>
@@ -675,12 +637,11 @@
                         </div>
                         <div class="choose-content">
                             <h3>
-                                <a href="../html/index.html">Quality</a>
+                                <a href="../html/index.html">{{ __('about.quality') }}</a>
                             </h3>
                             <p></p>
                             <div style="text-align: justify">
-                                What we do, we do well,We’re committed to providing the best
-                                customer service possible.
+                                {{ __('about.qualityPart1') }}
                             </div>
                             <p></p>
                         </div>
@@ -694,16 +655,18 @@
     <div class="projects-area with-black-background pb-75">
         <div class="container">
             <div class="section-title">
-                <span>PROJECTS</span>
+                <span>{{ __('project.projetc') }}</span>
                 <h2>
-                    Our Latest Projects<span class="overlay" style="
+                    {{ __('home.ourProjetcs') }}
+                    <span class="overlay" style="
                     transform-origin: left 50% 0px;
                     transform: matrix(0, 0, 0, 1, 0, 0);
                   "></span>
                 </h2>
                 <p></p>
                 <p class="MsoNormal" style="line-height: 150%">
-                    Our Latest Projects<br />
+                    {{ __('home.ourProjetcs') }}
+                    <br />
                 </p>
                 <p class="MsoNormal" style="line-height: 150%">
                     <span lang="AR-JO" dir="RTL" style="

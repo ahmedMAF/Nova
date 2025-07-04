@@ -17,13 +17,13 @@
         <div class="container">
             <div class="page-banner-content aos-init aos-animate" data-aos="fade-right" data-aos-delay="50"
                 data-aos-duration="500" data-aos-once="true">
-                <h2 style="color: white">Login</h2>
+                <h2 style="color: white">{{ __('login.login') }}</h2>
 
                 <ul>
                     <li>
-                        <a href="../html/index.html">Home</a>
+                        <a href="../html/index.html">{{ __('login.home') }}</a>
                     </li>
-                    <li>Login</li>
+                    <li>{{ __('login.login') }}</li>
                 </ul>
             </div>
         </div>
@@ -48,7 +48,7 @@
                                     <div class="col-lg-12 col-md-12">
                                         <div class="form-group">
                                             <input type="email" name="email" class="form-control" required=""
-                                                data-error="Please enter your Email" placeholder="Email">
+                                                data-error="{{ __('login.emailErorr') }}" placeholder="{{ __('login.email') }}">
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
@@ -56,14 +56,14 @@
                                     <div class="col-lg-12 col-md-12">
                                         <div class="form-group">
                                             <input type="password" name="password" class="form-control" required=""
-                                                data-error="Please enter your Password" placeholder="Password">
+                                                data-error="{{ __('login.passwordErorr') }}" placeholder="{{ __('login.password') }}">
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
 
                                     <div class="col-lg-12 col-md-12 text-center">
                                         <button type="submit" class="default-btn disabled"
-                                            style="pointer-events: all; cursor: pointer;">Login<span></span></button>
+                                            style="pointer-events: all; cursor: pointer;">{{ __('login.login') }}<span></span></button>
 
 
                                     </div>

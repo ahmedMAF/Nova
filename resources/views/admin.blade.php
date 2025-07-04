@@ -17,13 +17,13 @@
         <div class="container">
             <div class="page-banner-content aos-init aos-animate" data-aos="fade-right" data-aos-delay="50"
                 data-aos-duration="500" data-aos-once="true">
-                <h2 style="color: white">Dashboard</h2>
+                <h2 style="color: white">{{ __('admin.dashbord') }}</h2>
 
                 <ul>
                     <li>
-                        <a href="../html/index.html">Home</a>
+                        <a href="../html/index.html">{{ __('admin.home') }}</a>
                     </li>
-                    <li>Dashboard</li>
+                    <li>{{ __('admin.dashbord') }}</li>
                 </ul>
             </div>
         </div>
@@ -39,25 +39,25 @@
     <section id="portfolio" class="portfolio section mt-5 pt-5">
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
-            <h2>Admin</h2>
-            <p>Easily manage every detail of the Smart Life website with complete control</p>
+            <h2>{{ __('admin.admin') }}</h2>
+            <p>{{ __('admin.adminPart1') }}</p>
         </div><!-- End Section Title -->
         <div class="container">
             <div class="row justify-content-center gy-5">
                 <div style="max-width: 220px;">
-                    <a href="{{route('admin_project')}}" class="default-btn">Add Project</a>
+                    <a href="{{route('admin_project')}}" class="default-btn">{{ __('admin.project') }}</a>
                 </div>
                 <div style="max-width: 220px;">
-                    <a href="{{route('admin_team')}}" class="default-btn">Add Member</a>
+                    <a href="{{route('admin_team')}}" class="default-btn">{{ __('admin.member') }}</a>
                 </div>
                 <div style="max-width: 220px;">
-                    <a href="{{route('admin_service')}}" class="default-btn">Add Service</a>
+                    <a href="{{route('admin_service')}}" class="default-btn">{{ __('admin.service') }}</a>
                 </div>
                 <div style="max-width: 220px;">
-                    <a href="{{route('admin_category')}}" class="default-btn">Add Category</a>
+                    <a href="{{route('admin_category')}}" class="default-btn">{{ __('admin.category') }}</a>
                 </div>
                 <div style="max-width: 220px;">
-                    <a href="{{route('change')}}" class="default-btn">password</a>
+                    <a href="{{route('change')}}" class="default-btn">{{ __('admin.password') }}</a>
                 </div>
             </div>
         </div>

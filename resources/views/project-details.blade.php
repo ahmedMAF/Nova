@@ -10,14 +10,14 @@
         <div class="container">
             <div class="page-banner-content aos-init aos-animate" data-aos="fade-right" data-aos-delay="50"
                 data-aos-duration="500" data-aos-once="true">
-                <h2 style="color: white">Project details</h2>
+                <h2 style="color: white">{{__('project-details.projectDetails')}}</h2>
 
                 <ul>
                     <li>
-                        <a href="#">Home</a>
+                        <a href="#">{{__('project-details.home')}}</a>
                     </li>
                     <li>
-                        <a href="#">Projects</a>
+                        <a href="#">{{__('project-details.projects')}}</a>
                     </li>
                     <li>{{$project->name}}</li>
                 </ul>
@@ -41,15 +41,15 @@
                         <div class="project-details-meta mb-5">
                             <ul class="list-unstyled d-flex flex-wrap align-items-center justify-content-between">
                                 <li>
-                                    <span>Date:</span>
+                                    <span>{{__('project-details.date')}}:</span>
                                     {{$project->date}}
                                 </li>
                                 <li>
-                                    <span>Category:</span>
+                                    <span>{{__('project-details.category')}}:</span>
                                     {{$project->category->name}}
                                 </li>
                                 <li>
-                                    <span>Client:</span>
+                                    <span>{{__('project-details.client')}}:</span>
                                     {{$project->client}}
                                 </li>
                             </ul>
@@ -64,7 +64,7 @@
                         <!-- Project Gallery -->
                         @if (json_decode($project->photos))
                             <div class="project-gallery mb-5">
-                                <h4 class="mb-4">Project Gallery</h4>
+                                <h4 class="mb-4">{{__('project-details.gallery')}}</h4>
                                 <div class="row">
                                     @foreach (json_decode($project->photos) as $photo)
                                         <div class="col-md-4 col-sm-6 col-12 mb-4">
@@ -87,7 +87,7 @@
                         <!-- Project Videos -->
                         @if (json_decode($project->videos))
                             <div class="project-videos mb-5">
-                                <h4 class="mb-4">Project Videos</h4>
+                                <h4 class="mb-4">{{__('project-details.videos')}}</h4>
                                 <div>
                                     <div>
                                         @foreach (json_decode($project->videos) as $video)
@@ -105,14 +105,14 @@
                         <!-- Project Links -->
                         @if ($project->link)
                             <div class="project-links">
-                                <h4 class="mb-4">Related Links</h4>
+                                <h4 class="mb-4">{{__('project-details.links')}}</h4>
                                 <div>
                                     <div>
                                         <div class="mx-auto link-item p-3 rounded-3 text-center"
                                             style="background-color: #f8f9fa; width: fit-content;">
                                             <a href="{{$project->link}}" target="_blank" class="d-flex align-items-center">
                                                 <i class="ri-external-link-line me-2"></i>
-                                                <span>Live Demo</span>
+                                                <span>{{__('project-details.live')}}</span>
                                             </a>
                                         </div>
                                     </div>

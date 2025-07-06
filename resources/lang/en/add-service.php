@@ -1,0 +1,26 @@
+<?php
+
+return [
+    'addService' => 'Add Service',
+    'home' => 'Home',
+    'admin' => 'Admin',
+    'nameEn' => 'Name (English)',
+    'nameAr' => 'Name (Arabic)',
+    'nameErorr' => 'Please enter service name',
+    'descriptionEn' => 'Description (English)',
+    'descriptionAr' => 'Description (Arabic)',
+    'descriptionErorr' => 'Please enter service description',
+    'deliveryTime' => 'Delivery Time Range',
+    'deliveryTimeErorr' => 'Please enter Delivery Time Rage',
+    'price' => 'Price Range',
+    'priceErorr' => 'Please enter Price Range',
+    'info' => 'Information',
+    'image' => 'Image',
+    'imageErorr' => 'Please uplode Image',
+    'addFeature' => 'Add a feature',
+    'feature' => 'Feature',
+    'add' => 'Add',
+    'editService' => 'Edit Service',
+    'save' => 'Save',
+    'features' => 'Features',
+];

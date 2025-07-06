@@ -18,16 +18,16 @@
         <div class="container">
             <div class="page-banner-content aos-init aos-animate" data-aos="fade-right" data-aos-delay="50"
                 data-aos-duration="500" data-aos-once="true">
-                <h2 style="color: white">Edit Project</h2>
+                <h2 style="color: white">{{__('add-project.editProject')}}</h2>
 
                 <ul>
                     <li>
-                        <a href="../html/index.html">Home</a>
+                        <a href="../html/index.html">{{__('add-project.home')}}</a>
                     </li>
                     <li>
-                        <a href="../html/index.html">Admin</a>
+                        <a href="../html/index.html">{{__('add-project.admin')}}</a>
                     </li>
-                    <li>Edit Project</li>
+                    <li>{{__('add-project.editProject')}}</li>
                 </ul>
             </div>
         </div>
@@ -53,7 +53,7 @@
                                     <div class="col-lg-12 col-md-12">
                                         <div class="form-group">
                                             <input type="text" name="name" class="form-control" required=""
-                                                data-error="Please enter project name" placeholder="Name (English)"
+                                                data-error="{{__('add-project.nameErorr')}}" placeholder="{{__('add-project.nameEn')}}"
                                                 value="{{ $project->name}}">
                                             <div class="help-block with-errors"></div>
                                         </div>
@@ -61,7 +61,7 @@
                                     <div class="col-lg-12 col-md-12">
                                         <div class="form-group">
                                             <input type="text" name="name_ar" class="form-control" required=""
-                                                data-error="Please enter project name" placeholder="Name (Arabic)"
+                                                data-error="{{__('add-project.nameErorr')}}" placeholder="{{__('add-project.nameAr')}}"
                                                 value="{{ $project->name_ar }}">
                                             <div class="help-block with-errors"></div>
                                         </div>
@@ -69,7 +69,7 @@
                                     <div class="col-lg-12 col-md-12">
                                         <div class="form-group">
                                             <input type="text" name="client" class="form-control" required=""
-                                                data-error="Please enter client name" placeholder="Client Name (English)"
+                                                data-error="{{__('add-project.clientErorr')}}" placeholder="{{__('add-project.clientEn')}}"
                                                 value="{{ $project->client }}">
                                             <div class="help-block with-errors"></div>
                                         </div>
@@ -77,7 +77,7 @@
                                     <div class="col-lg-12 col-md-12">
                                         <div class="form-group">
                                             <input type="text" name="client_ar" class="form-control" required=""
-                                                data-error="Please enter client name" placeholder="Client Name (Arabic)"
+                                                data-error="{{__('add-project.clientErorr')}}" placeholder="{{__('add-project.clientAr')}}"
                                                 value="{{ $project->client_ar }}">
                                             <div class="help-block with-errors"></div>
                                         </div>
@@ -85,23 +85,23 @@
                                     <div class="col-lg-12 col-md-12">
                                         <div class="form-group">
                                             <textarea name="description" class="form-control" cols="30" rows="6" required=""
-                                                data-error="Please enter project description"
-                                                placeholder="Description (English)">{{$project->description}}</textarea>
+                                                data-error="{{__('add-project.descriptionErorr')}}"
+                                                placeholder="{{__('add-project.descriptionEn')}}">{{$project->description}}</textarea>
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
                                     <div class="col-lg-12 col-md-12">
                                         <div class="form-group">
                                             <textarea name="description_ar" class="form-control" cols="30" rows="6"
-                                                required="" data-error="Please enter project description"
-                                                placeholder="Description (Arabic)">{{$project->description_ar}}</textarea>
+                                                required="" data-error="{{__('add-project.descriptionErorr')}}"
+                                                placeholder="{{__('add-project.descriptionAr')}}">{{$project->description_ar}}</textarea>
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
                                     <div class="col-lg-12 col-md-12">
                                         <div class="form-group">
                                             <select name="category" id="" required class="form-control select">
-                                                <option disabled selected>Please select Catogary</option>
+                                                <option disabled selected>{{__('add-project.select')}}</option>
                                                 @foreach ($categories as $category)
                                                     <option {{$category->id == $project->category_id ? "selected" : ""}}
                                                         value="{{ $category->id }}">{{ $category->name }}</option>
@@ -111,20 +111,20 @@
                                         </div>
                                     </div>
                                     <div class="col-lg-12 col-md-12">
-                                        <label class="pb-2 ps-2">Project Date</label>
+                                        <label class="pb-2 ps-2">{{__('add-project.projectDate')}}</label>
                                         <div class="form-group">
                                             <input type="date" name="date" class="form-control" required=""
-                                                data-error="Please enter project date" placeholder="Project Date"
+                                                data-error="{{__('add-project.projectDateErorr')}}" placeholder="{{__('add-project.projectDate')}}"
                                                 value="{{ $project->date }}">
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
 
                                     <div class="col-lg-12 col-md-12">
-                                        <label class="pb-2 ps-2">Project Photo</label>
+                                        <label class="pb-2 ps-2">{{__('add-project.projectPhoto')}}</label>
                                         <div class="form-group">
                                             <input type="file" name="image" class="form-control"
-                                                data-error="Please enter project photo">
+                                                data-error="{{__('add-project.projectPhotoErorr')}}">
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
@@ -132,12 +132,12 @@
                                     <div class="col-lg-12 col-md-12">
                                         <div class="form-group">
                                             <input type="text" name="link" class="form-control"
-                                                placeholder="link to project" value="{{ $project->link }}">
+                                                placeholder="{{__('add-project.link')}}" value="{{ $project->link }}">
                                         </div>
                                     </div>
 
                                     <div id="photo" class="col-lg-12 col-md-12">
-                                        <span style="cursor: pointer; font-size: 20px;">Add a photo</span>
+                                        <span style="cursor: pointer; font-size: 20px;">{{__('add-project.photos')}}</span>
                                         <span class="icon">+</span>
                                     </div>
                                     <div class="col-lg-12 col-md-12">
@@ -147,7 +147,7 @@
                                     </div>
 
                                     <div id="video" class="col-lg-12 col-md-12">
-                                        <span style="cursor: pointer; font-size: 20px;">Add a video</span>
+                                        <span style="cursor: pointer; font-size: 20px;">{{__('add-project.videos')}}</span>
                                         <span class="icon">+</span>
                                     </div>
                                     <div class="col-lg-12 col-md-12">
@@ -168,7 +168,7 @@
 
                                     <div class="col-lg-12 col-md-12 text-center">
                                         <button type="submit" class="default-btn disabled"
-                                            style="pointer-events: all; cursor: pointer;">Save<span></span></button>
+                                            style="pointer-events: all; cursor: pointer;">{{__('add-project.save')}}<span></span></button>
 
 
                                     </div>
@@ -179,7 +179,7 @@
                     <!-- Project Gallery -->
                     @if (json_decode($project->photos))
                         <div class="project-gallery mb-5">
-                            <h4 class="mb-4">Project Gallery</h4>
+                            <h4 class="mb-4">{{__('add-project.projectGallery')}}</h4>
                             <div class="row">
                                 @foreach (json_decode($project->photos) as $photo)
                                     <div class="col-md-4 col-sm-6 col-12 mb-4">
@@ -196,7 +196,7 @@
                                         <form action="{{route('delete_media', [$project->id, urlencode($photo), 'p'])}}" method="POST">
                                             @csrf
                                             @method('DELETE')
-                                            <input type="submit" value="delete" class="btn btn-danger mt-2">
+                                            <input type="submit" value="{{__('add-project.delete')}}" class="btn btn-danger mt-2">
                                         </form>
                                     </div>
                                 @endforeach
@@ -207,7 +207,7 @@
                     <!-- Project Videos -->
                     @if (json_decode($project->videos))
                         <div class="project-videos mb-5">
-                            <h4 class="mb-4">Project Videos</h4>
+                            <h4 class="mb-4">{{__('add-project.projectVideos')}}</h4>
                             <div>
                                 <div>
                                     @foreach (json_decode($project->videos) as $video)
@@ -218,7 +218,7 @@
                                             <form action="{{route('delete_media', [$project->id, $video, 'v'])}}" method="POST">
                                                 @csrf
                                                 @method('DELETE')
-                                                <input type="submit" value="delete" class="btn btn-danger mt-2">
+                                                <input type="submit" value="{{__('add-project.delete')}}" class="btn btn-danger mt-2">
                                             </form>
                                         </div>
                                     @endforeach
@@ -253,7 +253,7 @@
             let input = document.createElement('input');
             input.type = 'text';
             input.name = 'video[]';
-            input.placeholder = 'Video URL';
+            input.placeholder = '{{__("add-project.videoUrl")}}';
             input.className = 'form-control mb-2';
             conVideo.appendChild(input);
             v++;

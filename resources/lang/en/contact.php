@@ -15,4 +15,7 @@ return [
     'yourEmail' => 'Your Email Address',
     'message' => 'Write Your Message...',
     'send' => 'Send Message',
+    'nameErorr' => 'Please enter your name',
+    'emailErorr' => 'Please enter your email',
+    'messageErorr' => 'Please enter your message',
 ];

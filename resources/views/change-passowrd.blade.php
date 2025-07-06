@@ -17,16 +17,16 @@
         <div class="container">
             <div class="page-banner-content aos-init aos-animate" data-aos="fade-right" data-aos-delay="50"
                 data-aos-duration="500" data-aos-once="true">
-                <h2 style="color: white">Change Password</h2>
+                <h2 style="color: white">{{__('password.changePassword')}}</h2>
 
                 <ul>
                     <li>
-                        <a href="../html/index.html">Home</a>
+                        <a href="../html/index.html">{{__('password.home')}}</a>
                     </li>
                     <li>
-                        <a href="../html/index.html">Admin</a>
+                        <a href="../html/index.html">{{__('password.admin')}}</a>
                     </li>
-                    <li>Change Password</li>
+                    <li>{{__('password.changePassword')}}</li>
                 </ul>
             </div>
         </div>
@@ -51,7 +51,7 @@
                                     <div class="col-lg-12 col-md-12">
                                         <div class="form-group">
                                             <input type="password" name="old_password" class="form-control" required=""
-                                                data-error="Please enter your old password" placeholder="Old Password">
+                                                data-error="{{__('password.oldErorr')}}" placeholder="{{__('password.old')}}">
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
@@ -59,7 +59,7 @@
                                     <div class="col-lg-12 col-md-12">
                                         <div class="form-group">
                                             <input type="password" name="new_password" class="form-control" required=""
-                                                data-error="Please enter your New Password" placeholder="New Password">
+                                                data-error="{{__('password.newErorr')}}" placeholder="{{__('password.new')}}">
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
@@ -67,8 +67,8 @@
                                     <div class="col-lg-12 col-md-12">
                                         <div class="form-group">
                                             <input type="password" name="new_password_confirmation" class="form-control"
-                                                required="" data-error="Please enter your New Password"
-                                                placeholder="Confirm New Password">
+                                                required="" data-error="{{__('password.confirmErorr')}}"
+                                                placeholder="{{__('password.confirm')}}">
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
@@ -85,7 +85,7 @@
 
                                     <div class="col-lg-12 col-md-12 text-center">
                                         <button type="submit" class="default-btn disabled"
-                                            style="pointer-events: all; cursor: pointer;">Change<span></span></button>
+                                            style="pointer-events: all; cursor: pointer;">{{__('password.change')}}<span></span></button>
 
 
                                     </div>

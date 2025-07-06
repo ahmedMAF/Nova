@@ -10,16 +10,16 @@
         <div class="container">
             <div class="page-banner-content aos-init aos-animate" data-aos="fade-right" data-aos-delay="50"
                 data-aos-duration="500" data-aos-once="true">
-                <h2 style="color: white">Edit Service</h2>
+                <h2 style="color: white">{{__('add-service.editService')}}</h2>
 
                 <ul>
                     <li>
-                        <a href="../html/index.html">Home</a>
+                        <a href="../html/index.html">{{__('add-service.home')}}</a>
                     </li>
                     <li>
-                        <a href="../html/index.html">Admin</a>
+                        <a href="../html/index.html">{{__('add-service.admin')}}</a>
                     </li>
-                    <li>Edit Service</li>
+                    <li>{{__('add-service.editService')}}</li>
                 </ul>
             </div>
         </div>
@@ -44,7 +44,7 @@
                                     <div class="col-lg-12 col-md-12">
                                         <div class="form-group">
                                             <input type="text" name="name" class="form-control" required=""
-                                                data-error="Please enter service name" placeholder="Name (English)"
+                                                data-error="{{__('add-service.nameErorr')}}" placeholder="{{__('add-service.nameEn')}}"
                                                 value="{{ $service->name }}">
                                             <div class="help-block with-errors"></div>
                                         </div>
@@ -52,7 +52,7 @@
                                     <div class="col-lg-12 col-md-12">
                                         <div class="form-group">
                                             <input type="text" name="name_ar" class="form-control" required=""
-                                                data-error="Please enter service name" placeholder="Name (Arabic)"
+                                                data-error="{{__('add-service.nameErorr')}}" placeholder="{{__('add-service.nameAr')}}"
                                                 value="{{ $service->name_ar }}">
                                             <div class="help-block with-errors"></div>
                                         </div>
@@ -60,38 +60,38 @@
                                     <div class="col-lg-12 col-md-12">
                                         <div class="form-group">
                                             <textarea name="description" class="form-control" cols="30" rows="6" required=""
-                                                data-error="Please enter service description"
-                                                placeholder="Description (English)">{{ $service->description }}</textarea>
+                                                data-error="{{__('add-service.descriptionErorr')}}"
+                                                placeholder="{{__('add-service.descriptionEn')}}">{{ $service->description }}</textarea>
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
                                     <div class="col-lg-12 col-md-12">
                                         <div class="form-group">
                                             <textarea name="description_ar" class="form-control" cols="30" rows="6"
-                                                required="" data-error="Please enter service description"
-                                                placeholder="Description (Arabic)">{{ $service->description_ar }}</textarea>
+                                                required="" data-error="{{__('add-service.descriptionErorr')}}"
+                                                placeholder="{{__('add-service.descriptionAr')}}">{{ $service->description_ar }}</textarea>
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
                                     <div class="col-lg-12 col-md-12">
                                         <div class="form-group">
                                             <input type="text" name="delivery_time" class="form-control" required=""
-                                                data-error="Please enter Delivery Time Rage"
-                                                placeholder="Delivery Time Rage" value="{{ $service->delivery_time }}">
+                                                data-error="{{__('add-service.deliveryTimeErorr')}}"
+                                                placeholder="{{__('add-service.deliveryTime')}}" value="{{ $service->delivery_time }}">
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
                                     <div class="col-lg-12 col-md-12">
                                         <div class="form-group">
                                             <input type="text" name="price_range" class="form-control" required=""
-                                                data-error="Please enter Price Range" placeholder="Price Range"
+                                                data-error="{{__('add-service.priceErorr')}}" placeholder="{{__('add-service.price')}}"
                                                 value="{{ $service->price_range }}">
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
                                     <div class="col-lg-12 col-md-12">
                                         <div class="form-group">
-                                            <label class="pb-2 ps-2">Information</label>
+                                            <label class="pb-2 ps-2">{{__('add-service.info')}}</label>
                                             <input type="file" name="information" class="form-control"
                                                 data-error="Please uplode Information">
                                             <div class="help-block with-errors"></div>
@@ -99,13 +99,13 @@
                                     </div>
                                     <div class="col-lg-12 col-md-12">
                                         <div class="form-group">
-                                            <label class="pb-2 ps-2">Image</label>
+                                            <label class="pb-2 ps-2">{{__('add-service.image')}}</label>
                                             <input type="file" name="image" class="form-control"
-                                                data-error="Please uplode Image">
+                                                data-error="{{__('add-service.imageErorr')}}">
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
-                                    <label class="pb-2 ps-4">features</label>
+                                    <label class="pb-2 ps-4">{{__('add-service.features')}}</label>
                                     @foreach (json_decode($service->feature) as $feature)
                                         <div class="form-group">
                                             <input type="text" name="feature[]" class="form-control"
@@ -113,7 +113,7 @@
                                         </div>
                                     @endforeach
                                     <div id="feature" class="col-lg-12 col-md-12">
-                                        <span style="cursor: pointer; font-size: 20px;">Add a feature</span>
+                                        <span style="cursor: pointer; font-size: 20px;">{{__('add-service.addFeature')}}</span>
                                         <span class="icon">+</span>
                                     </div>
                                     <div class="col-lg-12 col-md-12">
@@ -134,7 +134,7 @@
 
                                     <div class="col-lg-12 col-md-12 text-center">
                                         <button type="submit" class="default-btn disabled"
-                                            style="pointer-events: all; cursor: pointer;">Save<span></span></button>
+                                            style="pointer-events: all; cursor: pointer;">{{__('add-service.save')}}<span></span></button>
 
 
                                     </div>
@@ -159,7 +159,7 @@
             input.type = 'text';
             input.name = 'feature[]';
             input.className = 'form-control mb-2';
-            input.placeholder = 'Feature';
+            input.placeholder = '{{__("add-service.feature")}}';
             confeature.appendChild(input);
             f++;
         }

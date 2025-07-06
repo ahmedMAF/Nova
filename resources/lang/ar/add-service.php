@@ -1,0 +1,26 @@
+<?php
+
+return [
+    'addService' => 'إضافة خدمة',
+    'home' => 'الرئيسية',
+    'admin' => 'لوحة التحكم',
+    'nameEn' => 'الاسم (بالإنجليزية)',
+    'nameAr' => 'الاسم (بالعربية)',
+    'nameErorr' => 'يرجى إدخال اسم الخدمة',
+    'descriptionEn' => 'الوصف (بالإنجليزية)',
+    'descriptionAr' => 'الوصف (بالعربية)',
+    'descriptionErorr' => 'يرجى إدخال وصف الخدمة',
+    'deliveryTime' => 'مدة التسليم',
+    'deliveryTimeErorr' => 'يرجى إدخال مدة التسليم',
+    'price' => 'نطاق السعر',
+    'priceErorr' => 'يرجى إدخال نطاق السعر',
+    'info' => 'معلومات',
+    'image' => 'الصورة',
+    'imageErorr' => 'يرجى رفع صورة',
+    'addFeature' => 'إضافة ميزة',
+    'feature' => 'ميزة',
+    'add' => 'إضافة',
+    'editService' => 'تعديل الخدمة',
+    'save' => 'حفظ',
+    'features' => 'الميزات',
+];

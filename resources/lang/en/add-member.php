@@ -13,5 +13,6 @@ return [
     'photo' => 'Photo',
     'photoErorr' => 'Please enter member photo',
     'add' => 'Add',
- 
+    'editMember' => 'Edit Member',
+    'save' => 'Save',
 ];

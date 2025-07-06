@@ -23,4 +23,9 @@ return [
     'videos' => 'Add a video',
     'add' => 'Add',
     'videoUrl' => 'Video URL',
+    'editProject' => 'Edit Project',
+    'delete' => 'Dlete',
+    'save' => 'Save',
+    'projectVideos' => 'Project Videos',
+    'projectGallery' => 'Project Gallery',
 ];

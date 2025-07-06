@@ -19,16 +19,16 @@
         <div class="container">
             <div class="page-banner-content aos-init aos-animate" data-aos="fade-right" data-aos-delay="50"
                 data-aos-duration="500" data-aos-once="true">
-                <h2 style="color: white">Add Category</h2>
+                <h2 style="color: white">{{__('add-cat.addCat')}}</h2>
 
                 <ul>
                     <li>
-                        <a href="../html/index.html">Home</a>
+                        <a href="../html/index.html">{{__('add-cat.home')}}</a>
                     </li>
                     <li>
-                        <a href="../html/index.html">Admin</a>
+                        <a href="../html/index.html">{{__('add-cat.admin')}}</a>
                     </li>
-                    <li>Add Category</li>
+                    <li>{{__('add-cat.addCat')}}</li>
                 </ul>
             </div>
         </div>
@@ -53,14 +53,14 @@
                                     <div class="col-lg-12 col-md-12">
                                         <div class="form-group">
                                             <input type="text" name="name" class="form-control" required=""
-                                                data-error="Please enter category name" placeholder="Name (English)">
+                                                data-error="{{__('add-cat.nameErorr')}}" placeholder="{{__('add-cat.nameEn')}}">
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
                                     <div class="col-lg-12 col-md-12">
                                         <div class="form-group">
-                                            <input type="text" name="name_ar" class="form-control" 
-                                                data-error="Please enter category name" placeholder="Name (Arabic)">
+                                            <input type="text" name="name_ar" class="form-control" required=""
+                                                data-error="{{__('add-cat.nameErorr')}}" placeholder="{{__('add-cat.nameAr')}}">
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
@@ -75,7 +75,7 @@
                                     @endif
                                     <div class="col-lg-12 col-md-12 text-center">
                                         <button type="submit" class="default-btn disabled"
-                                            style="pointer-events: all; cursor: pointer;">Add<span></span></button>
+                                            style="pointer-events: all; cursor: pointer;">{{__('add-cat.add')}}<span></span></button>
                                     </div>
                                 </div>
                             </div>

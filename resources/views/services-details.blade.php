@@ -10,14 +10,14 @@
         <div class="container">
             <div class="page-banner-content aos-init aos-animate" data-aos="fade-right" data-aos-delay="50"
                 data-aos-duration="500" data-aos-once="true">
-                <h2 style="color: white">Service Details</h2>
+                <h2 style="color: white">{{__('service-details.serviceDetails')}}</h2>
 
                 <ul>
                     <li>
-                        <a href="#">Home</a>
+                        <a href="#">{{__('service-details.home')}}</a>
                     </li>
                     <li>
-                        <a href="#">Services</a>
+                        <a href="#">{{__('service-details.services')}}</a>
                     </li>
                     <li>{{$service->name}}</li>
                 </ul>
@@ -45,7 +45,7 @@
 
                         <!-- Service Features -->
                         <div class="service-features mb-5">
-                            <h4>Key Features</h4>
+                            <h4>{{__('service-details.keyFeatures')}}</h4>
                             <ul class="list-unstyled px-2">
                                 @foreach (json_decode($service->feature) as $feature)
                                     <li>
@@ -58,31 +58,27 @@
 
                         <!-- Service Process -->
                         <div class="service-process mb-5">
-                            <h4>Our Development Process</h4>
+                            <h4>{{__('service-details.ourDevelopment')}}</h4>
                             <div class="process-steps px-2">
                                 <div class="process-step mb-4">
-                                    <h5>Requirement Analysis</h5>
-                                    <p>We start by understanding your business needs and project requirements to create a
-                                        detailed project plan.</p>
+                                    <h5>{{__('service-details.ourDevelopmentPart1')}}</h5>
+                                    <p>{{__('service-details.ourDevelopmentPart11')}}</p>
                                 </div>
                                 <div class="process-step mb-4">
-                                    <h5>Design & Prototyping</h5>
-                                    <p>Our designers create wireframes and mockups to visualize the website structure and
-                                        user interface.</p>
+                                    <h5>{{__('service-details.ourDevelopmentPart2')}}</h5>
+                                    <p>{{__('service-details.ourDevelopmentPart22')}}</p>
                                 </div>
                                 <div class="process-step mb-4">
-                                    <h5>Development</h5>
-                                    <p>Our developers bring the design to life using the latest web technologies and coding
-                                        standards.</p>
+                                    <h5>{{__('service-details.ourDevelopmentPart3')}}</h5>
+                                    <p>{{__('service-details.ourDevelopmentPart33')}}</p>
                                 </div>
                                 <div class="process-step mb-4">
-                                    <h5>Testing & Quality Assurance</h5>
-                                    <p>We rigorously test the website across multiple devices and browsers to ensure
-                                        flawless performance.</p>
+                                    <h5>{{__('service-details.ourDevelopmentPart4')}}</h5>
+                                    <p>{{__('service-details.ourDevelopmentPart44')}}</p>
                                 </div>
                                 <div class="process-step mb-4">
-                                    <h5>Deployment & Training</h5>
-                                    <p>We launch your website and provide training on how to manage and update your content.
+                                    <h5>{{__('service-details.ourDevelopmentPart5')}}</h5>
+                                    <p>{{__('service-details.ourDevelopmentPart55')}}
                                     </p>
                                 </div>
                             </div>
@@ -90,7 +86,7 @@
 
                         <!-- Service Benefits -->
                         <div class="service-benefits mb-30">
-                            <h4>Why Choose Our Service?</h4>
+                            <h4>{{__('service-details.choose')}}</h4>
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="benefit-item mb-4">
@@ -98,9 +94,8 @@
                                             <i class="ri-checkbox-circle-fill me-3"
                                                 style="color: #4e6baf; font-size: 24px;"></i>
                                             <div>
-                                                <h5>Expert Team</h5>
-                                                <p class="mb-0">Our developers have 10+ years of experience in web
-                                                    technologies.</p>
+                                                <h5>{{__('service-details.choose1')}}</h5>
+                                                <p class="mb-0">{{__('service-details.choose11')}}</p>
                                             </div>
                                         </div>
                                     </div>
@@ -111,8 +106,8 @@
                                             <i class="ri-checkbox-circle-fill me-3"
                                                 style="color: #4e6baf; font-size: 24px;"></i>
                                             <div>
-                                                <h5>Timely Delivery</h5>
-                                                <p class="mb-0">We deliver projects on time with 98% on-time delivery rate.
+                                                <h5>{{__('service-details.choose3')}}</h5>
+                                                <p class="mb-0">{{__('service-details.choose33')}}
                                                 </p>
                                             </div>
                                         </div>
@@ -124,9 +119,8 @@
                                             <i class="ri-checkbox-circle-fill me-3"
                                                 style="color: #4e6baf; font-size: 24px;"></i>
                                             <div>
-                                                <h5>Quality Assurance</h5>
-                                                <p class="mb-0">Rigorous testing ensures bug-free and high-performance
-                                                    websites.</p>
+                                                <h5>{{__('service-details.choose2')}}</h5>
+                                                <p class="mb-0">{{__('service-details.choose22')}}</p>
                                             </div>
                                         </div>
                                     </div>
@@ -137,8 +131,8 @@
                                             <i class="ri-checkbox-circle-fill me-3"
                                                 style="color: #4e6baf; font-size: 24px;"></i>
                                             <div>
-                                                <h5>Ongoing Support</h5>
-                                                <p class="mb-0">We provide 24/7 support and maintenance services.</p>
+                                                <h5>{{__('service-details.choose4')}}</h5>
+                                                <p class="mb-0">{{__('service-details.choose44')}}</p>
                                             </div>
                                         </div>
                                     </div>
@@ -152,23 +146,23 @@
                     <div class="service-sidebar">
                         <!-- Service Overview -->
                         <div class="sidebar-widget mb-5">
-                            <h3 class="widget-title">Service Overview</h3>
+                            <h3 class="widget-title">{{__('service-details.overview')}}</h3>
                             <ul class="overview-list">
                                 <li>
-                                    <span>Service Name:</span>
+                                    <span>{{__('service-details.sname')}}:</span>
                                     {{$service->name}}
                                 </li>
                                 <li>
-                                    <span>Delivery Time:</span>
+                                    <span>{{__('service-details.dTime')}}:</span>
                                     {{$service->delivery_time}}
                                 </li>
                                 <li>
-                                    <span>Price Range:</span>
+                                    <span>{{__('service-details.pRange')}}:</span>
                                     {{$service->price_range}}
                                 </li>
                                 <li>
-                                    <span>Support:</span>
-                                    24/7 Available
+                                    <span>{{__('service-details.textSupport')}}:</span>
+                                    {{__('service-details.support')}}
                                 </li>
                             </ul>
                         </div>
@@ -176,10 +170,10 @@
                         <!-- Download Brochure -->
                         @if ($service->information)
                             <div class="sidebar-widget mb-5">
-                                <h3 class="widget-title">Download Brochure</h3>
+                                <h3 class="widget-title">{{__('service-details.downloadBrochure')}}</h3>
                                 <a href="{{asset('storage/' . $service->information)}}" class="default-btn"
                                     style="width: 100%; text-align: center;">
-                                    <i class="ri-download-line me-2"></i> Download PDF
+                                    <i class="ri-download-line me-2"></i>{{__('service-details.download')}} 
                                 </a>
                             </div>
                         @endif
@@ -190,7 +184,7 @@
                                 <div class="align-items-center">
                                     <div>
                                         <div class="talk-content margin-zero">
-                                            <h4>Contact For Service</h4>
+                                            <h4>{{__('service-details.contact')}}</h4>
                                             <form action="https://formspree.io/f/xyzezaoe" method="post">
                                                 <input type="hidden" value="KE1FBRWJqSJ5Rl0GflJd3GPetPqRdPKG8TCg25Jl">
                                                 <div id="contactFormTwo" novalidate="true">
@@ -199,7 +193,7 @@
                                                             <div class="form-group">
                                                                 <input style="background-color: #ececec" type="text"
                                                                     name="email" class="form-control" required=""
-                                                                    data-error="Please enter youre name" placeholder="Name">
+                                                                    data-error="{{__('service-details.nameErorr')}}" placeholder="{{__('service-details.name')}}">
                                                                 <div class="help-block with-errors"></div>
                                                             </div>
                                                         </div>
@@ -207,8 +201,8 @@
                                                             <div class="form-group">
                                                                 <input style="background-color: #ececec" type="email"
                                                                     name="email" class="form-control" required=""
-                                                                    data-error="Please enter your email"
-                                                                    placeholder="Emial">
+                                                                    data-error="{{__('service-details.emailErorr')}}"
+                                                                    placeholder="{{__('service-details.email')}}">
                                                                 <div class="help-block with-errors"></div>
                                                             </div>
                                                         </div>
@@ -216,14 +210,14 @@
                                                             <div class="form-group">
                                                                 <textarea style="background-color: #ececec" name="message"
                                                                     class="form-control" cols="30" rows="6" required=""
-                                                                    data-error="Please enter your message"
-                                                                    placeholder="Youre Message"></textarea>
+                                                                    data-error="{{__('service-details.messageErorr')}}"
+                                                                    placeholder="{{__('service-details.message')}}"></textarea>
                                                                 <div class="help-block with-errors"></div>
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-12 col-md-12 text-center">
                                                             <button type="submit" class="default-btn disabled"
-                                                                style="pointer-events: all; cursor: pointer;">Send<span></span></button>
+                                                                style="pointer-events: all; cursor: pointer;">{{__('service-details.send')}}<span></span></button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -236,7 +230,7 @@
 
                         <!-- Other Services -->
                         <div class="sidebar-widget">
-                            <h3 class="widget-title">Other Services</h3>
+                            <h3 class="widget-title">{{__('service-details.other')}}</h3>
                             <div class="other-services">
                                 @foreach ($services as $s)
                                     <div class="single-service mb-3 px-2">

@@ -11,7 +11,8 @@ class TeamController extends Controller
 {
     public function team()
     {
-        $members = Team::all();
+        $locale = app()->getLocale();
+        $members = Team::select('id', "name_{$locale} as name", "role_{$locale} as role", 'image')->get();
         return view('team', ['members' => $members]);
     }
     public function teamPage()

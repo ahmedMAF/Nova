@@ -20,7 +20,6 @@ class Project extends Model
         'photos',
         'videos',
     ];
-
     public function category()
     {
         return $this->belongsTo(Category::class);

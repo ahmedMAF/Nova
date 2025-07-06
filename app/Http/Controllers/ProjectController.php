@@ -12,7 +12,8 @@ class ProjectController extends Controller
 {
     public function projects()
     {
-        $projects = Project::paginate(10);
+        $locale = app()->getLocale();
+        $projects = Project::select('id', 'image', "name_{$locale} as name", "description_{$locale} as description", 'date')->paginate(10);
         return view('projects', ['projects' => $projects]);
     }
     public function project()
@@ -76,8 +77,11 @@ class ProjectController extends Controller
 
     public function details($projectId)
     {
-        $project = Project::find($projectId);
-        return view('project-details', ["project" => $project]);
+        $locale = app()->getLocale();
+        $project = Project::select('id' , "name_{$locale} as name", "description_{$locale} as description", "client_{$locale} as client" , 'date', 'link', 'image', 'photos', 'videos' , 'category_id')
+            ->where('id', $projectId)
+            ->first();
+        return view('project-details', ["project" => $project , 'locale' => $locale]);
     }
 
     public function editProject($id)

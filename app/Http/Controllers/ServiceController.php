@@ -11,7 +11,8 @@ class ServiceController extends Controller
 {
     public function services()
     {
-        $services = Service::all();
+        $locale = app()->getLocale();
+        $services = Service::select('id', "name_{$locale} as name", "description_{$locale} as description" , 'image')->get();;
         return view('services', ['services' => $services]);
     }
     public function service()
@@ -63,8 +64,11 @@ class ServiceController extends Controller
 
     public function details($serviceId)
     {
-        $service = Service::find($serviceId);
-        $services = Service::select('name', 'id')->get();
+        $locale = app()->getLocale();
+        $service = Service::select('id', "name_{$locale} as name", "description_{$locale} as description" , 'delivery_time', 'price_range', 'information', 'image', 'feature')
+            ->where('id', $serviceId)
+            ->first();
+        $services = Service::select("name_{$locale} as name", 'id')->get();
         return view('services-details', ["service" => $service, "services" => $services]);
     }
 

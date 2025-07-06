@@ -46,7 +46,8 @@
                                 </li>
                                 <li>
                                     <span>{{__('project-details.category')}}:</span>
-                                    {{$project->category->name}}
+                                    {{ $project->category->{'name_' . $locale} }}
+
                                 </li>
                                 <li>
                                     <span>{{__('project-details.client')}}:</span>

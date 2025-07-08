@@ -19,13 +19,19 @@
     <link rel="stylesheet" href="{{asset('css/magnific-popup.min.css')}}" />
     <link rel="stylesheet" href="{{asset('css/fancybox.min.css')}}" />
     <link rel="stylesheet" href="{{asset('css/nice-select.min.css')}}" />
-    <link rel="stylesheet" href="{{asset('css/style.css')}}" />
+    <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}" />
+    <link rel="stylesheet" href="{{asset('css/toastr.min.css')}}" />
+    @if (app()->getLocale() == 'ar')
+        <link rel="stylesheet" href="{{asset('css/ar-style.css')}}" />>
+        <link rel="stylesheet" href="{{asset('css/ar.css')}}" />>
+    @else
+        <link rel="stylesheet" href="{{asset('css/style.css')}}" />
+    @endif
     <link rel="stylesheet" href="{{asset('css/navbar.css')}}" />
     <link rel="stylesheet" href="{{asset('css/footer.css')}}" />
     <link rel="stylesheet" href="{{asset('css/dark.css')}}" />
     <link rel="stylesheet" href="{{asset('css/responsive.css')}}" />
-    <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}" />
-    <link rel="stylesheet" href="{{asset('css/toastr.min.css')}}" />
+
 
     <title>@yield('title')</title>
 </head>
@@ -77,7 +83,7 @@
 
                         <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent"
                             style="display: block">
-                            <ul class="navbar-nav ms-auto">
+                            <ul class="navbar-nav ms-auto nav-ul-ar">
                                 <li class="nav-item">
                                     <a href="{{route('home')}}" class="nav-link">{{ __('main.home') }}</a>
                                 </li>

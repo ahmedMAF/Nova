@@ -54,7 +54,7 @@
                                         <div class="form-group">
                                             <input type="text" name="name" class="form-control" required=""
                                                 data-error="{{__('add-project.nameErorr')}}" placeholder="{{__('add-project.nameEn')}}"
-                                                value="{{ $project->name}}">
+                                                value="{{ $project->name_en}}">
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
@@ -70,7 +70,7 @@
                                         <div class="form-group">
                                             <input type="text" name="client" class="form-control" required=""
                                                 data-error="{{__('add-project.clientErorr')}}" placeholder="{{__('add-project.clientEn')}}"
-                                                value="{{ $project->client }}">
+                                                value="{{ $project->client_en }}">
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
@@ -86,7 +86,7 @@
                                         <div class="form-group">
                                             <textarea name="description" class="form-control" cols="30" rows="6" required=""
                                                 data-error="{{__('add-project.descriptionErorr')}}"
-                                                placeholder="{{__('add-project.descriptionEn')}}">{{$project->description}}</textarea>
+                                                placeholder="{{__('add-project.descriptionEn')}}">{{$project->description_en}}</textarea>
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
@@ -104,7 +104,8 @@
                                                 <option disabled selected>{{__('add-project.select')}}</option>
                                                 @foreach ($categories as $category)
                                                     <option {{$category->id == $project->category_id ? "selected" : ""}}
-                                                        value="{{ $category->id }}">{{ $category->name }}</option>
+                                                        value="{{ $category->id }}">{{ $category->name_en . " | " . $category->name_ar}}
+                                                    </option>
                                                 @endforeach
                                             </select>
                                             <div class="help-block with-errors"></div>

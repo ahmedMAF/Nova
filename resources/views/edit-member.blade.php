@@ -45,7 +45,7 @@
                                         <div class="form-group">
                                             <input type="text" name="name" class="form-control" required=""
                                                 data-error="{{__('add-member.nameErorr')}}" placeholder="{{__('add-member.nameEn')}}"
-                                                value="{{ $member->name }}">
+                                                value="{{ $member->name_en }}">
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
@@ -61,7 +61,7 @@
                                         <div class="form-group">
                                             <input type="text" name="role" class="form-control" required=""
                                                 data-error="{{__('add-member.roleErorr')}}" placeholder="{{__('add-member.roleEn')}}"
-                                                value="{{ $member->role }}">
+                                                value="{{ $member->role_en }}">
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>

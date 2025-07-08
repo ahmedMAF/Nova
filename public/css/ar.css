@@ -1,0 +1,30 @@
+.iot-right {
+    left: 0% !important;
+    right: 97% !important;
+}
+
+.web-right {
+    left: 0% !important;
+    right: 95% !important;
+}
+
+.mobile-right {
+    left: 0% !important;
+    right: 93% !important;
+}
+
+.desktop-right {
+    left: 0% !important;
+    right: 97% !important;
+}
+
+.ai-right {
+    left: 0% !important;
+    right: 95% !important;
+}
+
+.nav-ul-ar {
+    margin-left: 0px !important;
+    margin-right: auto !important;
+    padding: 0px !important;
+}

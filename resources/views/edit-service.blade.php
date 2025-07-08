@@ -45,7 +45,7 @@
                                         <div class="form-group">
                                             <input type="text" name="name" class="form-control" required=""
                                                 data-error="{{__('add-service.nameErorr')}}" placeholder="{{__('add-service.nameEn')}}"
-                                                value="{{ $service->name }}">
+                                                value="{{ $service->name_en }}">
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
@@ -61,7 +61,7 @@
                                         <div class="form-group">
                                             <textarea name="description" class="form-control" cols="30" rows="6" required=""
                                                 data-error="{{__('add-service.descriptionErorr')}}"
-                                                placeholder="{{__('add-service.descriptionEn')}}">{{ $service->description }}</textarea>
+                                                placeholder="{{__('add-service.descriptionEn')}}">{{ $service->description_en }}</textarea>
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>

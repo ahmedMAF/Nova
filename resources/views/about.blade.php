@@ -48,7 +48,7 @@
                                 style="transform: matrix(0, 0, 0, 1, 0, 0); transform-origin: left 50% 0px;"></span></h3>
                         <p></p>
                         <p class="MsoNormal"
-                            style="text-align: justify; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; direction: ltr; unicode-bidi: embed;">
+                            style="text-align: justify; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; unicode-bidi: embed;">
                             {{ __('about.whatWeDo') }}
                             <font face="Open Sans, sans-serif"><span style="font-size: 12pt;">
                                     <o:p></o:p>
@@ -358,7 +358,7 @@
                     <p class="progress-title-holder">
                         <span class="progress-title">{{ __('about.iot') }}</span>
                         <span class="progress-number-wrapper">
-                            <span class="progress-number-mark" style="left: 97%;">
+                            <span class="progress-number-mark iot-right" style="left: 97%;">
                                 <span class="percent">97%</span>
                                 <span class="down-arrow"></span>
                             </span>
@@ -374,7 +374,7 @@
                     <p class="progress-title-holder">
                         <span class="progress-title">{{ __('about.web') }}</span>
                         <span class="progress-number-wrapper">
-                            <span class="progress-number-mark" style="left: 95%;">
+                            <span class="progress-number-mark web-right" style="left: 95%;">
                                 <span class="percent">95%</span>
                                 <span class="down-arrow"></span>
                             </span>
@@ -390,7 +390,7 @@
                     <p class="progress-title-holder">
                         <span class="progress-title">{{ __('about.mobile') }}</span>
                         <span class="progress-number-wrapper">
-                            <span class="progress-number-mark" style="left: 93%;">
+                            <span class="progress-number-mark mobile-right" style="left: 93%;">
                                 <span class="percent">93%</span>
                                 <span class="down-arrow"></span>
                             </span>
@@ -406,7 +406,7 @@
                     <p class="progress-title-holder">
                         <span class="progress-title">{{ __('about.desktop') }}</span>
                         <span class="progress-number-wrapper">
-                            <span class="progress-number-mark" style="left: 97%;">
+                            <span class="progress-number-mark desktop-right" style="left: 97%;">
                                 <span class="percent">97%</span>
                                 <span class="down-arrow"></span>
                             </span>
@@ -421,7 +421,7 @@
                     <p class="progress-title-holder">
                         <span class="progress-title">{{ __('about.ai') }}</span>
                         <span class="progress-number-wrapper">
-                            <span class="progress-number-mark" style="left: 95%;">
+                            <span class="progress-number-mark ai-right" style="left: 95%;">
                                 <span class="percent">95%</span>
                                 <span class="down-arrow"></span>
                             </span>

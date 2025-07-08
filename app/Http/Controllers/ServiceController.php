@@ -12,7 +12,7 @@ class ServiceController extends Controller
     public function services()
     {
         $locale = app()->getLocale();
-        $services = Service::select('id', "name_{$locale} as name", "description_{$locale} as description" , 'image')->get();;
+        $services = Service::select('id', "name_{$locale} as name", "description_{$locale} as description" , 'image')->get();
         return view('services', ['services' => $services]);
     }
     public function service()

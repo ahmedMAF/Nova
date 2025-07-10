@@ -1421,7 +1421,7 @@ Services Area CSS
 
 .services-item {
   background-color: #2E2141;
-  padding: 10px;
+  padding: 10px 10px 20px 10px;
   border-radius: 15px;
   margin-bottom: 25px;
   position: relative;
@@ -1432,16 +1432,23 @@ Services Area CSS
 .services-item .services-image {
   overflow: hidden;
   border-radius: 15px;
+  width: 100%;
+  height: 250px;
 }
 
 .services-item .services-image a {
   display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .services-item .services-image a img {
   border-radius: 15px;
   -webkit-transition: var(--transition);
   transition: var(--transition);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .services-item .services-content {
@@ -3441,16 +3448,23 @@ Blog Area CSS
   position: relative;
   overflow: hidden;
   border-radius: 15px;
+  width: 100%;
+  height: 250px;
 }
 
 .single-blog-card .blog-image a {
   display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .single-blog-card .blog-image a img {
   border-radius: 15px;
   -webkit-transition: var(--transition);
   transition: var(--transition);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .single-blog-card .blog-image .date {
@@ -4600,6 +4614,15 @@ Team Area CSS
 
 .single-team-card .team-image {
   position: relative;
+  width: 100%;
+  height: 350px;
+}
+
+.single-team-card .team-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .single-team-card .team-image .team-social {
@@ -9685,8 +9708,24 @@ Buy Now Btn
   border-radius: 10px;
   color: white !important;
 }
-.btn-custm-delete{
+
+.btn-custm-delete {
   background: #dc3545;
   border: none;
   font-size: 15px;
+}
+
+.projetc-detalis-image{
+  width: 100%;
+   height: 300px;
+}
+.projetc-detalis-image a{
+  display:block; 
+  width: 100%; 
+  height: 100%;
+}
+.projetc-detalis-image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

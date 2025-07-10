@@ -34,7 +34,8 @@
                     <div class="project-details-desc">
                         <!-- Main Project Image -->
                         <div class="project-details-image mb-5 text-center">
-                            <img src="{{asset('storage/' . $project->image)}}" alt="Main Project Image" class="rounded-3">
+                            <img style="width:100%; max-width: 600px;" src="{{asset('storage/' . $project->image)}}"
+                                alt="Main Project Image" class="rounded-3">
                         </div>
 
                         <!-- Project Meta -->
@@ -70,13 +71,15 @@
                                     @foreach (json_decode($project->photos) as $photo)
                                         <div class="col-md-4 col-sm-6 col-12 mb-4">
                                             <div class="gallery-item text-center">
-                                                <a href="{{asset('storage/' . $photo)}}" class="fancybox text-decoration-none"
-                                                    data-fancybox="gallery">
-                                                    <img src="{{asset('storage/' . $photo)}}" alt="Project Image"
-                                                        class="img-fluid rounded-3">
-                                                    <div class="gallery-overlay">
-                                                        <i style="color: var(--main-color)" class="fs-3 ri-zoom-in-line"></i>
-                                                    </div>
+                                                <div class="projetc-detalis-image">
+                                                    <a href="{{asset('storage/' . $photo)}}" class="fancybox text-decoration-none"
+                                                        data-fancybox="gallery">
+                                                        <img src="{{asset('storage/' . $photo)}}" alt="Project Image"
+                                                            class="img-fluid rounded-3">
+                                                </div>
+                                                <div class="gallery-overlay mt-3">
+                                                    <i style="color: var(--main-color)" class="fs-3 ri-zoom-in-line"></i>
+                                                </div>
                                                 </a>
                                             </div>
                                         </div>

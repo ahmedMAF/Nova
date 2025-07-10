@@ -42,11 +42,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 col-md-12">
-                    <div class="row justify-content-center">
+                    <div class="row justify-content-center gy-5">
 
                         @if (session('is_admin'))
                             @foreach ($projects as $project)
-                                <div class="col-lg-6 col-md-6">
+                                <div class="col-lg-4 col-md-6">
                                     <div class="single-blog-card">
                                         <div class="blog-image">
                                             <a class="prevent" href="{{route('project_details', $project->id)}}"><img
@@ -75,7 +75,7 @@
                             @endforeach
                         @else
                             @foreach ($projects as $project)
-                                <div class="col-lg-6 col-md-6">
+                                <div class="col-lg-4 col-md-6">
                                     <div class="single-blog-card">
                                         <div class="blog-image">
                                             <a class="prevent" href="{{route('project_details', $project->id)}}"><img

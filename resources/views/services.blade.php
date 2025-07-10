@@ -162,7 +162,7 @@
                 <div class="row justify-content-center">
                     @foreach ($services as $service)
                         <div class="col-lg-4 col-md-6">
-                            <div class="services-item" style="height: 500px">
+                            <div class="services-item">
                                 <div class="services-image">
                                     <a class="prevent" href="{{route('service_details', $service->id)}}"><img
                                             src="{{asset('storage/' . $service->image)}}" alt="image" /></a>
@@ -193,7 +193,7 @@
                 <div class="row justify-content-center">
                     @foreach ($services as $service)
                         <div class="col-lg-4 col-md-6">
-                            <div class="services-item" style="height: 500px">
+                            <div class="services-item">
                                 <div class="services-image">
                                     <a class="prevent" href="{{route('service_details', $service->id)}}"><img
                                             src="{{asset('storage/' . $service->image)}}" alt="image" /></a>

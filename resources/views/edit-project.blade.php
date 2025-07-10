@@ -185,11 +185,13 @@
                                 @foreach (json_decode($project->photos) as $photo)
                                     <div class="col-md-4 col-sm-6 col-12 mb-4">
                                         <div class="gallery-item text-center">
-                                            <a href="{{asset('storage/' . $photo)}}" class="fancybox text-decoration-none"
+                                            <div style="height: 250px" class="projetc-detalis-image">
+                                                <a href="{{asset('storage/' . $photo)}}" class="fancybox text-decoration-none"
                                                 data-fancybox="gallery">
                                                 <img src="{{asset('storage/' . $photo)}}" alt="Project Image"
                                                     class="img-fluid rounded-3">
-                                                <div class="gallery-overlay">
+                                            </div>
+                                                <div class="gallery-overlay mt-3">
                                                     <i style="color: var(--main-color)" class="fs-3 ri-zoom-in-line"></i>
                                                 </div>
                                             </a>
@@ -197,7 +199,7 @@
                                         <form action="{{route('delete_media', [$project->id, urlencode($photo), 'p'])}}" method="POST">
                                             @csrf
                                             @method('DELETE')
-                                            <input type="submit" value="{{__('add-project.delete')}}" class="btn btn-danger mt-2">
+                                            <input type="submit" value="{{__('add-project.delete')}}" class="btn-custm btn-custm-delete mt-3 mx-auto d-block">
                                         </form>
                                     </div>
                                 @endforeach
@@ -219,7 +221,7 @@
                                             <form action="{{route('delete_media', [$project->id, $video, 'v'])}}" method="POST">
                                                 @csrf
                                                 @method('DELETE')
-                                                <input type="submit" value="{{__('add-project.delete')}}" class="btn btn-danger mt-2">
+                                                <input type="submit" value="{{__('add-project.delete')}}" class="btn-custm btn-custm-delete mt-2">
                                             </form>
                                         </div>
                                     @endforeach

@@ -38,9 +38,9 @@ class TeamController extends Controller
         // Save the team member data to the database
         // Assuming you have a TeamMember model
         Team::create([
-            'name' => $validate['name'],
+            'name_en' => $validate['name'],
             'name_ar' => $validate['name_ar'],
-            'role' => $validate['role'],
+            'role_en' => $validate['role'],
             'role_ar' => $validate['role_ar'],
             'image' => $imagePath,
         ]);
@@ -69,9 +69,9 @@ class TeamController extends Controller
         $member = Team::find($id);
 
         // Update the member's data
-        $member->name = $validate['name'];
+        $member->name_en = $validate['name'];
         $member->name_ar = $validate['name_ar'];
-        $member->role = $validate['role'];
+        $member->role_en = $validate['role'];
         $member->role_ar = $validate['role_ar'];
 
         // Handle file upload if a new image is provided

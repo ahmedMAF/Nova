@@ -59,14 +59,17 @@
                                                 <a class="prevent" href="#">{{$project->name}}</a>
                                             </h3>
                                             <p>{{$project->description}}</p>
-                                            <a href="{{route('project_details', $project->id)}}" class="blog-btn show">{{ __('project.view') }}</a>
+                                            <a href="{{route('project_details', $project->id)}}"
+                                                class="blog-btn show">{{ __('project.view') }}</a>
                                         </div>
-                                        <a href="{{route('edit_project' , $project->id)}}">{{ __('project.edit') }}</a>
-                                        <form action="{{route('delete_project' , $project->id)}}" method="POST">
-                                            @csrf
-                                            @method('DELETE')
-                                            <input type="submit" value="{{ __('project.delete') }}">
-                                        </form>
+                                        <div class="d-flex justify-content-between mt-3">
+                                            <a class="btn-custm" href="{{route('edit_project', $project->id)}}">{{ __('project.edit') }}</a>
+                                            <form action="{{route('delete_project', $project->id)}}" method="POST">
+                                                @csrf
+                                                @method('DELETE')
+                                                <input class="btn-custm btn-custm-delete" type="submit" value="{{ __('project.delete') }}">
+                                            </form>
+                                        </div>
                                     </div>
                                 </div>
                             @endforeach
@@ -85,7 +88,8 @@
                                                 <a class="prevent" href="#">{{$project->name}}</a>
                                             </h3>
                                             <p>{{$project->description}}</p>
-                                            <a href="{{route('project_details', $project->id)}}" class="blog-btn show">{{ __('project.view') }}</a>
+                                            <a href="{{route('project_details', $project->id)}}"
+                                                class="blog-btn show">{{ __('project.view') }}</a>
                                         </div>
                                     </div>
                                 </div>
@@ -129,7 +133,8 @@
                                     <div class="col-lg-6 col-md-6">
                                         <div class="form-group">
                                             <input type="text" name="name" class="form-control" required=""
-                                                data-error="{{__('contact.nameErorr')}}" placeholder="{{ __('contact.name') }}">
+                                                data-error="{{__('contact.nameErorr')}}"
+                                                placeholder="{{ __('contact.name') }}">
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>

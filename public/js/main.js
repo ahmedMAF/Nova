@@ -1,12 +1,12 @@
 jQuery(function ($) {
-    'use strict';
+	'use strict';
 
 	// Header Sticky
-	$(window).on('scroll',function() {
-		if ($(this).scrollTop() > 30){
+	$(window).on('scroll', function () {
+		if ($(this).scrollTop() > 30) {
 			$('.navbar-area').addClass("is-sticky");
 		}
-		else{
+		else {
 			$('.navbar-area').removeClass("is-sticky");
 		}
 	});
@@ -17,54 +17,54 @@ jQuery(function ($) {
 	});
 
 	// Others Option For Responsive JS
-	$(".others-option-for-responsive .dot-menu").on("click", function(){
+	$(".others-option-for-responsive .dot-menu").on("click", function () {
 		$(".others-option-for-responsive .container .container").toggleClass("active");
 	});
 
 	// Language Switcher
-	$(".language-option").each(function() {
-        var each = $(this)
-        each.find(".lang-name").html(each.find(".language-dropdown-menu a:nth-child(1)").text());
-        var allOptions = $(".language-dropdown-menu").children('a');
-        each.find(".language-dropdown-menu").on("click", "a", function() {
-            allOptions.removeClass('selected');
-            $(this).addClass('selected');
-            $(this).closest(".language-option").find(".lang-name").html($(this).text());
-        });
-    })
+	$(".language-option").each(function () {
+		var each = $(this)
+		each.find(".lang-name").html(each.find(".language-dropdown-menu a:nth-child(1)").text());
+		var allOptions = $(".language-dropdown-menu").children('a');
+		each.find(".language-dropdown-menu").on("click", "a", function () {
+			allOptions.removeClass('selected');
+			$(this).addClass('selected');
+			$(this).closest(".language-option").find(".lang-name").html($(this).text());
+		});
+	})
 
 	// Search Popup JS
-	$('.close-btn').on('click',function() {
+	$('.close-btn').on('click', function () {
 		$('.search-overlay').fadeOut();
 		$('.search-btn').show();
 		$('.close-btn').removeClass('active');
 	});
-	$('.search-btn').on('click',function() {
+	$('.search-btn').on('click', function () {
 		$(this).hide();
 		$('.search-overlay').fadeIn();
 		$('.close-btn').addClass('active');
 	});
 
 	// TweenMax JS
-	$('.main-slides-area').mousemove(function(e){
+	$('.main-slides-area').mousemove(function (e) {
 		var wx = $(window).width();
 		var wy = $(window).height();
 		var x = e.pageX - this.offsetLeft;
 		var y = e.pageY - this.offsetTop;
-		var newx = x - wx/2;
-		var newy = y - wy/2;
-		$('.main-slides-image').each(function(){
+		var newx = x - wx / 2;
+		var newy = y - wy / 2;
+		$('.main-slides-image').each(function () {
 			var speed = $(this).attr('data-speed');
-			if($(this).attr('data-revert')) speed *= -.4;
-			TweenMax.to($(this), 1, {x: (1 - newx*speed), y: (1 - newy*speed)});
+			if ($(this).attr('data-revert')) speed *= -.4;
+			TweenMax.to($(this), 1, { x: (1 - newx * speed), y: (1 - newy * speed) });
 		});
 	});
 
 	// ScrollMagic JS
 	var controller = new ScrollMagic.Controller();
-	$(".main-slides-content h1, .about-content h3, .services-section-content h3, .section-title h2, .testimonials-section-content h3, .main-hero-content h1, .skill-content h3, .main-banner-content h1, .about-wrap-content h3, .talk-content h3, .projects-section-content h3, .projects-info-content h3").each(function() {
+	$(".main-slides-content h1, .about-content h3, .services-section-content h3, .section-title h2, .testimonials-section-content h3, .main-hero-content h1, .skill-content h3, .main-banner-content h1, .about-wrap-content h3, .talk-content h3, .projects-section-content h3, .projects-info-content h3").each(function () {
 		var tl = new TimelineMax();
-		if(tl.isActive()){
+		if (tl.isActive()) {
 			return false;
 		}
 		var cov = $(this).find(".overlay");
@@ -74,8 +74,8 @@ jQuery(function ($) {
 			triggerElement: this,
 			triggerHook: 0.7
 		})
-		.setTween(tl)
-		.addTo(controller);
+			.setTween(tl)
+			.addTo(controller);
 	});
 
 	// Home Slides
@@ -88,8 +88,9 @@ jQuery(function ($) {
 		autoplayTimeout: 1500,
 		autoplayHoverPause: true,
 		autoplay: true,
-		autoHeight:true,
+		autoHeight: true,
 		items: 1,
+		rtl: $('html').attr('dir') === 'rtl',
 		navText: [
 			"<i class='ri-arrow-left-s-line'></i>",
 			"<i class='ri-arrow-right-s-line'></i>"
@@ -106,8 +107,9 @@ jQuery(function ($) {
 		autoplayTimeout: 2000,
 		autoplayHoverPause: true,
 		autoplay: true,
-		autoHeight:true,
+		autoHeight: true,
 		items: 1,
+		rtl: $('html').attr('dir') === 'rtl',
 		navText: [
 			"<i class='ri-arrow-left-s-line'></i>",
 			"<i class='ri-arrow-right-s-line'></i>"
@@ -123,7 +125,7 @@ jQuery(function ($) {
 		margin: 25,
 		autoplayHoverPause: true,
 		autoplay: true,
-
+		rtl: $('html').attr('dir') === 'rtl',
 		responsive: {
 			0: {
 				items: 2
@@ -153,7 +155,7 @@ jQuery(function ($) {
 		center: true,
 		autoplayHoverPause: true,
 		autoplay: false,
-
+		rtl: $('html').attr('dir') === 'rtl',
 		responsive: {
 			0: {
 				items: 1
@@ -178,7 +180,7 @@ jQuery(function ($) {
 		center: true,
 		autoplayHoverPause: true,
 		autoplay: true,
-
+		rtl: $('html').attr('dir') === 'rtl',
 		responsive: {
 			0: {
 				items: 1
@@ -205,6 +207,7 @@ jQuery(function ($) {
 		center: true,
 		autoplayHoverPause: true,
 		autoplay: true,
+		rtl: $('html').attr('dir') === 'rtl',
 		navText: [
 			"<i class='ri-arrow-left-s-line'></i>",
 			"<i class='ri-arrow-right-s-line'></i>"
@@ -232,6 +235,7 @@ jQuery(function ($) {
 		margin: 25,
 		autoplayHoverPause: true,
 		autoplay: true,
+		rtl: $('html').attr('dir') === 'rtl',
 		navText: [
 			"<i class='ri-arrow-left-s-line'></i>",
 			"<i class='ri-arrow-right-s-line'></i>"
@@ -261,6 +265,7 @@ jQuery(function ($) {
 		margin: 25,
 		autoplayHoverPause: true,
 		autoplay: true,
+		rtl: $('html').attr('dir') === 'rtl',
 		navText: [
 			"<i class='ri-arrow-left-s-line'></i>",
 			"<i class='ri-arrow-right-s-line'></i>"
@@ -288,7 +293,7 @@ jQuery(function ($) {
 		center: true,
 		autoplayHoverPause: true,
 		autoplay: true,
-
+		rtl: $('html').attr('dir') === 'rtl',
 		responsive: {
 			0: {
 				items: 1
@@ -315,9 +320,10 @@ jQuery(function ($) {
 		autoplayTimeout: 1500,
 		autoplayHoverPause: true,
 		autoplay: true,
-		autoHeight:true,
+		autoHeight: true,
 		margin: 15,
 		items: 1,
+		rtl: $('html').attr('dir') === 'rtl',
 		navText: [
 			"<i class='ri-arrow-left-s-line'></i>",
 			"<i class='ri-arrow-right-s-line'></i>"
@@ -344,7 +350,7 @@ jQuery(function ($) {
 			event.preventDefault();
 		}
 	});
-	function callbackFunction (resp) {
+	function callbackFunction(resp) {
 		if (resp.result === "success") {
 			formSuccessSub();
 		}
@@ -352,21 +358,21 @@ jQuery(function ($) {
 			formErrorSub();
 		}
 	}
-	function formSuccessSub(){
+	function formSuccessSub() {
 		$(".newsletter-form")[0].reset();
 		submitMSGSub(true, "Thank you for subscribing!");
-		setTimeout(function() {
+		setTimeout(function () {
 			$("#validator-newsletter").addClass('hide');
 		}, 4000)
 	}
-	function formErrorSub(){
+	function formErrorSub() {
 		$(".newsletter-form").addClass("animated shake");
-		setTimeout(function() {
+		setTimeout(function () {
 			$(".newsletter-form").removeClass("animated shake");
 		}, 1000)
 	}
-	function submitMSGSub(valid, msg){
-		if(valid){
+	function submitMSGSub(valid, msg) {
+		if (valid) {
 			var msgClasses = "validation-success";
 		}
 		else {
@@ -389,7 +395,7 @@ jQuery(function ($) {
 		var timeLeft = endTime - now;
 		var days = Math.floor(timeLeft / 86400);
 		var hours = Math.floor((timeLeft - (days * 86400)) / 3600);
-		var minutes = Math.floor((timeLeft - (days * 86400) - (hours * 3600 )) / 60);
+		var minutes = Math.floor((timeLeft - (days * 86400) - (hours * 3600)) / 60);
 		var seconds = Math.floor((timeLeft - (days * 86400) - (hours * 3600) - (minutes * 60)));
 		if (hours < "10") { hours = "0" + hours; }
 		if (minutes < "10") { minutes = "0" + minutes; }
@@ -399,57 +405,57 @@ jQuery(function ($) {
 		$("#minutes").html(minutes + "<span>Minutes</span>");
 		$("#seconds").html(seconds + "<span>Seconds</span>");
 	}
-	setInterval(function() { makeTimer(); }, 0);
+	setInterval(function () { makeTimer(); }, 0);
 
 	// Odometer JS
-	$('.odometer').appear(function(e) {
+	$('.odometer').appear(function (e) {
 		var odo = $(".odometer");
-		odo.each(function() {
+		odo.each(function () {
 			var countNumber = $(this).attr("data-count");
 			$(this).html(countNumber);
 		});
 	});
 
 	// skill Bar
-	jQuery('.skill-bar').each(function() {
+	jQuery('.skill-bar').each(function () {
 		jQuery(this).find('.progress-content').animate({
-		width:jQuery(this).attr('data-percentage')
-		},2000);
+			width: jQuery(this).attr('data-percentage')
+		}, 2000);
 
 		jQuery(this).find('.progress-number-mark').animate(
-		{left:jQuery(this).attr('data-percentage')},
-		{
-			duration: 2000,
-			step: function(now, fx) {
-			var data = Math.round(now);
-			jQuery(this).find('.percent').html(data + '%');
-			}
-		});
+			{ left: jQuery(this).attr('data-percentage') },
+			{
+				duration: 2000,
+				step: function (now, fx) {
+					var data = Math.round(now);
+					jQuery(this).find('.percent').html(data + '%');
+				}
+			});
 	});
 
 
 	// MixItUp JS
 	try {
-        var mixer = mixitup('#Container', {
-            controls: {
-                toggleDefault: 'none'
-            }
-        });
-    } catch (err) {}
+		var mixer = mixitup('#Container', {
+			controls: {
+				toggleDefault: 'none'
+			}
+		});
+	} catch (err) { }
 
 	// Nice Select JS
 	$('select').niceSelect();
 
 	// Input Plus & Minus Number JS
-	$('.input-counter').each(function() {
+	$('.input-counter').each(function () {
 		var spinner = jQuery(this),
-		input = spinner.find('input[type="text"]'),
-		btnUp = spinner.find('.plus-btn'),
-		btnDown = spinner.find('.minus-btn'),
-		min = input.attr('min'),
-		max = input.attr('max');
+			input = spinner.find('input[type="text"]'),
+			btnUp = spinner.find('.plus-btn'),
+			btnDown = spinner.find('.minus-btn'),
+			min = input.attr('min'),
+			max = input.attr('max');
 
-		btnUp.on('click', function() {
+		btnUp.on('click', function () {
 			var oldValue = parseFloat(input.val());
 			if (oldValue >= max) {
 				var newVal = oldValue;
@@ -459,7 +465,7 @@ jQuery(function ($) {
 			spinner.find("input").val(newVal);
 			spinner.find("input").trigger("change");
 		});
-		btnDown.on('click', function() {
+		btnDown.on('click', function () {
 			var oldValue = parseFloat(input.val());
 			if (oldValue <= min) {
 				var newVal = oldValue;
@@ -475,7 +481,7 @@ jQuery(function ($) {
 	AOS.init();
 
 	// WOW Animation JS
-	if($('.wow').length){
+	if ($('.wow').length) {
 		var wow = new WOW({
 			mobile: false
 		});
@@ -483,17 +489,17 @@ jQuery(function ($) {
 	}
 
 	// Go to Top
-	$(window).on('scroll', function(){
+	$(window).on('scroll', function () {
 		var scrolled = $(window).scrollTop();
 		if (scrolled > 600) $('.go-top').addClass('active');
 		if (scrolled < 600) $('.go-top').removeClass('active');
 	});
-	$('.go-top').on('click', function() {
-		$("html, body").animate({ scrollTop: "0" },  500);
+	$('.go-top').on('click', function () {
+		$("html, body").animate({ scrollTop: "0" }, 500);
 	});
 
 	// Preloader JS
-	jQuery(window).on('load',function(){
+	jQuery(window).on('load', function () {
 		jQuery(".preloader").fadeOut(500);
 	});
 	// Switch Btn
@@ -524,7 +530,7 @@ try {
 			document.getElementById('slider').checked = false;
 		} else {
 			setTheme('theme-light');
-		document.getElementById('slider').checked = true;
+			document.getElementById('slider').checked = true;
 		}
 	})();
-} catch (err) {}
+} catch (err) { }

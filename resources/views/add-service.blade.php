@@ -44,14 +44,16 @@
                                     <div class="col-lg-12 col-md-12">
                                         <div class="form-group">
                                             <input type="text" name="name" class="form-control" required=""
-                                                data-error="{{__('add-service.nameErorr')}}" placeholder="{{__('add-service.nameEn')}}">
+                                                data-error="{{__('add-service.nameErorr')}}"
+                                                placeholder="{{__('add-service.nameEn')}}">
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
                                     <div class="col-lg-12 col-md-12">
                                         <div class="form-group">
                                             <input type="text" name="name_ar" class="form-control" required=""
-                                                data-error="{{__('add-service.nameErorr')}}" placeholder="{{__('add-service.nameAr')}}">
+                                                data-error="{{__('add-service.nameErorr')}}"
+                                                placeholder="{{__('add-service.nameAr')}}">
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
@@ -75,14 +77,23 @@
                                         <div class="form-group">
                                             <input type="text" name="delivery_time" class="form-control" required=""
                                                 data-error="{{__('add-service.deliveryTimeErorr')}}"
-                                                placeholder="{{__('add-service.deliveryTime')}}">
+                                                placeholder="{{__('add-service.deliveryTimeEn')}}">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12">
+                                        <div class="form-group">
+                                            <input type="text" name="delivery_time_ar" class="form-control" required=""
+                                                data-error="{{__('add-service.deliveryTimeErorr')}}"
+                                                placeholder="{{__('add-service.deliveryTimeAr')}}">
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
                                     <div class="col-lg-12 col-md-12">
                                         <div class="form-group">
                                             <input type="text" name="price_range" class="form-control" required=""
-                                                data-error="{{__('add-service.priceErorr')}}" placeholder="{{__('add-service.price')}}">
+                                                data-error="{{__('add-service.priceErorr')}}"
+                                                placeholder="{{__('add-service.price')}}">
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
@@ -103,7 +114,8 @@
                                         </div>
                                     </div>
                                     <div id="feature" class="col-lg-12 col-md-12">
-                                        <span style="cursor: pointer; font-size: 20px;">{{__('add-service.addFeature')}}</span>
+                                        <span
+                                            style="cursor: pointer; font-size: 20px;">{{__('add-service.addFeature')}}</span>
                                         <span class="icon">+</span>
                                     </div>
                                     <div class="col-lg-12 col-md-12">
@@ -145,12 +157,18 @@
         let f = 0;
 
         feature.onclick = function () {
-            let input = document.createElement('input');
-            input.type = 'text';
-            input.name = 'feature[]';
-            input.className = 'form-control mb-2';
-            input.placeholder = '{{__("add-service.feature")}}';
-            confeature.appendChild(input);
+            let inputEn = document.createElement('input');
+            inputEn.type = 'text';
+            inputEn.name = 'feature[]';
+            inputEn.className = 'form-control mb-2';
+            inputEn.placeholder = '{{__("add-service.featureEn")}}';
+            let inputAr = document.createElement('input');
+            inputAr.type = 'text';
+            inputAr.name = 'feature_ar[]';
+            inputAr.className = 'form-control mb-4';
+            inputAr.placeholder = '{{__("add-service.featureAr")}}';
+            confeature.appendChild(inputEn);
+            confeature.appendChild(inputAr);
             f++;
         }
     </script>

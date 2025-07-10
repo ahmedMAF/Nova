@@ -90,7 +90,7 @@
                                             <select name="category" id="" required class="form-control select">
                                                 <option disabled selected>{{__('add-project.select')}}</option>
                                                 @foreach ($categories as $category)
-                                                    <option value="{{ $category->id }}">{{ $category->name }}</option>
+                                                    <option value="{{ $category->id }}">{{ $category->name_en . ' | ' . $category->name_ar}}</option>
                                                 @endforeach
                                             </select>
                                             <div class="help-block with-errors"></div>

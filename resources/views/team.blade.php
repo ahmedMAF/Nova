@@ -79,12 +79,12 @@
                                     <span>{{$member->role}}</span>
                                 </div>
                             </div>
-                            <div>
-                                <a href="{{ route('edit_member', $member->id) }}" class="btn btn-warning">{{ __('team.edit') }}</a>
+                            <div class="d-flex justify-content-between">
+                                <a href="{{ route('edit_member', $member->id) }}" class="btn-custm">{{ __('team.edit') }}</a>
                                 <form action="{{ route('delete_member', $member->id) }}" method="POST" style="display: inline;">
                                     @csrf
                                     @method('DELETE')
-                                    <button type="submit" class="btn btn-danger">{{ __('team.delete') }}</button>
+                                    <input type="submit" class="btn-custm btn-custm-delete" value="{{ __('team.delete') }}">
                                 </form>
                             </div>
                         </div>

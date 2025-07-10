@@ -19,7 +19,7 @@ class CategoryController extends Controller
         ]);
 
         Category::create([
-            'name' => $validated['name'],
+            'name_en' => $validated['name'],
             'name_ar' => $validated['name_ar'],
         ]);
 

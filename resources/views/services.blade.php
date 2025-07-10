@@ -13,12 +13,12 @@
 
     <!-- Start Page Banner Area -->
     <div class="page-banner-area bg-2 jarallax" style="
-                                                        background-color: black;
-                                                        position: relative;
-                                                        z-index: 0;
-                                                        background-attachment: scroll;
-                                                        background-size: auto;
-                                                      " data-jarallax='{"speed": 0.3}'>
+                                                            background-color: black;
+                                                            position: relative;
+                                                            z-index: 0;
+                                                            background-attachment: scroll;
+                                                            background-size: auto;
+                                                          " data-jarallax='{"speed": 0.3}'>
         <div class="container">
             <div class="page-banner-content aos-init aos-animate" data-aos="fade-right" data-aos-delay="50"
                 data-aos-duration="500" data-aos-once="true">
@@ -33,32 +33,32 @@
             </div>
         </div>
         <div id="jarallax-container-0" style="
-                                                          position: absolute;
-                                                          top: 0px;
-                                                          left: 0px;
-                                                          width: 100%;
-                                                          height: 100%;
-                                                          overflow: hidden;
-                                                          pointer-events: none;
-                                                          visibility: hidden;
-                                                          z-index: -100;
-                                                        ">
+                                                              position: absolute;
+                                                              top: 0px;
+                                                              left: 0px;
+                                                              width: 100%;
+                                                              height: 100%;
+                                                              overflow: hidden;
+                                                              pointer-events: none;
+                                                              visibility: hidden;
+                                                              z-index: -100;
+                                                            ">
             <div style="
-                                                            background-position: 50% 50%;
-                                                            background-size: 100%;
-                                                            background-repeat: no-repeat;
-                                                            position: fixed;
-                                                            top: 0px;
-                                                            left: 0px;
-                                                            width: 1263.33px;
-                                                            height: 559.657px;
-                                                            overflow: hidden;
-                                                            pointer-events: none;
-                                                            margin-left: 0px;
-                                                            margin-top: 21.6717px;
-                                                            visibility: visible;
-                                                            transform: translateY(-30.75px) translateZ(0px);
-                                                          "></div>
+                                                                background-position: 50% 50%;
+                                                                background-size: 100%;
+                                                                background-repeat: no-repeat;
+                                                                position: fixed;
+                                                                top: 0px;
+                                                                left: 0px;
+                                                                width: 1263.33px;
+                                                                height: 559.657px;
+                                                                overflow: hidden;
+                                                                pointer-events: none;
+                                                                margin-left: 0px;
+                                                                margin-top: 21.6717px;
+                                                                visibility: visible;
+                                                                transform: translateY(-30.75px) translateZ(0px);
+                                                              "></div>
         </div>
     </div>
     <!-- End Page Banner Area -->
@@ -113,38 +113,38 @@
                 <h2>
                     {{ __('service.oureServices') }}
                     <span class="overlay" style="
-                                                        transform-origin: left 50% 0px;
-                                                        transform: matrix(0, 0, 0, 1, 0, 0);
-                                                      "></span>
+                                                            transform-origin: left 50% 0px;
+                                                            transform: matrix(0, 0, 0, 1, 0, 0);
+                                                          "></span>
                 </h2>
                 <p></p>
                 <p align="center" style="
-                                                      margin: 0in 0in 15pt;
-                                                      text-align: center;
-                                                      line-height: 18pt;
-                                                      background-image: initial;
-                                                      background-position: initial;
-                                                      background-size: initial;
-                                                      background-repeat: initial;
-                                                      background-attachment: initial;
-                                                      background-origin: initial;
-                                                      background-clip: initial;
-                                                      vertical-align: baseline;
-                                                    "></p>
+                                                          margin: 0in 0in 15pt;
+                                                          text-align: center;
+                                                          line-height: 18pt;
+                                                          background-image: initial;
+                                                          background-position: initial;
+                                                          background-size: initial;
+                                                          background-repeat: initial;
+                                                          background-attachment: initial;
+                                                          background-origin: initial;
+                                                          background-clip: initial;
+                                                          vertical-align: baseline;
+                                                        "></p>
                 <div style="text-align: left">
                     <p class="MsoNormal" style="
-                                                        text-align: center;
-                                                        background-image: initial;
-                                                        background-position: initial;
-                                                        background-size: initial;
-                                                        background-repeat: initial;
-                                                        background-attachment: initial;
-                                                        background-origin: initial;
-                                                        background-clip: initial;
-                                                        direction: ltr;
-                                                        unicode-bidi: embed;
-                                                      ">
-                                                      {{ __('service.oureServicesPart1') }}
+                                                            text-align: center;
+                                                            background-image: initial;
+                                                            background-position: initial;
+                                                            background-size: initial;
+                                                            background-repeat: initial;
+                                                            background-attachment: initial;
+                                                            background-origin: initial;
+                                                            background-clip: initial;
+                                                            direction: ltr;
+                                                            unicode-bidi: embed;
+                                                          ">
+                        {{ __('service.oureServicesPart1') }}
                         <font face="Open Sans, sans-serif"><span style="font-size: 12pt">
                                 <o:p></o:p>
                             </span></font>
@@ -174,14 +174,17 @@
                                     <p>
                                         {{$service->description}}
                                     </p>
-                                    <a href="{{route('service_details', $service->id)}}" class="services-btn show">{{ __('service.view') }}</a>
+                                    <a href="{{route('service_details', $service->id)}}"
+                                        class="services-btn show">{{ __('service.view') }}</a>
                                 </div>
-                                <a href="{{route('edit_service', $service->id)}}">{{ __('service.edit') }}</a>
-                                <form action="{{route('delete_service', $service->id)}}" method="POST">
-                                    @csrf
-                                    @method('DELETE')
-                                    <input type="submit" value="{{ __('service.delete') }}" class="btn btn-danger">
-                                </form>
+                                <div class="d-flex justify-content-between">
+                                    <a class="btn-custm" href="{{route('edit_service', $service->id)}}">{{ __('service.edit') }}</a>
+                                    <form action="{{route('delete_service', $service->id)}}" method="POST">
+                                        @csrf
+                                        @method('DELETE')
+                                        <input type="submit" value="{{ __('service.delete') }}" class="btn-custm btn-custm-delete">
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     @endforeach
@@ -202,7 +205,8 @@
                                     <p>
                                         {{$service->description}}
                                     </p>
-                                    <a href="{{route('service_details', $service->id)}}" class="services-btn show">{{ __('service.view') }}</a>
+                                    <a href="{{route('service_details', $service->id)}}"
+                                        class="services-btn show">{{ __('service.view') }}</a>
                                 </div>
                             </div>
                         </div>
@@ -240,7 +244,8 @@
                                     <div class="col-lg-6 col-md-6">
                                         <div class="form-group">
                                             <input type="text" name="name" class="form-control" required=""
-                                                data-error="{{__('contact.nameErorr')}}" placeholder="{{ __('contact.name') }}">
+                                                data-error="{{__('contact.nameErorr')}}"
+                                                placeholder="{{ __('contact.name') }}">
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>

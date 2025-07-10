@@ -12,7 +12,7 @@ class ServiceController extends Controller
     public function services()
     {
         $locale = app()->getLocale();
-        $services = Service::select('id', "name_{$locale} as name", "description_{$locale} as description" , 'image')->get();
+        $services = Service::select('id', "name_{$locale} as name", "description_{$locale} as description", 'image')->get();
         return view('services', ['services' => $services]);
     }
     public function service()
@@ -29,14 +29,17 @@ class ServiceController extends Controller
             'description' => 'required|string',
             'description_ar' => 'required|string',
             'delivery_time' => 'required|string',
+            'delivery_time_ar' => 'required|string',
             'price_range' => 'required|string',
             'information' => 'file',
             'image' => 'required|image|mimes:jpeg,png,jpg,gif',
             'feature.*' => 'string',
+            'feature_ar.*' => 'string',
         ]);
 
         $infoPath = null;
         $feature = [];
+        $featureAr = [];
         $imagePath = $request->file('image')->store('service', 'public');
 
         if ($request->hasFile('information')) {
@@ -47,16 +50,22 @@ class ServiceController extends Controller
             $feature = $request->input('feature');
         }
 
+        if ($request->has('feature_ar')) {
+            $featureAr = $request->input('feature_ar');
+        }
+
         Service::create([
-            "name" => $validated["name"],
+            "name_en" => $validated["name"],
             "name_ar" => $validated["name_ar"],
-            "description" => $validated["description"],
+            "description_en" => $validated["description"],
             "description_ar" => $validated["description_ar"],
-            "delivery_time" => $validated["delivery_time"],
+            "delivery_time_en" => $validated["delivery_time"],
+            "delivery_time_ar" => $validated["delivery_time_ar"],
             "price_range" => $validated["price_range"],
             "information" => $infoPath,
             "image" => $imagePath,
-            "feature" => json_encode($feature),
+            "feature_en" => json_encode($feature),
+            "feature_ar" => json_encode($featureAr),
         ]);
 
         return redirect()->route('services')->with('success', 'Service added successfully!');
@@ -65,7 +74,7 @@ class ServiceController extends Controller
     public function details($serviceId)
     {
         $locale = app()->getLocale();
-        $service = Service::select('id', "name_{$locale} as name", "description_{$locale} as description" , 'delivery_time', 'price_range', 'information', 'image', 'feature')
+        $service = Service::select('id', "name_{$locale} as name", "description_{$locale} as description", "delivery_time_{$locale} as delivery_time", 'price_range', 'information', 'image', "feature_{$locale} as feature")
             ->where('id', $serviceId)
             ->first();
         $services = Service::select("name_{$locale} as name", 'id')->get();
@@ -89,10 +98,12 @@ class ServiceController extends Controller
             'description' => 'required|string',
             'description_ar' => 'required|string',
             'delivery_time' => 'required|string',
+            'delivery_time_ar' => 'required|string',
             'price_range' => 'required|string',
             'information' => 'file',
             'image' => 'image|mimes:jpeg,png,jpg,gif',
             'feature.*' => 'nullable|string',
+            'feature_ar.*' => 'nullable|string',
         ]);
 
         $infoPath = $service->information;
@@ -104,10 +115,20 @@ class ServiceController extends Controller
         }
 
         $feature = [];
+        $featureAr = [];
+
         if ($request->input('feature')) {
             foreach ($request->input('feature') as $value) {
                 if ($value) {
                     $feature[] = $value;
+                }
+            }
+        }
+
+        if ($request->input('feature_ar')) {
+            foreach ($request->input('feature_ar') as $value) {
+                if ($value) {
+                    $featureAr[] = $value;
                 }
             }
         }
@@ -120,15 +141,17 @@ class ServiceController extends Controller
         }
 
         $service->update([
-            "name" => $validated["name"],
+            "name_en" => $validated["name"],
             "name_ar" => $validated["name_ar"],
-            "description" => $validated["description"],
+            "description_en" => $validated["description"],
             "description_ar" => $validated["description_ar"],
-            "delivery_time" => $validated["delivery_time"],
+            "delivery_time_en" => $validated["delivery_time"],
+            "delivery_time_ar" => $validated["delivery_time_ar"],
             "price_range" => $validated["price_range"],
             "information" => $infoPath,
             "image" => $imagePath,
-            "feature" => json_encode($feature),
+            "feature_en" => json_encode($feature),
+            "feature_ar" => json_encode($featureAr),
         ]);
 
         return redirect()->route('services')->with('success', 'Service updated successfully!');

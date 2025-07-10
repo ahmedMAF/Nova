@@ -34,7 +34,7 @@ class ProjectController extends Controller
             'description_ar' => 'required|string',
             'category' => 'required|exists:categories,id',
             'date' => 'required|date',
-            'link' => 'string',
+            'link' => 'nullable|string',
             'image' => 'required|image|mimes:jpeg,png,jpg,gif',
             'photo.*' => 'image|mimes:jpeg,png,jpg,gif',
             'video.*' => 'url',
@@ -57,11 +57,11 @@ class ProjectController extends Controller
         }
 
         Project::create([
-            'name' => $validated['name'],
+            'name_en' => $validated['name'],
             'name_ar' => $validated['name_ar'],
-            'client' => $validated['client'],
+            'client_en' => $validated['client'],
             'client_ar' => $validated['client_ar'],
-            'description' => $validated['description'],
+            'description_en' => $validated['description'],
             'description_ar' => $validated['description_ar'],
             'category_id' => $validated['category'],
             'date' => $validated['date'],
@@ -134,11 +134,11 @@ class ProjectController extends Controller
         }
 
         $project->update([
-            'name' => $validated['name'],
+            'name_en' => $validated['name'],
             'name_ar' => $validated['name_ar'],
-            'client' => $validated['client'],
+            'client_en' => $validated['client'],
             'client_ar' => $validated['client_ar'],
-            'description' => $validated['description'],
+            'description_en' => $validated['description'],
             'description_ar' => $validated['description_ar'],
             'category_id' => $validated['category'],
             'date' => $validated['date'],

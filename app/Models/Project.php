@@ -7,11 +7,11 @@ use Illuminate\Database\Eloquent\Model;
 class Project extends Model
 {
     protected $fillable = [
-        'name',
+        'name_en',
         'name_ar',
-        'client',
+        'client_en',
         'client_ar',
-        'description',
+        'description_en',
         'description_ar',
         'category_id',
         'date',

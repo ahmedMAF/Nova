@@ -22,8 +22,8 @@
     <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}" />
     <link rel="stylesheet" href="{{asset('css/toastr.min.css')}}" />
     @if (app()->getLocale() == 'ar')
-        <link rel="stylesheet" href="{{asset('css/ar-style.css')}}" />>
-        <link rel="stylesheet" href="{{asset('css/ar.css')}}" />>
+        <link rel="stylesheet" href="{{asset('css/ar-style.css')}}" />
+        <link rel="stylesheet" href="{{asset('css/ar.css')}}" />
     @else
         <link rel="stylesheet" href="{{asset('css/style.css')}}" />
     @endif
@@ -112,7 +112,7 @@
                                 @endif
                                 <li class="nav-item">
                                     <a href="{{route('change_language')}}" class="nav-link">
-                                        <i style="font-size: 18px" class="ri-global-line"></i>
+                                        <i style="font-size: 18px;" class="ri-global-line"></i>
                                         <span class="language-text">{{ __('main.enar') }}</span>
                                     </a>
                                 </li>

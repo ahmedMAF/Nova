@@ -267,7 +267,7 @@
         <div class="container-fluid">
             <div class="row align-items-center">
                 <div class="col-lg-4 col-md-12">
-                    <div class="services-section-content aos-init" data-aos="fade-down" data-aos-delay="80"
+                    <div class="services-section-content aos-init services-info-ar" data-aos="fade-down" data-aos-delay="80"
                         data-aos-duration="800" data-aos-once="true">
                         <div class="services-bg-text">{{ __('service.services') }}</div>
                         <span>{{ __('service.services') }}</span>
@@ -292,9 +292,8 @@
                                       background-clip: initial;
                                       vertical-align: baseline;
                                     "></p>
-                        <div style="text-align: left">
+                        <div  >
                             <p class="MsoNormal" style="
-                                        text-align: center;
                                         background-image: initial;
                                         background-position: initial;
                                         background-size: initial;
@@ -302,7 +301,6 @@
                                         background-attachment: initial;
                                         background-origin: initial;
                                         background-clip: initial;
-                                        direction: ltr;
                                         unicode-bidi: embed;
                                       ">
                                 {{ __('service.oureServicesPart1') }}
@@ -347,7 +345,7 @@
                                                     {{$service->description}}
                                                 </p>
                                                 <a href="../html/services.html" class="services-btn">
-                                                    View More</a>
+                                                    {{__('service.view')}}</a>
                                             </div>
                                         </div>
                                     </div>
@@ -620,7 +618,7 @@
                                         <h3>
                                             <a href="../html/projects.html">{{$project->name}}</a>
                                         </h3>
-                                        <a href="../html/projects.html" class="projects-btn">View More</a>
+                                        <a href="../html/projects.html" class="projects-btn">{{__('project.view')}}</a>
                                     </div>
                                 </div>
                             </div>

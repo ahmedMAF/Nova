@@ -77,7 +77,15 @@
                                         <div class="form-group">
                                             <input type="text" name="delivery_time" class="form-control" required=""
                                                 data-error="{{__('add-service.deliveryTimeErorr')}}"
-                                                placeholder="{{__('add-service.deliveryTime')}}" value="{{ $service->delivery_time }}">
+                                                placeholder="{{__('add-service.deliveryTimeEn')}}" value="{{ $service->delivery_time_en }}">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12">
+                                        <div class="form-group">
+                                            <input type="text" name="delivery_time_ar" class="form-control" required=""
+                                                data-error="{{__('add-service.deliveryTimeErorr')}}"
+                                                placeholder="{{__('add-service.deliveryTimeAr')}}" value="{{ $service->delivery_time_ar }}">
                                             <div class="help-block with-errors"></div>
                                         </div>
                                     </div>
@@ -106,9 +114,16 @@
                                         </div>
                                     </div>
                                     <label class="pb-2 ps-4">{{__('add-service.features')}}</label>
-                                    @foreach (json_decode($service->feature) as $feature)
+                                    @foreach (json_decode($service->feature_en) as $feature)
                                         <div class="form-group">
                                             <input type="text" name="feature[]" class="form-control"
+                                             placeholder="feature" value="{{ $feature }}">
+                                        </div>
+                                    @endforeach
+                                    <label class="pb-2 ps-4">{{__('add-service.features')}}</label>
+                                    @foreach (json_decode($service->feature_ar) as $feature)
+                                        <div class="form-group">
+                                            <input type="text" name="feature_ar[]" class="form-control"
                                              placeholder="feature" value="{{ $feature }}">
                                         </div>
                                     @endforeach
@@ -155,12 +170,18 @@
         let f = 0;
 
         feature.onclick = function () {
-            let input = document.createElement('input');
-            input.type = 'text';
-            input.name = 'feature[]';
-            input.className = 'form-control mb-2';
-            input.placeholder = '{{__("add-service.feature")}}';
-            confeature.appendChild(input);
+            let inputEn = document.createElement('input');
+            inputEn.type = 'text';
+            inputEn.name = 'feature[]';
+            inputEn.className = 'form-control mb-2';
+            inputEn.placeholder = '{{__("add-service.featureEn")}}';
+            let inputAr = document.createElement('input');
+            inputAr.type = 'text';
+            inputAr.name = 'feature_ar[]';
+            inputAr.className = 'form-control mb-4';
+            inputAr.placeholder = '{{__("add-service.featureAr")}}';
+            confeature.appendChild(inputEn);
+            confeature.appendChild(inputAr);
             f++;
         }
     </script>

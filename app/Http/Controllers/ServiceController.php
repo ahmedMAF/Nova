@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Service;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Str;
 
 
 class ServiceController extends Controller
@@ -13,7 +14,11 @@ class ServiceController extends Controller
     {
         $locale = app()->getLocale();
         $services = Service::select('id', "name_{$locale} as name", "description_{$locale} as description", 'image')->get();
-        return view('services', ['services' => $services]);
+        $servicesWithShortDes = $services->map(function ($service) {
+            $service->description = Str::words($service->description, 12);
+            return $service;
+        });
+        return view('services', ['services' => $servicesWithShortDes]);
     }
     public function service()
     {

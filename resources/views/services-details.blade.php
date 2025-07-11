@@ -14,10 +14,10 @@
 
                 <ul>
                     <li>
-                        <a href="#">{{__('service-details.home')}}</a>
+                        <a href="{{route('home')}}">{{__('service-details.home')}}</a>
                     </li>
                     <li>
-                        <a href="#">{{__('service-details.services')}}</a>
+                        <a href="{{route('services')}}">{{__('service-details.services')}}</a>
                     </li>
                     <li>{{$service->name}}</li>
                 </ul>

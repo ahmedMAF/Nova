@@ -26,7 +26,7 @@
 
                 <ul>
                     <li>
-                        <a href="../html/index.html">{{ __('service.home') }}</a>
+                        <a href="{{route('home')}}">{{ __('service.home') }}</a>
                     </li>
                     <li>{{ __('service.services') }}</li>
                 </ul>

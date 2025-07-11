@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Category;
 use App\Models\Project;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Str;
 
 
 class ProjectController extends Controller
@@ -14,6 +15,10 @@ class ProjectController extends Controller
     {
         $locale = app()->getLocale();
         $projects = Project::select('id', 'image', "name_{$locale} as name", "description_{$locale} as description", 'date')->paginate(10);
+        $projects->getCollection()->transform(function ($project) {
+            $project->description = Str::words($project->description, 12);
+            return $project;
+        });
         return view('projects', ['projects' => $projects]);
     }
     public function project()
@@ -78,10 +83,10 @@ class ProjectController extends Controller
     public function details($projectId)
     {
         $locale = app()->getLocale();
-        $project = Project::select('id' , "name_{$locale} as name", "description_{$locale} as description", "client_{$locale} as client" , 'date', 'link', 'image', 'photos', 'videos' , 'category_id')
+        $project = Project::select('id', "name_{$locale} as name", "description_{$locale} as description", "client_{$locale} as client", 'date', 'link', 'image', 'photos', 'videos', 'category_id')
             ->where('id', $projectId)
             ->first();
-        return view('project-details', ["project" => $project , 'locale' => $locale]);
+        return view('project-details', ["project" => $project, 'locale' => $locale]);
     }
 
     public function editProject($id)

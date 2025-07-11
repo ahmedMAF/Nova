@@ -2006,16 +2006,24 @@ Projects Area CSS
 .projects-item .projects-image {
   overflow: hidden;
   border-radius: 15px;
+  width: 100%;
+  height: 230px;
 }
 
 .projects-item .projects-image a {
   display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .projects-item .projects-image a img {
   border-radius: 15px;
   -webkit-transition: var(--transition);
   transition: var(--transition);
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .projects-item .projects-content {
@@ -9721,6 +9729,17 @@ Buy Now Btn
   height: 100%;
 }
 .projetc-detalis-image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.services-item .custom-image{
+  width: 100%;
+  height: 200px;
+}
+
+.services-item .services-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;

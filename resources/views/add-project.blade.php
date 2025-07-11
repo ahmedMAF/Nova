@@ -14,10 +14,10 @@
 
                 <ul>
                     <li>
-                        <a href="../html/index.html">{{__('add-project.home')}}</a>
+                        <a href="{{route('home')}}">{{__('add-project.home')}}</a>
                     </li>
                     <li>
-                        <a href="../html/index.html">{{__('add-project.admin')}}</a>
+                        <a href="{{route('admin')}}">{{__('add-project.admin')}}</a>
                     </li>
                     <li>{{__('add-project.addProject')}}</li>
                 </ul>

@@ -66,7 +66,7 @@
                 <div class="container">
                     <div class="main-responsive-menu">
                         <div class="logo">
-                            <a href="../html/index.html">
+                            <a href="{{route('home')}}">
                                 <img src="{{asset('image/logo.jpeg')}}" alt="image" />
                             </a>
                         </div>
@@ -77,7 +77,7 @@
             <div class="main-navbar">
                 <div class="container-fluid">
                     <nav class="navbar navbar-expand-md navbar-light">
-                        <a class="navbar-brand" href="../html/index.html">
+                        <a class="navbar-brand" href="{{route('home')}}">
                             <img src="{{asset('image/logo.jpeg')}}" alt="image" />
                         </a>
 
@@ -168,7 +168,7 @@
                     <div class="single-footer-widget aos-init" data-aos="fade-up" data-aos-delay="50"
                         data-aos-duration="500" data-aos-once="true">
                         <div class="widget-logo">
-                            <a href="../html/index.html"><img src="{{asset('image/logo.jpeg')}}" alt="image" /></a>
+                            <a href="{{route('home')}}"><img src="{{asset('image/logo.jpeg')}}" alt="image" /></a>
                         </div>
                         <p>
                             <font color="#ffffff">&nbsp; &nbsp;</font>
@@ -213,12 +213,12 @@
                         <h3>{{ __('main.links') }}</h3>
 
                         <ul class="quick-links">
-                            <li><a href="../html/index.html">{{ __('main.home') }}</a></li>
-                            <li><a href="../html/about.html">{{ __('main.about') }}</a></li>
+                            <li><a href="{{route('home')}}">{{ __('main.home') }}</a></li>
+                            <li><a href="{{route('about')}}">{{ __('main.about') }}</a></li>
                             <li>
-                                <a href="../html/services.html">{{ __('main.services') }}</a>
+                                <a href="{{route('services')}}">{{ __('main.services') }}</a>
                             </li>
-                            <li><a href="../html/team.html">{{ __('main.team') }}</a></li>
+                            <li><a href="{{route('team')}}">{{ __('main.team') }}</a></li>
                         </ul>
                     </div>
                 </div>
@@ -230,9 +230,9 @@
 
                         <ul class="quick-links">
                             <li>
-                                <a href="../html/projects.html">{{ __('main.projects') }}</a>
+                                <a href="{{route('projects')}}">{{ __('main.projects') }}</a>
                             </li>
-                            <li><a href="../html/contact.html">{{ __('main.contact') }}</a></li>
+                            <li><a href="{{route('contact')}}">{{ __('main.contact') }}</a></li>
                         </ul>
                     </div>
                 </div>

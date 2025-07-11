@@ -23,7 +23,7 @@
 
                 <ul>
                     <li>
-                        <a href="../html/index.html">{{ __('team.home') }}</a>
+                        <a href="{{route('home')}}">{{ __('team.home') }}</a>
                     </li>
                     <li>{{ __('team.team') }}</li>
                 </ul>

@@ -23,10 +23,10 @@
 
                 <ul>
                     <li>
-                        <a href="../html/index.html">{{__('add-cat.home')}}</a>
+                        <a href="{{route('home')}}">{{__('add-cat.home')}}</a>
                     </li>
                     <li>
-                        <a href="../html/index.html">{{__('add-cat.admin')}}</a>
+                        <a href="{{route('admin')}}">{{__('add-cat.admin')}}</a>
                     </li>
                     <li>{{__('add-cat.addCat')}}</li>
                 </ul>

@@ -21,7 +21,7 @@
 
                 <ul>
                     <li>
-                        <a href="../html/index.html">{{ __('login.home') }}</a>
+                        <a href="{{route('home')}}">{{ __('login.home') }}</a>
                     </li>
                     <li>{{ __('login.login') }}</li>
                 </ul>

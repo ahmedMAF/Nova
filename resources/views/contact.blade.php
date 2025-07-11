@@ -14,7 +14,7 @@
 
                 <ul>
                     <li>
-                        <a href="../html/index.html">{{ __('contact.home') }}</a>
+                        <a href="{{route('home')}}">{{ __('contact.home') }}</a>
                     </li>
                     <li>{{ __('contact.contact') }}</li>
                 </ul>

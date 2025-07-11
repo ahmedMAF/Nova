@@ -14,7 +14,7 @@
 
                 <ul>
                     <li>
-                        <a href="../html/index.html">{{ __('about.home') }}</a>
+                        <a href="{{route('about')}}">{{ __('about.home') }}</a>
                     </li>
                     <li>{{ __('about.about') }}</li>
                 </ul>
@@ -151,23 +151,23 @@
                 <h2>
                     {{ __('about.shoosePart1') }}
                     <span class="overlay" style="
-                            transform-origin: left 50% 0px;
-                            transform: matrix(0, 0, 0, 1, 0, 0);
-                          "></span>
+                                transform-origin: left 50% 0px;
+                                transform: matrix(0, 0, 0, 1, 0, 0);
+                              "></span>
                 </h2>
                 <p></p>
                 <h1 style="line-height: 150%" class="">
                     <p class="MsoNormal" style="
-                            background-image: initial;
-                            background-position: initial;
-                            background-size: initial;
-                            background-repeat: initial;
-                            background-attachment: initial;
-                            background-origin: initial;
-                            background-clip: initial;
-                            direction: ltr;
-                            unicode-bidi: embed;
-                          ">
+                                background-image: initial;
+                                background-position: initial;
+                                background-size: initial;
+                                background-repeat: initial;
+                                background-attachment: initial;
+                                background-origin: initial;
+                                background-clip: initial;
+                                direction: ltr;
+                                unicode-bidi: embed;
+                              ">
                         {{ __('about.shoosePart2') }}
                         <font face="Open Sans, sans-serif"><span style="font-size: 12pt">
                                 <o:p></o:p>
@@ -182,13 +182,13 @@
                     <div class="single-choose-card aos-init" data-aos="fade-up" data-aos-delay="50" data-aos-duration="500"
                         data-aos-once="true">
                         <div class="choose-image" data-tilt="">
-                            <a href="../html/index.html"><img
+                            <a href="{{route('home')}}"><img
                                     src="{{asset('image/Ziar1VrkIiAJE8yrWiyIZTKyDVzte1QK4ufIuZMm.png')}}"
                                     alt=" image" /></a>
                         </div>
                         <div class="choose-content">
                             <h3>
-                                <a href="../html/index.html">{{ __('about.excellence') }}</a>
+                                {{ __('about.excellence') }}
                             </h3>
                             <p></p>
                             <div style="text-align: justify">
@@ -202,13 +202,13 @@
                     <div class="single-choose-card aos-init" data-aos="fade-up" data-aos-delay="50" data-aos-duration="500"
                         data-aos-once="true">
                         <div class="choose-image" data-tilt="">
-                            <a href="../html/index.html"><img
+                            <a href="{{route('home')}}"><img
                                     src="{{asset('image/mv5MUSz3BO1ZdImmoKRZFA7wywV93EZdHyAUfH7A.png')}}"
                                     alt=" image" /></a>
                         </div>
                         <div class="choose-content">
                             <h3>
-                                <a href="../html/index.html">{{ __('about.commitment') }}</a>
+                                {{ __('about.commitment') }}
                             </h3>
                             <p></p>
                             <div style="text-align: justify">
@@ -222,13 +222,13 @@
                     <div class="single-choose-card aos-init" data-aos="fade-up" data-aos-delay="50" data-aos-duration="500"
                         data-aos-once="true">
                         <div class="choose-image" data-tilt="">
-                            <a href="../html/index.html"><img
+                            <a href="{{route('home')}}"><img
                                     src="{{asset('image/k2mPAdhe3yfadl3R35APCMq4PLwkBk615EzGDJqQ.png')}}"
                                     alt=" image" /></a>
                         </div>
                         <div class="choose-content">
                             <h3>
-                                <a href="../html/index.html">{{ __('about.teamwork') }}</a>
+                                 {{ __('about.teamwork') }}
                             </h3>
                             <p></p>
                             <div style="text-align: justify">
@@ -242,13 +242,13 @@
                     <div class="single-choose-card aos-init" data-aos="fade-up" data-aos-delay="50" data-aos-duration="500"
                         data-aos-once="true">
                         <div class="choose-image" data-tilt="">
-                            <a href="../html/index.html"><img
+                            <a href="{{route('home')}}"><img
                                     src="{{asset('image/decTe7YkYPePp0G4TSZyAGovB85Yi9tTuNmKYi7X.png')}}"
                                     alt=" image" /></a>
                         </div>
                         <div class="choose-content">
                             <h3>
-                                <a href="../html/index.html">{{ __('about.creativity') }}</a>
+                            {{ __('about.creativity') }}
                             </h3>
                             <p></p>
                             <div style="text-align: justify">
@@ -262,13 +262,13 @@
                     <div class="single-choose-card aos-init" data-aos="fade-up" data-aos-delay="50" data-aos-duration="500"
                         data-aos-once="true">
                         <div class="choose-image" data-tilt="">
-                            <a href="../html/index.html"><img
+                            <a href="{{route('home')}}"><img
                                     src="{{asset('image/sFL2jkR1CC43rPNzB0QiUhKidGgQdQz4raiik3ft.png')}}"
                                     alt=" image" /></a>
                         </div>
                         <div class="choose-content">
                             <h3>
-                                <a href="../html/index.html">{{ __('about.passion') }}</a>
+                                {{ __('about.passion') }}
                             </h3>
                             <p></p>
                             <div style="text-align: justify">
@@ -282,13 +282,13 @@
                     <div class="single-choose-card aos-init" data-aos="fade-up" data-aos-delay="50" data-aos-duration="500"
                         data-aos-once="true">
                         <div class="choose-image" data-tilt="">
-                            <a href="../html/index.html"><img
+                            <a href="{{route('home')}}"><img
                                     src="{{asset('image/33dJZH0ohwVRfdXVLH1Ro2SstEO4qePp0STU4Ywi.png')}}"
                                     alt=" image" /></a>
                         </div>
                         <div class="choose-content">
                             <h3>
-                                <a href="../html/index.html">{{ __('about.integrity') }}</a>
+                               {{ __('about.integrity') }}
                             </h3>
                             <p></p>
                             <div style="text-align: justify">
@@ -302,13 +302,13 @@
                     <div class="single-choose-card aos-init" data-aos="fade-up" data-aos-delay="50" data-aos-duration="500"
                         data-aos-once="true">
                         <div class="choose-image" data-tilt="">
-                            <a href="../html/index.html"><img
+                            <a href="{{route('home')}}"><img
                                     src="{{asset('image/9kHL2vfSqYS15orB5H93AdDZtETO2mGBhNOeKbSL.png')}}"
                                     alt=" image" /></a>
                         </div>
                         <div class="choose-content">
                             <h3>
-                                <a href="../html/index.html">{{ __('about.innovation') }}</a>
+                              {{ __('about.innovation') }}
                             </h3>
                             <p></p>
                             <div style="text-align: justify">
@@ -323,13 +323,13 @@
                     <div class="single-choose-card aos-init" data-aos="fade-up" data-aos-delay="50" data-aos-duration="500"
                         data-aos-once="true">
                         <div class="choose-image" data-tilt="">
-                            <a href="../html/index.html"><img
+                            <a href="{{route('home')}}"><img
                                     src="{{asset('image/An9T3tDQAyAU4LS7gG1nOWzuA4jkHoNWpEzVd9w3.png')}}"
                                     alt=" image" /></a>
                         </div>
                         <div class="choose-content">
                             <h3>
-                                <a href="../html/index.html">{{ __('about.quality') }}</a>
+                              {{ __('about.quality') }}
                             </h3>
                             <p></p>
                             <div style="text-align: justify">

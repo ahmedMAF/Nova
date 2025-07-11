@@ -21,7 +21,7 @@
 
                 <ul>
                     <li>
-                        <a href="../html/index.html">{{ __('admin.home') }}</a>
+                        <a href="{{route('home')}}">{{ __('admin.home') }}</a>
                     </li>
                     <li>{{ __('admin.dashbord') }}</li>
                 </ul>

@@ -21,10 +21,10 @@
 
                 <ul>
                     <li>
-                        <a href="../html/index.html">{{__('password.home')}}</a>
+                        <a href="{{route('home')}}">{{__('password.home')}}</a>
                     </li>
                     <li>
-                        <a href="../html/index.html">{{__('password.admin')}}</a>
+                        <a href="{{route('admin')}}">{{__('password.admin')}}</a>
                     </li>
                     <li>{{__('password.changePassword')}}</li>
                 </ul>

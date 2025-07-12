@@ -416,11 +416,12 @@ Main Slides Area CSS
   position: relative;
   z-index: 1;
   overflow: hidden;
+  height: 100vh;
 }
 
 .main-slides-item {
   background-color: var(--black-color);
-  padding-top: 150px;
+  padding-top: 100px;
   padding-bottom: 100px;
 }
 

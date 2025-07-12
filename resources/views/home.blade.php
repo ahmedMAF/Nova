@@ -32,12 +32,6 @@
                                                 data-aos-once="true" class="aos-init aos-animate">
                                                 {{ __('home.iotPart1') }}
                                             </p>
-
-                                            <div class="slides-btn aos-init" data-aos="fade-right" data-aos-delay="70"
-                                                data-aos-duration="700" data-aos-once="true">
-                                                <a href="{{route('contact')}}"
-                                                    class="default-btn">{{ __('home.getStarted') }}</a>
-                                            </div>
                                         </div>
                                     </div>
 
@@ -45,7 +39,7 @@
                                         data-aos-delay="70" data-aos-duration="700" data-aos-once="true">
                                         <div class="main-slides-image" data-tilt=""
                                             style="transform: matrix(1, 0, 0, 1, 0, 0)">
-                                            <img src="{{asset('image/slideiot.jpeg')}}" alt="image" />
+                                            <img style="height: 500px; width: auto;" src="{{asset('image/mainSlideIOT.jpeg')}}" alt="image" />
                                         </div>
                                     </div>
                                 </div>
@@ -77,12 +71,6 @@
                                                 </p>
                                             </div>
                                             <p></p>
-
-                                            <div class="slides-btn aos-init" data-aos="fade-right" data-aos-delay="70"
-                                                data-aos-duration="700" data-aos-once="true">
-                                                <a href="{{route('contact')}}"
-                                                    class="default-btn">{{ __('home.getStarted') }}</a>
-                                            </div>
                                         </div>
                                     </div>
 
@@ -90,7 +78,7 @@
                                         data-aos-delay="70" data-aos-duration="700" data-aos-once="true">
                                         <div class="main-slides-image" data-tilt=""
                                             style="transform: matrix(1, 0, 0, 1, 0, 0)">
-                                            <img src="{{asset('image/slideai.jpeg')}}" alt="image" />
+                                            <img style="height: 500px; width: auto;" src="{{asset('image/mainSlideAI.jfif')}}" alt="image" />
                                         </div>
                                     </div>
                                 </div>
@@ -117,12 +105,6 @@
                                                 data-aos-once="true" class="aos-init aos-animate">
                                                 {{ __('home.programinPart1') }}
                                             </p>
-
-                                            <div class="slides-btn aos-init" data-aos="fade-right" data-aos-delay="70"
-                                                data-aos-duration="700" data-aos-once="true">
-                                                <a href="{{route('contact')}}"
-                                                    class="default-btn">{{ __('home.getStarted') }}</a>
-                                            </div>
                                         </div>
                                     </div>
 
@@ -130,7 +112,7 @@
                                         data-aos-delay="70" data-aos-duration="700" data-aos-once="true">
                                         <div class="main-slides-image" data-tilt=""
                                             style="transform: matrix(1, 0, 0, 1, 0, 0)">
-                                            <img src="{{asset('image/slidedev.jpeg')}}" alt="image" />
+                                            <img style="height: 500px; width: auto;" src="{{asset('image/mainSlideCode.jpeg')}}" alt="image" />
                                         </div>
                                     </div>
                                 </div>
@@ -162,12 +144,6 @@
                                                 </p>
                                             </div>
                                             <p></p>
-
-                                            <div class="slides-btn aos-init" data-aos="fade-right" data-aos-delay="70"
-                                                data-aos-duration="700" data-aos-once="true">
-                                                <a href="{{route('contact')}}"
-                                                    class="default-btn">{{ __('home.getStarted') }}</a>
-                                            </div>
                                         </div>
                                     </div>
 
@@ -175,7 +151,7 @@
                                         data-aos-delay="70" data-aos-duration="700" data-aos-once="true">
                                         <div class="main-slides-image" data-tilt=""
                                             style="transform: matrix(1, 0, 0, 1, 0, 0)">
-                                            <img src="{{asset('image/slidecourse.jpeg')}}" alt="image" />
+                                            <img style="height: 500px; width: auto;" src="{{asset('image/mainSlideCoures.jpeg')}}" alt="image" />
                                         </div>
                                     </div>
                                 </div>
@@ -183,16 +159,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="owl-nav disabled">
-                <button type="button" role="presentation" class="owl-prev">
-                    <i class="ri-arrow-left-s-line"></i></button><button type="button" role="presentation" class="owl-next">
-                    <i class="ri-arrow-right-s-line"></i>
-                </button>
-            </div>
-            <div class="owl-dots" style="margin-bottom: 100px; display: none">
-                <button role="button" class="owl-dot"><span></span></button><button role="button"
-                    class="owl-dot active"><span></span></button>
             </div>
         </div>
 
@@ -352,19 +318,6 @@
                                 @endforeach
 
                             </div>
-                        </div>
-                        <div class="owl-nav disabled">
-                            <button type="button" role="presentation" class="owl-prev">
-                                <span aria-label="Previous">‹</span></button><button type="button" role="presentation"
-                                class="owl-next">
-                                <span aria-label="Next">›</span>
-                            </button>
-                        </div>
-                        <div class="owl-dots">
-                            <button role="button" class="owl-dot active">
-                                <span></span></button><button role="button" class="owl-dot"><span></span></button><button
-                                role="button" class="owl-dot"><span></span></button><button role="button"
-                                class="owl-dot"><span></span></button>
                         </div>
                     </div>
                 </div>
@@ -626,14 +579,6 @@
 
                     </div>
                 </div>
-                <div class="owl-nav">
-                    <button type="button" role="presentation" class="owl-prev">
-                        <i class="ri-arrow-left-s-line"></i></button><button type="button" role="presentation"
-                        class="owl-next">
-                        <i class="ri-arrow-right-s-line"></i>
-                    </button>
-                </div>
-                <div class="owl-dots disabled"></div>
             </div>
         </div>
 

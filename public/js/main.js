@@ -82,10 +82,10 @@ jQuery(function ($) {
 	$('.home-slides').owlCarousel({
 		loop: true,
 		nav: false,
-		dots: true,
+		dots: false,
 		animateOut: 'fadeOut',
 		smartSpeed: 1500,
-		autoplayTimeout: 1500,
+		autoplayTimeout: 3000,
 		autoplayHoverPause: true,
 		autoplay: true,
 		autoHeight: true,
@@ -206,7 +206,7 @@ jQuery(function ($) {
 		margin: 25,
 		center: true,
 		autoplayHoverPause: true,
-		autoplay: true,
+		autoplay: false,
 		rtl: $('html').attr('dir') === 'rtl',
 		navText: [
 			"<i class='ri-arrow-left-s-line'></i>",

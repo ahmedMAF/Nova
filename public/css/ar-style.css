@@ -417,12 +417,11 @@ Main Slides Area CSS
   z-index: 1;
   overflow: hidden;
   height: 100vh;
-  background-color: black;
 }
 
 .main-slides-item {
   background-color: var(--black-color);
-  padding-top: 150px;
+  padding-top: 100px;
   padding-bottom: 100px;
 }
 
@@ -1219,7 +1218,6 @@ Services Area CSS
 
 .services-area .container-fluid {
   overflow: hidden;
-  right: calc((100% - 1320px)/2);
   position: relative;
 }
 

@@ -67,7 +67,7 @@
                     <div class="main-responsive-menu">
                         <div class="logo">
                             <a href="{{route('home')}}">
-                                <img style="50px" src="{{asset('image/nova.png')}}" alt="image" />
+                                <img style="height: 60px" src="{{asset('image/nova.jpeg')}}" alt="image" />
                             </a>
                         </div>
                     </div>
@@ -78,7 +78,7 @@
                 <div class="container-fluid">
                     <nav class="navbar navbar-expand-md navbar-light">
                         <a class="navbar-brand" href="{{route('home')}}">
-                            <img style="width: 50px" src="{{asset('image/nova.png')}}" alt="image" />
+                            <img style="height: 70px" src="{{asset('image/nova.jpeg')}}" alt="image" />
                         </a>
 
                         <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent"
@@ -168,7 +168,7 @@
                     <div class="single-footer-widget aos-init" data-aos="fade-up" data-aos-delay="50"
                         data-aos-duration="500" data-aos-once="true">
                         <div class="widget-logo">
-                            <a style="width: 100px" href="{{route('home')}}"><img src="{{asset('image/nova.png')}}" alt="image" /></a>
+                            <a style="width: 130px" href="{{route('home')}}"><img src="{{asset('image/nova.jpeg')}}" alt="image" /></a>
                         </div>
                         <p>
                             <font color="#ffffff">&nbsp; &nbsp;</font>

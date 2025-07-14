@@ -1,2 +1,13 @@
 User-agent: *
-Disallow:
+Disallow: /admin/login
+Disallow: /admin
+Disallow: /admin/password
+Disallow: /admin/project
+Disallow: /admin/edit/project/
+Disallow: /admin/team
+Disallow: /admin/edit/member/
+Disallow: /admin/category
+Disallow: /admin/services
+Disallow: /admin/edit/service/
+
+Sitemap: https://yourdomain.com/sitemap.xml

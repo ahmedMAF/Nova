@@ -69,7 +69,7 @@
                     <div class="main-responsive-menu">
                         <div class="logo">
                             <a href="{{route('home')}}">
-                                <img style="height: 60px" src="{{asset('image/nova.jpeg')}}" alt="image" />
+                                <img style="height: 45px" src="{{asset('image/nova.jpeg')}}" alt="image" />
                             </a>
                         </div>
                     </div>

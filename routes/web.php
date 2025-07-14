@@ -28,7 +28,7 @@ Route::middleware(SetLocale::class)->group(function () {
 });
 
 
-Route::middleware([Auth::class , SetLocale::class])->group(function () {
+Route::middleware([Auth::class, SetLocale::class])->group(function () {
     Route::get('/admin', [AdminController::class, 'admin'])->name('admin');
     Route::get('/admin/password', [LoginController::class, 'change'])->name('change');
     Route::post('/admin/password', [LoginController::class, 'changePassword'])->name('change_password');
@@ -62,3 +62,37 @@ Route::get('/change-language', function () {
 
     return redirect()->back();
 })->name('change_language');
+
+
+
+
+
+
+
+use Spatie\Sitemap\Sitemap;
+use Spatie\Sitemap\Tags\Url;
+use App\Models\Project;
+use App\Models\Service;
+
+Route::get('/generate-sitemap', function () {
+    $sitemap = Sitemap::create();
+
+    $sitemap->add(Url::create('/'));
+    $sitemap->add(Url::create('/about'));
+    $sitemap->add(Url::create('/team'));
+    $sitemap->add(Url::create('/contact'));
+    $sitemap->add(Url::create('/projects'));
+    $sitemap->add(Url::create('/services'));
+
+    foreach (Project::all() as $project) {
+        $sitemap->add(Url::create("/project/details/{$project->id}"));
+    }
+
+    foreach (Service::all() as $service) {
+        $sitemap->add(Url::create("/service/details/{$service->id}"));
+    }
+
+    $sitemap->writeToFile(public_path('sitemap.xml'));
+
+    return 'okay';
+});

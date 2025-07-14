@@ -1,6 +1,10 @@
 @extends('layout.main')
 
-@section('title', 'Our Services')
+@section('title', __('service.title'))
+
+@section('meta')
+    <meta name="description" content="{{ __('service.meta') }}">
+@endsection
 
 @section('content')
     @if (session('success'))

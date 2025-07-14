@@ -14,4 +14,6 @@ return [
     'aiPart1' => 'Leverage the power of artificial intelligence to enhance your business operations and achieve remarkable results in ways that were previously impossible.',
     'coures' => 'Empowering Minds Through Training',
     'couresPart1' => 'Invest in your future and learn the most in-demand tech skills with training courses designed to maximize your potential.',
+    'title' => 'Home',
+    'metaDescription' => 'NOVA Integrated Solutions offers web development, IoT solutions, mobile and desktop application development, AI development, and professional training courses. Explore our successful projects and contact us to grow your business.',
 ];

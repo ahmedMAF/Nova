@@ -41,4 +41,6 @@ return [
     'mobile' => 'Mobile Development',
     'desktop' => 'Desktop Development',
     'ai' => 'Artificial Intelligence',
+    'title' => 'About Us',
+    'meta' => 'At NOVA Integrated Solutions, we turn ideas into reality through smart tech solutions — from web, mobile, and desktop development to AI and IoT integration, plus training programs that prepare the next generation of innovators.',
 ];

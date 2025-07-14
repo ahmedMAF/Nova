@@ -10,4 +10,6 @@ return [
     'ourTeamPart3' => 'We have a team of professionals, where all the members work collaboratively and passionately to achieve significant results and together overcome business challenges.',
     'edit' => 'Edit',
     'delete' => 'Delete',
+    'title' => 'Team',
+    'meta' => 'NOVA’s team consists of passionate professionals who work collaboratively to deliver high-quality IT solutions. We believe human resources are the core of every successful company.',
 ];

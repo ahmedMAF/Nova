@@ -1,6 +1,10 @@
 @extends('layout.main')
 
-@section('title', 'About Us')
+@section('title', __('about.title'))
+
+@section('meta')
+    <meta name="description" content="{{ __('about.meta') }}">
+@endsection
 
 @section('content')
     <!-- Start Page Banner Area -->

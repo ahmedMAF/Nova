@@ -1,6 +1,10 @@
 @extends('layout.main')
 
-@section('title', 'Home')
+@section('title',  __('home.title'))
+
+@section('meta')
+    <meta name="description" content="{{ __('home.metaDescription') }}">
+@endsection
 
 @section('content')
     <!-- Start Main Slides Area -->
@@ -8,10 +12,10 @@
         <div class="home-slides owl-carousel owl-theme owl-loaded owl-drag">
             <div class="owl-stage-outer owl-height" style="height: 784.656px">
                 <div class="owl-stage" style="
-                                              transform: translate3d(-3789px, 0px, 0px);
-                                              transition: all 0s ease 0s;
-                                              width: 7580px;
-                                            ">
+                                                  transform: translate3d(-3789px, 0px, 0px);
+                                                  transition: all 0s ease 0s;
+                                                  width: 7580px;
+                                                ">
                     <div class="owl-item cloned" style="width: 1263.33px">
                         <div class="main-slides-item">
                             <div class="container-fluid">
@@ -24,9 +28,9 @@
                                                 data-aos-once="true" class="aos-init aos-animate">
                                                 {{ __('home.iot') }}
                                                 <span class="overlay" style="
-                                                              transform-origin: left 50% 0px;
-                                                              transform: matrix(0, 0, 0, 1, 0, 0);
-                                                            "></span>
+                                                                  transform-origin: left 50% 0px;
+                                                                  transform: matrix(0, 0, 0, 1, 0, 0);
+                                                                "></span>
                                             </h1>
                                             <p data-aos="fade-right" data-aos-delay="70" data-aos-duration="700"
                                                 data-aos-once="true" class="aos-init aos-animate">
@@ -39,7 +43,8 @@
                                         data-aos-delay="70" data-aos-duration="700" data-aos-once="true">
                                         <div class="main-slides-image" data-tilt=""
                                             style="transform: matrix(1, 0, 0, 1, 0, 0)">
-                                            <img style="height: 500px; width: auto;" src="{{asset('image/mainSlideIOT.jpeg')}}" alt="image" />
+                                            <img style="height: 500px; width: auto;"
+                                                src="{{asset('image/mainSlideIOT.jpeg')}}" alt="image" />
                                         </div>
                                     </div>
                                 </div>
@@ -58,9 +63,9 @@
                                                 data-aos-once="true" class="aos-init aos-animate">
                                                 {{ __('home.ai') }}
                                                 <span class="overlay" style="
-                                                              transform-origin: left 50% 0px;
-                                                              transform: matrix(0, 0, 0, 1, 0, 0);
-                                                            "></span>
+                                                                  transform-origin: left 50% 0px;
+                                                                  transform: matrix(0, 0, 0, 1, 0, 0);
+                                                                "></span>
                                             </h1>
                                             <p data-aos="fade-right" data-aos-delay="70" data-aos-duration="700"
                                                 data-aos-once="true" class="aos-init aos-animate"></p>
@@ -78,7 +83,8 @@
                                         data-aos-delay="70" data-aos-duration="700" data-aos-once="true">
                                         <div class="main-slides-image" data-tilt=""
                                             style="transform: matrix(1, 0, 0, 1, 0, 0)">
-                                            <img style="height: 500px; width: auto;" src="{{asset('image/mainSlideAI.jfif')}}" alt="image" />
+                                            <img style="height: 500px; width: auto;"
+                                                src="{{asset('image/mainSlideAI.jfif')}}" alt="image" />
                                         </div>
                                     </div>
                                 </div>
@@ -97,9 +103,9 @@
                                                 data-aos-once="true" class="aos-init aos-animate">
                                                 {{ __('home.programin') }}
                                                 <span class="overlay" style="
-                                                              transform: matrix(0, 0, 0, 1, 0, 0);
-                                                              transform-origin: right 50% 0px;
-                                                            "></span>
+                                                                  transform: matrix(0, 0, 0, 1, 0, 0);
+                                                                  transform-origin: right 50% 0px;
+                                                                "></span>
                                             </h1>
                                             <p data-aos="fade-right" data-aos-delay="70" data-aos-duration="700"
                                                 data-aos-once="true" class="aos-init aos-animate">
@@ -112,7 +118,8 @@
                                         data-aos-delay="70" data-aos-duration="700" data-aos-once="true">
                                         <div class="main-slides-image" data-tilt=""
                                             style="transform: matrix(1, 0, 0, 1, 0, 0)">
-                                            <img style="height: 500px; width: auto;" src="{{asset('image/mainSlideCode.jpeg')}}" alt="image" />
+                                            <img style="height: 500px; width: auto;"
+                                                src="{{asset('image/mainSlideCode.jpeg')}}" alt="image" />
                                         </div>
                                     </div>
                                 </div>
@@ -131,9 +138,9 @@
                                                 data-aos-once="true" class="aos-init aos-animate">
                                                 {{ __('home.coures') }}
                                                 <span class="overlay" style="
-                                                              transform: matrix(0, 0, 0, 1, 0, 0);
-                                                              transform-origin: right 50% 0px;
-                                                            "></span>
+                                                                  transform: matrix(0, 0, 0, 1, 0, 0);
+                                                                  transform-origin: right 50% 0px;
+                                                                "></span>
                                             </h1>
                                             <p data-aos="fade-right" data-aos-delay="70" data-aos-duration="700"
                                                 data-aos-once="true" class="aos-init aos-animate"></p>
@@ -151,7 +158,8 @@
                                         data-aos-delay="70" data-aos-duration="700" data-aos-once="true">
                                         <div class="main-slides-image" data-tilt=""
                                             style="transform: matrix(1, 0, 0, 1, 0, 0)">
-                                            <img style="height: 500px; width: auto;" src="{{asset('image/mainSlideCoures.jpeg')}}" alt="image" />
+                                            <img style="height: 500px; width: auto;"
+                                                src="{{asset('image/mainSlideCoures.jpeg')}}" alt="image" />
                                         </div>
                                     </div>
                                 </div>
@@ -196,22 +204,22 @@
                         <h3>
                             {{ __('about.what') }}
                             <span class="overlay" style="
-                                            transform-origin: left 50% 0px;
-                                            transform: matrix(0, 0, 0, 1, 0, 0);
-                                          "></span>
+                                                transform-origin: left 50% 0px;
+                                                transform: matrix(0, 0, 0, 1, 0, 0);
+                                              "></span>
                         </h3>
                         <p></p>
                         <p class="MsoNormal" style="
-                                          text-align: justify;
-                                          background-image: initial;
-                                          background-position: initial;
-                                          background-size: initial;
-                                          background-repeat: initial;
-                                          background-attachment: initial;
-                                          background-origin: initial;
-                                          background-clip: initial;
-                                          unicode-bidi: embed;
-                                        ">
+                                              text-align: justify;
+                                              background-image: initial;
+                                              background-position: initial;
+                                              background-size: initial;
+                                              background-repeat: initial;
+                                              background-attachment: initial;
+                                              background-origin: initial;
+                                              background-clip: initial;
+                                              unicode-bidi: embed;
+                                            ">
                             {{ __('about.whatWeDo') }}
 
                             <font face="Open Sans, sans-serif"><span style="font-size: 12pt">
@@ -240,35 +248,35 @@
                         <h3>
                             {{ __('service.oureServices') }}
                             <span class="overlay" style="
-                                        transform-origin: left 50% 0px;
-                                        transform: matrix(0, 0, 0, 1, 0, 0);
-                                      "></span>
+                                            transform-origin: left 50% 0px;
+                                            transform: matrix(0, 0, 0, 1, 0, 0);
+                                          "></span>
                         </h3>
                         <p></p>
                         <p align="center" style="
-                                      margin: 0in 0in 15pt;
-                                      text-align: center;
-                                      line-height: 18pt;
-                                      background-image: initial;
-                                      background-position: initial;
-                                      background-size: initial;
-                                      background-repeat: initial;
-                                      background-attachment: initial;
-                                      background-origin: initial;
-                                      background-clip: initial;
-                                      vertical-align: baseline;
-                                    "></p>
-                        <div  >
+                                          margin: 0in 0in 15pt;
+                                          text-align: center;
+                                          line-height: 18pt;
+                                          background-image: initial;
+                                          background-position: initial;
+                                          background-size: initial;
+                                          background-repeat: initial;
+                                          background-attachment: initial;
+                                          background-origin: initial;
+                                          background-clip: initial;
+                                          vertical-align: baseline;
+                                        "></p>
+                        <div>
                             <p class="MsoNormal" style="
-                                        background-image: initial;
-                                        background-position: initial;
-                                        background-size: initial;
-                                        background-repeat: initial;
-                                        background-attachment: initial;
-                                        background-origin: initial;
-                                        background-clip: initial;
-                                        unicode-bidi: embed;
-                                      ">
+                                            background-image: initial;
+                                            background-position: initial;
+                                            background-size: initial;
+                                            background-repeat: initial;
+                                            background-attachment: initial;
+                                            background-origin: initial;
+                                            background-clip: initial;
+                                            unicode-bidi: embed;
+                                          ">
                                 {{ __('service.oureServicesPart1') }}
                                 <font face="Open Sans, sans-serif"><span style="font-size: 12pt">
                                         <o:p></o:p>
@@ -292,10 +300,10 @@
                     <div class="services-slides owl-carousel owl-theme owl-loaded owl-drag">
                         <div class="owl-stage-outer">
                             <div class="owl-stage" style="
-                                        transition: all 0s ease 0s;
-                                        width: 2767px;
-                                        transform: translate3d(-553px, 0px, 0px);
-                                      ">
+                                            transition: all 0s ease 0s;
+                                            width: 2767px;
+                                            transform: translate3d(-553px, 0px, 0px);
+                                          ">
 
                                 @foreach ($services as $service)
                                     <div class="owl-item cloned" style="width: 251.628px; margin-right: 25px">
@@ -310,7 +318,7 @@
                                                 <p>
                                                     {{$service->description}}
                                                 </p>
-                                                <a href="{{route('service_details' , $service->id)}}" class="services-btn">
+                                                <a href="{{route('service_details', $service->id)}}" class="services-btn">
                                                     {{__('service.view')}}</a>
                                             </div>
                                         </div>
@@ -331,23 +339,23 @@
                 <h2>
                     {{ __('about.shoosePart1') }}
                     <span class="overlay" style="
-                                transform-origin: left 50% 0px;
-                                transform: matrix(0, 0, 0, 1, 0, 0);
-                              "></span>
+                                    transform-origin: left 50% 0px;
+                                    transform: matrix(0, 0, 0, 1, 0, 0);
+                                  "></span>
                 </h2>
                 <p></p>
                 <h1 style="line-height: 150%" class="">
                     <p class="MsoNormal" style="
-                                background-image: initial;
-                                background-position: initial;
-                                background-size: initial;
-                                background-repeat: initial;
-                                background-attachment: initial;
-                                background-origin: initial;
-                                background-clip: initial;
-                                direction: ltr;
-                                unicode-bidi: embed;
-                              ">
+                                    background-image: initial;
+                                    background-position: initial;
+                                    background-size: initial;
+                                    background-repeat: initial;
+                                    background-attachment: initial;
+                                    background-origin: initial;
+                                    background-clip: initial;
+                                    direction: ltr;
+                                    unicode-bidi: embed;
+                                  ">
                         {{ __('about.shoosePart2') }}
                         <font face="Open Sans, sans-serif"><span style="font-size: 12pt">
                                 <o:p></o:p>
@@ -408,7 +416,7 @@
                         </div>
                         <div class="choose-content">
                             <h3>
-                                 {{ __('about.teamwork') }}
+                                {{ __('about.teamwork') }}
                             </h3>
                             <p></p>
                             <div style="text-align: justify">
@@ -428,7 +436,7 @@
                         </div>
                         <div class="choose-content">
                             <h3>
-                            {{ __('about.creativity') }}
+                                {{ __('about.creativity') }}
                             </h3>
                             <p></p>
                             <div style="text-align: justify">
@@ -468,7 +476,7 @@
                         </div>
                         <div class="choose-content">
                             <h3>
-                               {{ __('about.integrity') }}
+                                {{ __('about.integrity') }}
                             </h3>
                             <p></p>
                             <div style="text-align: justify">
@@ -488,7 +496,7 @@
                         </div>
                         <div class="choose-content">
                             <h3>
-                              {{ __('about.innovation') }}
+                                {{ __('about.innovation') }}
                             </h3>
                             <p></p>
                             <div style="text-align: justify">
@@ -509,7 +517,7 @@
                         </div>
                         <div class="choose-content">
                             <h3>
-                              {{ __('about.quality') }}
+                                {{ __('about.quality') }}
                             </h3>
                             <p></p>
                             <div style="text-align: justify">
@@ -531,9 +539,9 @@
                 <h2>
                     {{ __('home.ourProjetcs') }}
                     <span class="overlay" style="
-                            transform-origin: left 50% 0px;
-                            transform: matrix(0, 0, 0, 1, 0, 0);
-                          "></span>
+                                transform-origin: left 50% 0px;
+                                transform: matrix(0, 0, 0, 1, 0, 0);
+                              "></span>
                 </h2>
                 <p></p>
                 <p class="MsoNormal" style="line-height: 150%">
@@ -542,9 +550,9 @@
                 </p>
                 <p class="MsoNormal" style="line-height: 150%">
                     <span lang="AR-JO" dir="RTL" style="
-                            font-family: 'Open Sans', sans-serif;
-                            mso-bidi-language: AR-JO;
-                          ">
+                                font-family: 'Open Sans', sans-serif;
+                                mso-bidi-language: AR-JO;
+                              ">
                         <o:p></o:p>
                     </span>
                 </p>
@@ -554,24 +562,25 @@
             <div class="projects-slides owl-carousel owl-theme owl-loaded owl-drag">
                 <div class="owl-stage-outer">
                     <div class="owl-stage" style="
-                            transition: all 0.5s ease 0s;
-                            width: 3709px;
-                            transform: translate3d(-1568px, 0px, 0px);
-                          ">
+                                transition: all 0.5s ease 0s;
+                                width: 3709px;
+                                transform: translate3d(-1568px, 0px, 0px);
+                              ">
 
                         @foreach ($projects as $project)
                             <div class="owl-item cloned" style="width: 260.25px; margin-right: 25px">
                                 <div class="projects-item aos-init" data-aos="fade-up" data-aos-delay="50"
                                     data-aos-duration="500" data-aos-once="true">
                                     <div class="projects-image">
-                                        <a href="{{route('project_details' , $project->id)}}"><img src="{{asset('storage/' . $project->image)}}"
-                                                alt="image" /></a>
+                                        <a href="{{route('project_details', $project->id)}}"><img
+                                                src="{{asset('storage/' . $project->image)}}" alt="image" /></a>
                                     </div>
                                     <div class="projects-content">
                                         <h3>
-                                            <a href="{{route('project_details' , $project->id)}}">{{$project->name}}</a>
+                                            <a href="{{route('project_details', $project->id)}}">{{$project->name}}</a>
                                         </h3>
-                                        <a href="{{route('project_details' , $project->id)}}" class="projects-btn">{{__('project.view')}}</a>
+                                        <a href="{{route('project_details', $project->id)}}"
+                                            class="projects-btn">{{__('project.view')}}</a>
                                     </div>
                                 </div>
                             </div>

@@ -18,4 +18,6 @@ return [
     'nameErorr' => 'Please enter your name',
     'emailErorr' => 'Please enter your email',
     'messageErorr' => 'Please enter your message',
+    'title' => 'Contact Us',
+    'meta' => 'Contact NOVA Integrated Solutions for inquiries, service requests, or technical support. We are here to help and ready to answer all your questions.',
 ];

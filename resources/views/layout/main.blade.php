@@ -34,6 +34,8 @@
 
 
     <title>@yield('title')</title>
+
+    @yield('meta')
 </head>
 
 <body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">

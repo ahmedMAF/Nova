@@ -1,6 +1,10 @@
 @extends('layout.main')
 
-@section('title', 'Service Details')
+@section('title', $service->name)
+
+@section('meta')
+    <meta name="description" content="{{ Str::limit(strip_tags($service->description), 160) }}">
+@endsection
 
 @section('content')
     <!-- Start Page Banner Area -->

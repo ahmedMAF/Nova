@@ -1,6 +1,10 @@
 @extends('layout.main')
 
-@section('title', 'Our Projects')
+@section('title',  __('project.title'))
+
+@section('meta')
+    <meta name="description" content="{{ __('project.meta') }}">
+@endsection
 
 @section('content')
     @if (session('success'))

@@ -1,6 +1,10 @@
 @extends('layout.main')
 
-@section('title', 'Team')
+@section('title', __('team.title'))
+
+@section('meta')
+    <meta name="description" content="{{ __('team.meta') }}">
+@endsection
 
 @section('content')
 

@@ -1,6 +1,10 @@
 @extends('layout.main')
 
-@section('title', 'Project details')
+@section('title', $project->name)
+
+@section('meta')
+    <meta name="description" content="{{$project->description}}">
+@endsection
 
 @section('content')
     <!-- Start Page Banner Area -->

@@ -8,4 +8,6 @@ return [
     'view' => 'View More',
     'edit' => 'Edit',
     'delete' => 'Delete',
+    'title' => 'Our Services',
+    'meta' => 'NOVA Integrated Solutions provides complete tech services including web development, mobile and desktop applications, AI and IoT projects, and professional training courses for individuals and businesses locally and globally.',
 ];

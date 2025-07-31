@@ -69,7 +69,7 @@
                     <div class="main-responsive-menu">
                         <div class="logo">
                             <a href="{{route('home')}}">
-                                <img style="height: 45px" src="{{asset('image/nova.jpeg')}}" alt="image" />
+                                <img style="height: 45px" src="{{asset('image/nova.jpeg')}}" alt="logo nova" />
                             </a>
                         </div>
                     </div>
@@ -80,7 +80,7 @@
                 <div class="container-fluid">
                     <nav class="navbar navbar-expand-md navbar-light">
                         <a class="navbar-brand" href="{{route('home')}}">
-                            <img style="height: 70px" src="{{asset('image/nova.jpeg')}}" alt="image" />
+                            <img style="height: 70px" src="{{asset('image/nova.jpeg')}}" alt="logo nova" />
                         </a>
 
                         <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent"
@@ -170,7 +170,7 @@
                     <div class="single-footer-widget aos-init" data-aos="fade-up" data-aos-delay="50"
                         data-aos-duration="500" data-aos-once="true">
                         <div class="widget-logo">
-                            <a style="width: 130px" href="{{route('home')}}"><img src="{{asset('image/nova.jpeg')}}" alt="image" /></a>
+                            <a style="width: 130px" href="{{route('home')}}"><img src="{{asset('image/nova.jpeg')}}" alt="nova logo" /></a>
                         </div>
                         <p>
                             <font color="#ffffff">&nbsp; &nbsp;</font>
@@ -262,7 +262,7 @@
             <img src="{{asset('image/slides-shape-3.png')}}" alt="image" />
         </div>
         <div class="footer-shape-3">
-            <img src="{{asset('image/footer-shape-3.png')}}" alt="image" />
+            <img src="{{asset('image/slides-shape-5.png')}}" alt="image" />
         </div>
     </footer>
     <!-- End Footer Area -->

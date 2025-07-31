@@ -38,7 +38,7 @@
                     <div class="service-details-desc">
                         <!-- Main Service Image -->
                         <div class="service-details-image mb-5">
-                            <img src="{{asset('storage/' . $service->image)}}" alt="Service Image" class="rounded-3">
+                            <img src="{{asset('storage/' . $service->image)}}" alt="Service Image {{$service->name}}" class="rounded-3">
                         </div>
 
                         <!-- Service Title & Description -->

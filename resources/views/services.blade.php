@@ -169,7 +169,7 @@
                             <div class="services-item">
                                 <div class="services-image">
                                     <a class="prevent" href="{{route('service_details', $service->id)}}"><img
-                                            src="{{asset('storage/' . $service->image)}}" alt="image" /></a>
+                                            src="{{asset('storage/' . $service->image)}}" alt="{{$service->name}}" /></a>
                                 </div>
                                 <div class="services-content">
                                     <h3>
@@ -200,7 +200,7 @@
                             <div class="services-item">
                                 <div class="services-image">
                                     <a class="prevent" href="{{route('service_details', $service->id)}}"><img
-                                            src="{{asset('storage/' . $service->image)}}" alt="image" /></a>
+                                            src="{{asset('storage/' . $service->image)}}" alt="{{$service->name}}" /></a>
                                 </div>
                                 <div class="services-content">
                                     <h3>

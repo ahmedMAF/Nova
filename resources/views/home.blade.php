@@ -44,7 +44,7 @@
                                         <div class="main-slides-image" data-tilt=""
                                             style="transform: matrix(1, 0, 0, 1, 0, 0)">
                                             <img style="height: 500px; width: auto;"
-                                                src="{{asset('image/mainSlideIOT.jpeg')}}" alt="image" />
+                                                src="{{asset('image/mainSlideIOT.jpeg')}}" alt="IOT انترنت الاشياء" />
                                         </div>
                                     </div>
                                 </div>
@@ -84,7 +84,7 @@
                                         <div class="main-slides-image" data-tilt=""
                                             style="transform: matrix(1, 0, 0, 1, 0, 0)">
                                             <img style="height: 500px; width: auto;"
-                                                src="{{asset('image/mainSlideAI.jfif')}}" alt="image" />
+                                                src="{{asset('image/mainSlideAI.jfif')}}" alt="AI ذكاء اصطناعي" />
                                         </div>
                                     </div>
                                 </div>
@@ -119,7 +119,7 @@
                                         <div class="main-slides-image" data-tilt=""
                                             style="transform: matrix(1, 0, 0, 1, 0, 0)">
                                             <img style="height: 500px; width: auto;"
-                                                src="{{asset('image/mainSlideCode.jpeg')}}" alt="image" />
+                                                src="{{asset('image/mainSlideCode.jpeg')}}" alt="Programing البرمجة" />
                                         </div>
                                     </div>
                                 </div>
@@ -159,7 +159,7 @@
                                         <div class="main-slides-image" data-tilt=""
                                             style="transform: matrix(1, 0, 0, 1, 0, 0)">
                                             <img style="height: 500px; width: auto;"
-                                                src="{{asset('image/mainSlideCoures.jpeg')}}" alt="image" />
+                                                src="{{asset('image/mainSlideCoures.jpeg')}}" alt="Courses دورات تدريبية" />
                                         </div>
                                     </div>
                                 </div>
@@ -193,7 +193,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-12">
                     <div class="about-image" data-tilt="">
-                        <img src="{{asset('image/about.jpg')}}" alt="image" data-aos="fade-down" data-aos-delay="80"
+                        <img src="{{asset('image/about.jpg')}}" alt="about us حولنا" data-aos="fade-down" data-aos-delay="80"
                             data-aos-duration="800" data-aos-once="true" class="aos-init" />
                     </div>
                 </div>
@@ -309,7 +309,7 @@
                                     <div class="owl-item cloned" style="width: 251.628px; margin-right: 25px">
                                         <div class="services-item">
                                             <div class="services-image custom-image">
-                                                <img src="{{asset('storage/' . $service->image)}}" alt="image" />
+                                                <img src="{{asset('storage/' . $service->image)}}" alt="{{$service->name}}" />
                                             </div>
                                             <div class="services-content">
                                                 <h3>
@@ -573,7 +573,7 @@
                                     data-aos-duration="500" data-aos-once="true">
                                     <div class="projects-image">
                                         <a href="{{route('project_details', $project->id)}}"><img
-                                                src="{{asset('storage/' . $project->image)}}" alt="image" /></a>
+                                                src="{{asset('storage/' . $project->image)}}" alt="{{$project->name}}" /></a>
                                     </div>
                                     <div class="projects-content">
                                         <h3>

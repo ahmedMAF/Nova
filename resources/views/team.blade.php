@@ -76,7 +76,7 @@
                         <div class="col-lg-3 col-sm-6">
                             <div class="single-team-card">
                                 <div class="team-image" data-tilt="">
-                                    <img src="{{asset('storage/' . $member->image)}}" alt="image">
+                                    <img src="{{asset('storage/' . $member->image)}}" alt="{{$member->name}}">
                                 </div>
                                 <div class="team-content">
                                     <h3>{{$member->name}}</h3>
@@ -100,7 +100,7 @@
                         <div class="col-lg-3 col-sm-6">
                             <div class="single-team-card">
                                 <div class="team-image" data-tilt="">
-                                    <img src="{{asset('storage/' . $member->image)}}" alt="image">
+                                    <img src="{{asset('storage/' . $member->image)}}" alt="{{$member->name}}">
                                 </div>
                                 <div class="team-content">
                                     <h3>{{$member->name}}</h3>

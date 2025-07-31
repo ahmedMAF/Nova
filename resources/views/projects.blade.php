@@ -54,7 +54,7 @@
                                     <div class="single-blog-card">
                                         <div class="blog-image">
                                             <a class="prevent" href="{{route('project_details', $project->id)}}"><img
-                                                    src="{{asset('storage/' . $project->image)}}" alt="image"></a>
+                                                    src="{{asset('storage/' . $project->image)}}" alt="{{$project->name}}"></a>
 
                                             <div class="date">{{$project->date}}</div>
                                         </div>
@@ -83,7 +83,7 @@
                                     <div class="single-blog-card">
                                         <div class="blog-image">
                                             <a class="prevent" href="{{route('project_details', $project->id)}}"><img
-                                                    src="{{asset('storage/' . $project->image)}}" alt="image"></a>
+                                                    src="{{asset('storage/' . $project->image)}}" alt="{{$project->name}}"></a>
 
                                             <div class="date">{{$project->date}}</div>
                                         </div>

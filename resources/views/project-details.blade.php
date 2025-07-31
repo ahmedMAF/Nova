@@ -39,7 +39,7 @@
                         <!-- Main Project Image -->
                         <div class="project-details-image mb-5 text-center">
                             <img style="width:100%; max-width: 600px;" src="{{asset('storage/' . $project->image)}}"
-                                alt="Main Project Image" class="rounded-3">
+                                alt="Main Project Image {{$project->name}}" class="rounded-3">
                         </div>
 
                         <!-- Project Meta -->

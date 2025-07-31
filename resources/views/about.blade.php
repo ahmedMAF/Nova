@@ -40,7 +40,7 @@
                 <div class="col-lg-6 col-md-12">
                     <div class="about-image" data-tilt=""
                         style="will-change: transform; transform: perspective(300px) rotateX(0deg) rotateY(0deg);">
-                        <img src="{{asset('image/about.jpg')}}" alt="image" data-aos="fade-down" data-aos-delay="80"
+                        <img src="{{asset('image/about.jpg')}}" alt="about us" data-aos="fade-down" data-aos-delay="80"
                             data-aos-duration="800" data-aos-once="true" class="aos-init aos-animate">
                     </div>
                 </div>
@@ -73,7 +73,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-6 col-md-12">
                     <div class="about-wrap-image" data-tilt="" style="will-change: transform;">
-                        <img src="{{asset('image/aboutGoal.jpg')}}" alt="image" data-aos="fade-down" data-aos-delay="80"
+                        <img src="{{asset('image/aboutGoal.jpg')}}" alt="about us" data-aos="fade-down" data-aos-delay="80"
                             data-aos-duration="800" data-aos-once="true" class="aos-init aos-animate">
                     </div>
                 </div>

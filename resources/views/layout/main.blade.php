@@ -31,7 +31,10 @@
     <link rel="stylesheet" href="{{asset('css/footer.css')}}" />
     <link rel="stylesheet" href="{{asset('css/dark.css')}}" />
     <link rel="stylesheet" href="{{asset('css/responsive.css')}}" />
-
+    <link rel="icon" href="{{ asset('image/icon.png') }}" type="image/x-icon">
+    <style>
+        .switch-box { display: none !important; }
+    </style>
 
     <title>@yield('title')</title>
 
@@ -296,8 +299,6 @@
     <script src="{{asset('js/aos.js')}}"></script>
     <script src="{{asset('js/wow.min.js')}}"></script>
     <script src="{{asset('js/main.js')}}"></script>
-    <div class="switch-box"><label id="switch" class="switch"><input type="checkbox" onchange="toggleTheme()"
-                id="slider"><span class="slider round"></span></label></div>
     <script src="{{asset('js/toastr.min.js')}}"></script>
     <script></script>
 

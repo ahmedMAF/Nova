@@ -41,7 +41,7 @@
                     <div class="overview-card">
                         <h3>{{ __('contact.call') }}</h3>
                         <span>
-                            <a href="tel:9901234567">0597456498</a>
+                            <a href="tel:9901234567">+972597456498</a>
                         </span>
                     </div>
                 </div>
@@ -51,7 +51,7 @@
                         <h3>{{ __('contact.email') }}</h3>
                         <span>
                             <a href="../html/contact.html"><span style="margin: 0px" class="__cf_email__"
-                                    data-cfemail="650d0c060a1f00250208040c094b060a08">nova.integrated.solutions@gmail.com</span></a>
+                                    data-cfemail="650d0c060a1f00250208040c094b060a08">info@nova4is.com</span></a>
                         </span>
                     </div>
                 </div>
@@ -60,7 +60,7 @@
                     <div class="overview-card">
                         <h3>{{ __('contact.support') }}</h3>
                         <span>
-                            <a href="tel:15143125678">0597456498</a>
+                            <a href="tel:15143125678">+972597456498</a>
                         </span>
                     </div>
                 </div>
@@ -142,5 +142,5 @@
     </div>
     <!-- End Talk Area -->
 
-    
+
 @endsection

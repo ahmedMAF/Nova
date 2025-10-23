@@ -44,17 +44,17 @@
 
                         <!-- Project Meta -->
                         <div class="project-details-meta mb-5">
-                            <ul class="list-unstyled d-flex flex-wrap align-items-center justify-content-between">
-                                <li>
+                            <ul class="p-0 list-unstyled d-flex flex-wrap align-items-center justify-content-between">
+                                <li class="w-sm-100">
                                     <span>{{__('project-details.date')}}:</span>
                                     {{$project->date}}
                                 </li>
-                                <li>
+                                <li class="w-sm-100">
                                     <span>{{__('project-details.category')}}:</span>
                                     {{ $project->category->{'name_' . $locale} }}
 
                                 </li>
-                                <li>
+                                <li class="w-sm-100">
                                     <span>{{__('project-details.client')}}:</span>
                                     {{$project->client}}
                                 </li>
